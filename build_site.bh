@@ -1,0 +1,6 @@
+#!/bin/bash
+cd source
+bundle
+jekyll build
+cd _site
+cp -r . ../../docs
