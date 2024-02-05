@@ -10,7 +10,7 @@ I´ve been working in Rio de Janeiro, Brazil for more than 25 years in software 
 - HTML5, CSS, SCSS, Sass, Jekyll
 - AWS, Azure
 
-_DORMANT Skills<sub> I used to worked with a long time ago</sub>_  
+_DORMANT Skills<sub> used to work with a long time ago</sub>_  
 _- JAVA, C++, C_  
 
 _FORTHCOMING Skills<sub>learning and improving</sub>_  
