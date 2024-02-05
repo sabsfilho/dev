@@ -1,19 +1,31 @@
-# Software Engineer
-# Full Stack Senior C# Developer
-## JavaScript & SQL
+# Software Engineer & Full Stack Senior Developer
+### C#, JavaScript & SQL
 
 I´ve been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management in Brazilian IT, Banking and Fintech companies.
 
 ## Skills
-### C#, .NET, SQL, JavaScript, jQuery, Node.js, Express,  React, AWS, RESTFul
+- C#, .NET
+- SQL, PostGRE, MongoDB
+- JavaScript, jQuery, Node.js, Express, React, Mongoose, RESTful
+- HTML5, CSS, SCSS, Sass, Jekyll
+- AWS, Azure
 
-### B2 - English Proficiency
-### Native Brazilian Portuguese
+_DORMANT Skills<sub> I used to worked with a long time ago</sub>_  
+_- JAVA, C++, C_  
+
+_FORTHCOMING Skills<sub>learning and improving</sub>_  
+_- Deep Learning techniques_  
+_- ML.NET_  
+_- Python, Pandas, Jupyter, Seaborn, Scikit-learn, Keras and TensorFlow_  
+_- Google Colab & VSCode_
+
+## Language
+- B2 - English Proficiency  
+- Native Brazilian Portuguese
 
 ## Certifications
 
-- [Back End Development and APIs - January 31, 2024]
-(https://www.freecodecamp.org/certification/sabsfilho/back-end-development-and-apis)
+- [Back End Development and APIs - January 31, 2024](https://www.freecodecamp.org/certification/sabsfilho/back-end-development-and-apis)  
 Build microservices with npm, Node.js, Express.js, Mongoose.js and Mongo Database.  
 
 - Relation Database Certification - January 29, 2024  
