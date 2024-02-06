@@ -2,7 +2,7 @@
 ### C#, JavaScript & SQL
 
 I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management in Brazilian IT, Banking and Fintech companies.  
-I am a Mechanical Engineer having a post-graduation in System Project Management and currently looking for the opportunity to work remotely in IT projects and use the strong skills that I have developed during my great code years to collaborate for even more successful implementation.  
+I graduated in Mechanical Engineering, post-graduated in CS & System Project Management and I'm currently looking for the opportunity to work remotely in IT projects abroad.
 Available to start work right now on a full or part-time remote job at 4PM-6AM GMT.  
 _I need employer sponsorship to work within the United States._
 
@@ -61,9 +61,9 @@ Build C# applications using core concepts and object-oriented programming princi
 - [CodeAlly](https://codeally.io/cv/1925e7e676abb9663fe62f5e)
 
 ## Education
-- Pontifícia Universidade Católica-PUC / System Project Management  
+- [CS & System Project Management @ Pontifícia Universidade Católica - PUC](https://www.puc-rio.br)  
 2005-2006, Rio de Janeiro, RJ - Brazil  
-- Federal University of Rio de Janeiro - UFRJ / Mechanical Engineer  
+- [Mechanical Engineer @ Federal University of Rio de Janeiro - UFRJ](https://ufrj.br)  
 1995-2001, Rio de Janeiro, RJ - Brazil
 
 ## Awards
@@ -73,7 +73,7 @@ _A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical E
 ## Outer IT World
 - Capital Markets & Securities Analyst  For Trading Floor Certification  
 1998-1999,  Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil  
-_Economics for Capital Markets; Financial and Statistical Calculation; Asset Classes; Financial Instruments and Markets; Equity Markets Trend Analysis; Portfolio_
+_Economics for Capital Markets; Financial and Statistical Calculation; Asset Classes; Financial Instruments and Markets; Equity Markets Trend Analysis; Portfolio Management; Brazilian Securities Law; Structure and Dynamics of a Trading Floor Negotiation_
 - Financial Mathematics with HP 12c  
 1997, 40 hours, Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil  
 _Financial Fundamentals, Simple interest, Compound interest and Amortization, Discounted Cash Flow Analysis, Bond and Depreciation Calculations._
