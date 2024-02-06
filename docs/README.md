@@ -8,10 +8,11 @@ _I need employer sponsorship to work within the United States._
 
 ## Skills
 - C#, .NET
-- SQL, PostGRE, MongoDB
+- MS SQL Server & T-SQL, PostGRE & PL/pgSQL, MongoDB
 - JavaScript, jQuery, Node.js, Express, React, Mongoose, RESTful
 - HTML5, CSS, SCSS, Sass, Jekyll
 - AWS, Azure
+- Project Management (Kanban :heavy_check_mark:, SCRUM, Waterfall)
 
 _DORMANT Skills<sub> used to work with a long time ago</sub>_  
 _- JAVA, C++, C_  
