@@ -1,0 +1,9 @@
+developed using CodePen  
+
+- Random Quote Machine  
+https://codepen.io/sabsfilho/pen/qBvaBwY  
+techs: HTML5, SCSS, JSE6, React, Babel
+
+- Simple React Markdown Previewer
+https://codepen.io/sabsfilho/pen/qBvaXQv
+techs: HTML5, SCSS, JSE6, React, Babel

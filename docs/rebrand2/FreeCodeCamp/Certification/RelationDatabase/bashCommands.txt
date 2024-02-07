@@ -1,0 +1,115 @@
+Bourne Again Shell (BASH)
+touch = create
+put #!/bin/bash in file at first //shebang
+sh = run
+bash = bourne-again shell
+ls -l = list with permissions
+ls /bin = list binary system directory
+chmod +x file = give write permission to file
+echo $v = print v content
+read = read variable input from user
+man [cmd]= manual opens help for cmd
+type psql = location of psql
+cp zz.txt qq.txt = copy
+cat read file and print
+wc = word count print file attributes lines, words, bytes
+wc -l count lines
+rm -rf dir_name = remove dir_name not empty
+
+set variable 
+W="e.symbol='$1' or e.name='$1'" !!!!! NO SPACE =
+
+if [[ $1 == arg1 ]]
+then
+    echo true
+elif [[ $1 == arg1 ]]
+then
+   echo 2
+else
+    echo false
+fi
+if with -eq (equal), -ne (not equal), -lt (less than), -le (less than or equal), -gt (greater than), -ge (greater than or equal)
+
+for (( i = 10; i > 0; i-- ))
+do
+  echo $i
+done
+
+I=$1
+while [[ $I -ge 0 ]]
+do
+  echo $I
+  (( I-- ))
+  sleep 1
+done
+
+until [[ CONDITION ]]
+do
+  STATEMENTS
+done
+
+declare -p J = print J value
+
+echo $(( RANDOM % 75 + 1)) = print random value from 1 to 75
+
+
+FUNCTION_NAME() {
+  STATEMENTS
+}
+
+
+PSQL="psql -X --username=freecodecamp --dbname=students --no-align --tuples-only -c"
+#read lines from csv file with "," separator // major course are file csv columns
+cat courses.csv | while IFS="," read MAJOR COURSE
+do
+  <STATEMENTS>
+done
+
+name=""
+if [[ -z "$name" ]]; then
+    echo "Name variable is empty"
+elif [[ condition ]]
+then
+  commands
+else
+    echo "Name variable is not empty"
+fi
+
+write
+echo hello bash > stdout.txt
+append
+echo hello bash >> stdout.txt
+
+err
+./script.sh < name.txt 2> stderr.txt
+err & stdout
+./script.sh < name.txt 2> stderr.txt 1>stdout.txt
+
+show lines with meow
+grep --color -n 'meow[a-z]*' kitty_ipsum_1.txt
+count
+grep -c 'meow[a-z]*' kitty_ipsum_1.txt
+show word
+grep -o 'meow[a-z]*' kitty_ipsum_1.txt
+count lines .. wc -l count lines
+grep -o 'meow[a-z]*' kitty_ipsum_1.txt | wc -l
+
+replace r to 2 in name.txt
+sed 's/r/2/' name.txt in the terminal
+
+show lines then replace numbers to 1
+grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/[0-9]+/1/'
+
+grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt
+
+number of lines
+cat kitty_ipsum_2.txt | wc -l >> kitty_info.txt
+
+number of words
+wc -w < kitty_ipsum_2.txt >> kitty_info.txt
+
+character count
+wc -m < kitty_ipsum_2.txt >> kitty_info.txt
+
+file difference
+diff --color kitty_ipsum_1.txt doggy_ipsum_1.txt
