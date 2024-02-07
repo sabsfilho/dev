@@ -1,0 +1,3 @@
+[submodule "rebrand"]
+	path = docs/rebrand
+	url = https://github.com/sabsfilho/rebrand.git
