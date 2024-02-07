@@ -1,0 +1,12 @@
+publish site using jekyll
+create source dir
+put jekyll templates and source files
+create docs dir
+create codespace
+change language to en
+on terminal, cd to source
+for installing jekyll exec: bundle
+compile: jekyll build
+copy:
+cd _site
+cp -r . ../../docs
