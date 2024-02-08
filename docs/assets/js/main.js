@@ -1,5 +1,46 @@
 const CtMain = function(){
 
+    const data = {
+        skills: [
+            'C#, .NET',
+            'MS SQL Server &amp; T-SQL, PostGRE &amp; PL/pgSQL, MongoDB',
+            'JavaScript ES6, jQuery, Node.js, Express, React, Mongoose, RESTful',
+            'HTML5, CSS, SCSS, Sass, Jekyll',
+            'AWS, Azure',
+            'Project Management (Kanban ✔️, SCRUM, Waterfall)',
+            'Git, GitHub, Apache Subversion, TortoiseSVN'
+        ],
+        certifications: [
+            ['Back End Development and APIs @ FreeCodeCamp - January 31, 2024','https://www.freecodecamp.org/certification/sabsfilho/back-end-development-and-apis','Build microservices with npm, Node.js, Express.js, Mongoose.js and Mongo Database.'],
+            ['Relation Database Certification @ FreeCodeCamp - January 29, 2024','https://www.freecodecamp.org/certification/sabsfilho/relational-database-v8','Create, query a relational database using PostgreSQL, PSQL, VS Code and Linux Bash commands. Build scripts for version control system commands using Git.'],
+            ['Data Visualization Certification @ FreeCodeCamp - January 17, 2024','https://www.freecodecamp.org/certification/sabsfilho/data-visualization','Build charts, graphs, maps with JavaScript, D3.js, Babel, JSON API, AJAX'],
+            ['Front End Development Libraries @ FreeCodeCamp - January 13, 2024','https://www.freecodecamp.org/certification/sabsfilho/front-end-development-libraries','Build Single Page Applications (SPAs) with HTML, Bootstrap, Sass, SCSS, JavaScript, React, Redux, Babel.'],
+            ['Javascript Algorithms and Data Structures @ FreeCodeCamp - January 5, 2024','https://www.freecodecamp.org/certification/sabsfilho/javascript-algorithms-and-data-structures-v8','Build interactive interface using JavaScript fundamentals, Object Oriented and Functional Programming, Algorithms, Local storage, API Fetch data.'],
+            ['Responsive Web Design @ FreeCodeCamp - December 28, 2023','https://www.freecodecamp.org/certification/sabsfilho/responsive-web-design','Build web pages with HTML5, CSS, SCSS, Flexbox and CSS Grid.'],
+            ['Foundational C# with Microsoft @ FreeCodeCamp - December 11, 2023','https://www.freecodecamp.org/certification/sabsfilho/foundational-c-sharp-with-microsoft','Build C# applications using core concepts and object-oriented programming principles.'],
+        ],
+        profiles: [
+            ['FreeCodeCamp','https://www.freecodecamp.org/sabsfilho'],
+            ['Microsoft','https://learn.microsoft.com/en-us/users/samuelsantos-1448/'],
+            ['HackerRank','https://www.hackerrank.com/profile/sabsfilho'],
+            ['CodePen','https://codepen.io/sabsfilho'],
+            ['Replit','https://replit.com/@sabsfilho'],
+            ['CodeAlly','https://codeally.io/cv/1925e7e676abb9663fe62f5e']
+        ],
+        education: [
+            ['CS &amp; System Project Management @ Pontifícia Universidade Católica - PUC','https://www.puc-rio.br','2005-2006, Rio de Janeiro, RJ - Brazil'],
+            ['Mechanical Engineer @ Federal University of Rio de Janeiro - UFRJ','https://ufrj.br','1995-2001, Rio de Janeiro, RJ - Brazil']
+        ],
+        outerITWorld: [
+            `Capital Markets &amp; Securities Analyst  For Trading Floor Certification<br>
+1998-1999,  Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil<br>
+<em>Economics for Capital Markets; Financial and Statistical Calculation; Asset Classes; Financial Instruments and Markets; Equity Markets Trend Analysis; Portfolio Management; Brazilian Securities Law; Structure and Dynamics of a Trading Floor Negotiation</em>`,
+`Financial Mathematics with HP 12c<br>
+1997, 40 hours, Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil<br>
+<em>Financial Fundamentals, Simple interest, Compound interest and Amortization, Discounted Cash Flow Analysis, Bond and Depreciation Calculations.</em>`
+        ]
+    };
+
     /*
         - Skills
         - Showcases
@@ -11,7 +52,19 @@ const CtMain = function(){
 
     */
 
-    const addBlocks = ()=>{
+    const templ = {
+        item: (x) => {
+            const zs = [`<a href="${x[1]}" rel="nofollow">${x[0]}</a>`];
+            if (x.length > 2){
+                zs.push(`<div class="item-descr">${x[2]}</div>`)
+            }
+            return zs.join('')
+        }
+    },
+    isArray = x => x.constructor === Array,
+    buildItem = x=>isArray(x) ? templ.item(x) : x,
+    buildList = ls => ['<ul>', ls.map(x=>`<li>${buildItem(x)}</li>`).join(''), '</ul>'].join(''),
+    addBlocks = ()=>{
         const panel = document.getElementById('panel');
 /*
 mainContent = {
@@ -26,6 +79,7 @@ mainContent = {
         const mainContents = [
             {
                 body:`
+<div class="bio">
 <p>I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management in Brazilian IT, Banking and Fintech companies.</p>
 <p>I graduated in Mechanical Engineering and post-graduated in Computer Science & System Project Management.</p>
 <p>Over the last 10 years, I've been working asynchronously in a full remote position in a small Fintech company that develops stock market trade solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies.</p>
@@ -39,22 +93,14 @@ mainContent = {
 <span class="mailme">remember to include your e-mail in the message to allow me reply you an soon as possible.</span>
 <button class="sendbtn">Send</button>
 </p>
+</div>
                 `,
                 index:0,
-                tagImg:'assets/img/sailboat02.png',
+                tagImg:'assets/img/sailboat02.jpg',
                 tit:'About'
             },
             {
-                body:`
-<ul>
-    <li>C#, .NET</li>
-    <li>MS SQL Server &amp; T-SQL, PostGRE &amp; PL/pgSQL, MongoDB</li>
-    <li>JavaScript ES6, jQuery, Node.js, Express, React, Mongoose, RESTful</li>
-    <li>HTML5, CSS, SCSS, Sass, Jekyll</li>
-    <li>AWS, Azure</li>
-    <li>Project Management (Kanban ✔️, SCRUM, Waterfall)</li>
-    <li>Git, GitHub, Apache Subversion, TortoiseSVN</li>
-</ul>
+                body:`${buildList(data.skills)}
 <p><em>DORMANT Skills<sub> used to work with a long time ago</sub></em><br>
 <em>- JAVA, C++, C</em></p>
 <p><em>FORTHCOMING Skills<sub>learning and improving</sub></em><br>
@@ -63,9 +109,8 @@ mainContent = {
 <em>- Python, Pandas, Jupyter, Seaborn, Scikit-learn, Keras and TensorFlow</em><br>
 <em>- Google Colab &amp; VSCode</em></p>            
                 `,
-                href: 'how-i-rest-from-work/',
                 index: 1,         
-                tagImg: 'assets/img/i-rest.jpg',
+                tagImg: 'assets/img/wave.jpg',
                 tit: 'Skills'
             },
             {
@@ -77,81 +122,25 @@ Interface
 </ul>
                 `,
                 index: 2,
-                tagImg: 'assets/img/library.png',
+                tagImg: 'assets/img/library.jpg',
                 tit: 'Showcases'
             },
             {
-                body: `
-<ul>
-<li>
-<p><a href="https://www.freecodecamp.org/certification/sabsfilho/back-end-development-and-apis" rel="nofollow">Back End Development and APIs @ FreeCodeCamp - January 31, 2024</a><br>
-Build microservices with npm, Node.js, Express.js, Mongoose.js and Mongo Database.</p>
-</li>
-<li>
-<p><a href="https://www.freecodecamp.org/certification/sabsfilho/relational-database-v8" rel="nofollow">Relation Database Certification @ FreeCodeCamp - January 29, 2024</a><br>
-Create, query a relational database using PostgreSQL, PSQL, VS Code and Linux Bash commands. Build scripts for version control system commands using Git.</p>
-</li>
-<li>
-<p><a href="https://www.freecodecamp.org/certification/sabsfilho/data-visualization" rel="nofollow">Data Visualization Certification @ FreeCodeCamp - January 17, 2024</a><br>
-Build charts, graphs, maps with JavaScript, D3.js, Babel, JSON API, AJAX</p>
-</li>
-<li>
-<p><a href="https://www.freecodecamp.org/certification/sabsfilho/front-end-development-libraries" rel="nofollow">Front End Development Libraries @ FreeCodeCamp - January 13, 2024</a><br>
-Build Single Page Applications (SPAs) with HTML, Bootstrap, Sass, SCSS, JavaScript, React, Redux, Babel.</p>
-</li>
-<li>
-<p><a href="https://www.freecodecamp.org/certification/sabsfilho/javascript-algorithms-and-data-structures-v8" rel="nofollow">Javascript Algorithms and Data Structures @ FreeCodeCamp - January 5, 2024</a><br>
-Build interactive interface using JavaScript fundamentals, Object Oriented and Functional Programming, Algorithms, Local storage, API Fetch data.</p>
-</li>
-<li>
-<p><a href="https://www.freecodecamp.org/certification/sabsfilho/responsive-web-design" rel="nofollow">Responsive Web Design @ FreeCodeCamp - December 28, 2023</a><br>
-Build web pages with HTML5, CSS, SCSS, Flexbox and CSS Grid.</p>
-</li>
-<li>
-<p><a href="https://www.freecodecamp.org/certification/sabsfilho/foundational-c-sharp-with-microsoft" rel="nofollow">Foundational C# with Microsoft @ FreeCodeCamp - December 11, 2023</a><br>
-Build C# applications using core concepts and object-oriented programming principles.</p>
-</li>
-</ul>
-                                `,
+                body: buildList(data.certifications),
                 index: 3,
-                tagImg: 'assets/img/lego-bricks.png',
+                tagImg: 'assets/img/lego-bricks.jpg',
                 tit: 'Certifications'
             },
             {
-                body: `
-                <ul>
-                <li>
-                <p><a href="https://www.freecodecamp.org/sabsfilho" rel="nofollow">FreeCodeCamp</a></p>
-                </li>
-                <li>
-                <p><a href="https://learn.microsoft.com/en-us/users/samuelsantos-1448/" rel="nofollow">Microsoft</a></p>
-                </li>
-                <li>
-                <p><a href="https://www.hackerrank.com/profile/sabsfilho" rel="nofollow">HackerRank</a></p>
-                </li>
-                <li>
-                <p><a href="https://codepen.io/sabsfilho" rel="nofollow">CodePen</a></p>
-                </li>
-                <li>
-                <p><a href="https://codeally.io/cv/1925e7e676abb9663fe62f5e" rel="nofollow">CodeAlly</a></p>
-                </li>
-                </ul>
-                `,
+                body: buildList(data.profiles),
                 index: 4,
-                tagImg: 'assets/img/stamps.png',
+                tagImg: 'assets/img/stamps.jpg',
                 tit: 'Profiles'
             },
             {
-                body: `
-<ul>
-<li><a href="https://www.puc-rio.br" rel="nofollow">CS &amp; System Project Management @ Pontifícia Universidade Católica - PUC</a><br>
-2005-2006, Rio de Janeiro, RJ - Brazil</li>
-<li><a href="https://ufrj.br" rel="nofollow">Mechanical Engineer @ Federal University of Rio de Janeiro - UFRJ</a><br>
-1995-2001, Rio de Janeiro, RJ - Brazil</li>
-</ul>
-                `,
+                body: buildList(data.education),
                 index: 5,
-                tagImg: 'assets/img/education.png',
+                tagImg: 'assets/img/education.jpg',
                 tit: 'Education'
             },
             {
@@ -160,22 +149,13 @@ Build C# applications using core concepts and object-oriented programming princi
 <em>A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department.</em></p>
                 `,
                 index: 6,
-                tagImg: 'assets/img/medals.png',
+                tagImg: 'assets/img/medals.jpg',
                 tit: 'Awards'
             },
             {
-                body: `
-<ul>
-<li>Capital Markets &amp; Securities Analyst  For Trading Floor Certification<br>
-1998-1999,  Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil<br>
-<em>Economics for Capital Markets; Financial and Statistical Calculation; Asset Classes; Financial Instruments and Markets; Equity Markets Trend Analysis; Portfolio Management; Brazilian Securities Law; Structure and Dynamics of a Trading Floor Negotiation</em></li>
-<li>Financial Mathematics with HP 12c<br>
-1997, 40 hours, Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil<br>
-<em>Financial Fundamentals, Simple interest, Compound interest and Amortization, Discounted Cash Flow Analysis, Bond and Depreciation Calculations.</em></li>
-</ul>
-                                `,
+                body: buildList(data.outerITWorld),
                 index: 7,
-                tagImg: 'assets/img/milky-way.png',
+                tagImg: 'assets/img/milky-way.jpg',
                 tit: 'Outer IT World'
             }
         ].sort((a,b)=>b.index-a.index);

@@ -1,3 +1,9 @@
+:root{
+  --back-color01:#f3ebbb;
+  --back-color02:#83A0E6;
+  
+}
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -7,7 +13,6 @@
  *    IE on Windows Phone and in iOS.
  */
 html {
-  line-height: 1;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -769,14 +774,10 @@ template {
           box-sizing: border-box;
 }
 
-html {
-  line-height: 1.5;
-}
-
 body {
   font-family: 'Lato', sans-serif;
   color: #515151;
-  background-color: #fbfbfb;
+  background-color:var(--back-color01);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -934,7 +935,7 @@ table tfoot td {
   width: 240px;
   height: 100%;
   padding: 20px 10px;
-  background-color: #ffffff;
+  background:linear-gradient(var(--back-color02), var(--back-color01) 20%);
 }
 
 .about {
@@ -1019,7 +1020,8 @@ table tfoot td {
 
 .about p {
   font-size: 16px;
-  margin:10px 0
+  margin:10px 0;
+  line-height: 1.5;
 }
 
 .content-box {
@@ -1126,6 +1128,21 @@ footer .copyright {
   margin:0
 }
 
+.bio{
+  line-height: 1.5;
+}
+
+li a {
+  text-decoration: underline;
+  color:rgba(38, 57, 89);
+  cursor: pointer;
+}
+
+li a:hover {
+  text-decoration: underline;
+  color:brown
+}
+
 .post {
   width: 100%;
   max-width: 100%;
@@ -1174,6 +1191,10 @@ footer .copyright {
 .post .post-content {
   padding: 1rem;
   width: 80%;
+}
+
+.post .post-content li {
+  margin-bottom: 10px;
 }
 
 .post .post-content .post-date,
