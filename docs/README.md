@@ -3,16 +3,17 @@
 
 I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management in Brazilian IT, Banking and Fintech companies.  
 I graduated in Mechanical Engineering, post-graduated in CS & System Project Management and I'm currently looking for the opportunity to work remotely in IT projects abroad.  
-Available to start work right now on a full or part-time remote job at 4PM-6AM GMT.  
+Available to start work right now on a full or part-time remote job at 4PM-6AM GMT, also flexible for any Time Zone Overlap.  
 _I need employer sponsorship to work within the United States._
 
 ## Skills
 - C#, .NET
 - MS SQL Server & T-SQL, PostGRE & PL/pgSQL, MongoDB
-- JavaScript, jQuery, Node.js, Express, React, Mongoose, RESTful
+- JavaScript ES6, jQuery, Node.js, Express, React, Mongoose, RESTful
 - HTML5, CSS, SCSS, Sass, Jekyll
 - AWS, Azure
 - Project Management (Kanban :heavy_check_mark:, SCRUM, Waterfall)
+- Git, GitHub, Apache Subversion, TortoiseSVN
 
 _DORMANT Skills<sub> used to work with a long time ago</sub>_  
 _- JAVA, C++, C_  
@@ -72,13 +73,10 @@ ABCM-EMBRAER 2004 prize in undergraduate category.
 _A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department._
 
 ## Outer IT World
-- Capital Markets & Securities Analyst  For Trading Floor Certification  
+- Capital Markets & Securities Analyst For Trading Floor Certification  
 1998-1999,  Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil  
 _Economics for Capital Markets; Financial and Statistical Calculation; Asset Classes; Financial Instruments and Markets; Equity Markets Trend Analysis; Portfolio Management; Brazilian Securities Law; Structure and Dynamics of a Trading Floor Negotiation_
 - Financial Mathematics with HP 12c  
 1997, 40 hours, Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil  
 _Financial Fundamentals, Simple interest, Compound interest and Amortization, Discounted Cash Flow Analysis, Bond and Depreciation Calculations._
 
-
-
-![](https://github.com/sabsfilho/dev/assets/img/main-banner.jpg)
