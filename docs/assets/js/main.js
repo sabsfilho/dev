@@ -1,5 +1,41 @@
 const CtMain = function(){
 
+    const showCase = {
+        projs: [
+            {
+                tit: 'Jobs',
+                projs: [
+                    {p:'',u:'http://h2.putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery',d:`Put.Call.Bot is a software solution that evaluates quantitative analysis from real time
+                    Bovespa exchange market data, sending buy and sell signals to broker according to the
+                    algorithmic strategy chosen by the trader.`},
+                ]
+            },
+            {
+                tit: 'Web Design & Style',
+                k: 'rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign',
+                projs: [
+                    {k:'AccessibilityQuiz',n:'Accessibility Quiz',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'BalanceSheet',n:'Balance Sheet',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'CatPainting',n:'Cat Painting',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'CitySkyline',n:'City Skyline',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'FerrisWheel',n:'Ferris Wheel',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'LandingPage',n:'Landing Page',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'Magazine',n:'Magazine',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'NutritionLabel',n:'Nutrition Label',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'Penguin',n:'Penguin',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'PhotoGallery',n:'Photo Gallery',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'Piano',n:'Piano',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'PortfolioDemo',n:'Portfolio Demo',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'RegistrationForm',n:'Registration Form',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'RothkoPainting',n:'Rothko Painting',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'SurveyForm',n:'SurveyForm',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'TechnicalDocumentation',n:'Technical Documentation',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {k:'TributePage',n:'Tribute Page',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''}
+                ]
+            }
+        ] 
+    };
+
     const data = {
         skills: [
             'C#, .NET',
@@ -28,7 +64,7 @@ const CtMain = function(){
             ['CodeAlly','https://codeally.io/cv/1925e7e676abb9663fe62f5e']
         ],
         education: [
-            ['CS &amp; System Project Management @ Pontifícia Universidade Católica - PUC','https://www.puc-rio.br','2005-2006, Rio de Janeiro, RJ - Brazil'],
+            ['Computer Science &amp; System Project Management @ Pontifícia Universidade Católica - PUC','https://www.puc-rio.br','2005-2006, Rio de Janeiro, RJ - Brazil'],
             ['Mechanical Engineer @ Federal University of Rio de Janeiro - UFRJ','https://ufrj.br','1995-2001, Rio de Janeiro, RJ - Brazil']
         ],
         outerITWorld: [
@@ -41,29 +77,76 @@ const CtMain = function(){
         ]
     };
 
-    /*
-        - Skills
-        - Showcases
-        - Certifications
-        - Profiles
-        - Education
-        - Awards
-        - Outer IT World
-
-    */
-
+    /* html templates */
     const templ = {
+        accord: (i,n,w) => {
+            return `<button class="accord accord-l${i}">${n}</button><div class="accord-panel">${w}</div>`
+        },
+        href: (u,t) => `<a href="${u}" rel="nofollow">${t}</a>`,
         item: (x) => {
-            const zs = [`<a href="${x[1]}" rel="nofollow">${x[0]}</a>`];
+            const zs = [templ.href(x[1],x[0])];
             if (x.length > 2){
                 zs.push(`<div class="item-descr">${x[2]}</div>`)
             }
             return zs.join('')
         }
     },
+    setText = (id, v) => document.getElementById(id).innerHTML = v,
     isArray = x => x.constructor === Array,
     buildItem = x=>isArray(x) ? templ.item(x) : x,
     buildList = ls => ['<ul>', ls.map(x=>`<li>${buildItem(x)}</li>`).join(''), '</ul>'].join(''),
+    buildShowcases = () => {
+
+        const buildAccord = (i, ws, z)=>{
+            if (!z) return;
+
+            const zs = [];
+
+            const addK = k => {
+                if (z[k]) {
+                    zs.push(`<div class="accord-${k}">${z[k]}</div>`)
+                }
+            },
+            u = 
+            z.u ? z.u : 
+            z.k ? ['rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign',z.k,'index.html'].join('/') :
+            null;
+
+
+            if (u) {
+                zs.push(templ.href(u,z.n))
+            }
+            else {
+                addK('n');
+            }
+            
+            addK('d');
+            addK('tags');
+
+            if (z.projs) {                
+                z.projs.forEach(p => buildAccord(i+1, zs, p));
+            }
+
+            
+            ws.push(
+                z.tit ? 
+                templ.accord(i, z.tit, zs.join('')) :
+                zs.join('')
+            )
+        };
+
+        const qs = [];
+        buildAccord(0, qs, showCase);
+
+        const x = `${qs.join('')}
+    Interface
+    <ul>
+    <li><a href="rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign/CatPainting/index.html">CatPainting</a></li>
+    <li>MS SQL Server &amp; T-SQL, PostGRE &amp; PL/pgSQL, MongoDB</li>
+    </ul>
+                    `;
+        return x
+    },
     addBlocks = ()=>{
         const panel = document.getElementById('panel');
 /*
@@ -90,7 +173,7 @@ mainContent = {
 <p>
 <span>Please send me a message if you want to talk about how we can team up:</span>
 <textarea class="msg" maxlength="500"></textarea>
-<span class="mailme">remember to include your e-mail in the message to allow me reply you an soon as possible.</span>
+<span class="mailme">remember to include your e-mail in this message to allow me reply you an soon as possible.</span>
 <button class="sendbtn">Send</button>
 </p>
 </div>
@@ -114,13 +197,7 @@ mainContent = {
                 tit: 'Skills'
             },
             {
-                body: `
-Interface
-<ul>
-<li><a href="rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign/CatPainting/index.html">CatPainting</a></li>
-<li>MS SQL Server &amp; T-SQL, PostGRE &amp; PL/pgSQL, MongoDB</li>
-</ul>
-                `,
+                body: buildShowcases(),
                 index: 2,
                 tagImg: 'assets/img/library.jpg',
                 tit: 'Showcases'
@@ -133,13 +210,13 @@ Interface
             },
             {
                 body: buildList(data.profiles),
-                index: 4,
+                index: 5,
                 tagImg: 'assets/img/stamps.jpg',
                 tit: 'Profiles'
             },
             {
                 body: buildList(data.education),
-                index: 5,
+                index: 4,
                 tagImg: 'assets/img/education.jpg',
                 tit: 'Education'
             },
@@ -186,7 +263,9 @@ ${c.body}
 
     const load = ()=>{
 
-        addBlocks()
+        addBlocks();
+
+        setText('year', new Date().getFullYear());
         
     };
 
