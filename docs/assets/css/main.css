@@ -1,7 +1,9 @@
 :root{
   --back-color01:#f3ebbb;
   --back-color02:#83A0E6;
-  
+  --back-color03:#b9c7e9;
+  --back-color04:#111316;
+  --font-color01:#515151;
 }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -1128,21 +1130,6 @@ footer .copyright {
   margin:0
 }
 
-.bio{
-  line-height: 1.5;
-}
-
-li a {
-  text-decoration: underline;
-  color:rgba(38, 57, 89);
-  cursor: pointer;
-}
-
-li a:hover {
-  text-decoration: underline;
-  color:brown
-}
-
 .post {
   width: 100%;
   max-width: 100%;
@@ -1525,4 +1512,77 @@ a.newer-posts:hover {
   .post .post-content .post-title a {
     font-size: 21px;
   }
+}
+
+.bio{
+  line-height: 1.5;
+}
+
+li a, 
+.accord-panel a,
+.toggle-link {
+  text-decoration: underline;
+  color:rgba(38, 57, 89);
+  cursor: pointer;
+}
+
+li a:hover, 
+.accord-panel a:hover,
+.toggle-link:hover {
+  text-decoration: underline;
+  color:brown
+}
+
+
+.accord-btn{
+  margin-top:5px;
+  width:100%;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px var(--font-color01) solid;
+  color: var(--font-color01);
+  background-color: var(--back-color03);
+  cursor: pointer;
+  
+}
+.accord-btn:hover{
+  color: var(--back-color04);
+  border: 2px solid var(--back-color04);
+}
+.accord-panel{
+  display: none;
+  border-left: 2px var(--font-color01) solid;
+  border-right: 2px var(--font-color01) solid;
+  border-bottom: 2px var(--font-color01) solid;
+  padding:5px 15px 15px 15px;  
+  background-color: var(--back-color01);
+  border-radius: 0 0 10px 10px;
+}
+.accord-tags{
+  font-weight: bold;
+  font-size:14px
+}
+.active{
+  opacity: 80%;
+  border-radius: 10px 10px 0 0;
+}
+.first-p{
+  margin-top:10px !important
+}
+.toggle-link{
+  display: block;
+  margin:20px 0;
+}
+.toggle-panel{
+  display: none;
+}
+.digital-devices-imgs{
+  text-align: center;
+}
+.digital-devices-imgs > img {
+  margin-top:20px;
+}
+.digital-devices-imgs > div {
+  font-size: 12px;
 }

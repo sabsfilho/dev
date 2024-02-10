@@ -56,31 +56,65 @@ const CtMain = function(){
             ['Foundational C# with Microsoft @ FreeCodeCamp - December 11, 2023','https://www.freecodecamp.org/certification/sabsfilho/foundational-c-sharp-with-microsoft','Build C# applications using core concepts and object-oriented programming principles.'],
         ],
         profiles: [
-            ['FreeCodeCamp','https://www.freecodecamp.org/sabsfilho'],
-            ['Microsoft','https://learn.microsoft.com/en-us/users/samuelsantos-1448/'],
-            ['HackerRank','https://www.hackerrank.com/profile/sabsfilho'],
-            ['CodePen','https://codepen.io/sabsfilho'],
-            ['Replit','https://replit.com/@sabsfilho'],
-            ['CodeAlly','https://codeally.io/cv/1925e7e676abb9663fe62f5e']
+            ['FreeCodeCamp','https://www.freecodecamp.org/sabsfilho','An amazing place where I learn new cool techies stuff and practice a lot, building real case solutions.'],
+            ['Microsoft','https://learn.microsoft.com/en-us/users/samuelsantos-1448/','My windows since I was deployed.'],
+            ['HackerRank','https://www.hackerrank.com/profile/sabsfilho','My gym where I keep myself in good shape for hack activities.'],
+            ['CodePen','https://codepen.io/sabsfilho','My front end sandbox.'],
+            ['Replit','https://replit.com/@sabsfilho','My back end sandbox.'],
+            ['CodeAlly','https://codeally.io/cv/1925e7e676abb9663fe62f5e','My job sandbox.']
         ],
         education: [
             ['Computer Science &amp; System Project Management @ Pontifícia Universidade Católica - PUC','https://www.puc-rio.br','2005-2006, Rio de Janeiro, RJ - Brazil'],
-            ['Mechanical Engineer @ Federal University of Rio de Janeiro - UFRJ','https://ufrj.br','1995-2001, Rio de Janeiro, RJ - Brazil']
+            ['Mechanical Engineer @ Federal University of Rio de Janeiro - UFRJ','http://www.mecanica.ufrj.br/ufrj-em/','1995-2001, Rio de Janeiro, RJ - Brazil']
+        ],
+        awards: [
+            ['ABCM-EMBRAER 2004 prize in undergraduate category','https://abcm.org.br/symposium-series/SSM_Vol2/Section_II_Industrial_Instrumentation/SSM2_II_05.pdf',`
+2001-2003, UFRJ Robotics Lab (LabRob), Rio de Janeiro, RJ - Brazil<br>
+A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department
+<a class="toggle-link" data-hidden="click here to see more info" data-shown="show less"></a>
+<div class="toggle-panel">
+<p>I was very lucky to be in the right place at the right time when I was invited to collaborate on this project.</p>
+<p>At that time I was working as a C++ programmer at the Robotics Lab of the Federal University of Rio de Janeiro, UFRJ on a public funded research project.
+This Lab coordinator asked me if I could offer some kind of help for his research team to solve a puzzle they were facing on another project which was a cooperation with the Orthodontics department from the Federal University of Mato Grosso do Sul, UFMS.<br>
+A PHD doctor was doing research to propose a new technique to correct maxillae malformation, executing on the patient's jaws a series of surgeries based on the results from his study. In order to support him, we conceived a system to automate processes such as data acquisition, data manipulation, image visualization and evaluation of results from data analysis.</p>
+I developed a dedicated Windows program coded in Borland C++ 6.0 which was responsible for capturing the joint variables acquisition and conversion into Cartesian coordinates, through direct kinematics relations. 
+Then, the image of the mold contour was shown in the computer screen so that the user can visualize the results of the data acquisition being analyzed and decide whether they are ready or not to be registered in the database file. Statistics was extensively used to evaluate data from acquired curves. 
+In 2003 this digital system for measuring gypsum molds was used by Dr. Marcelo Arruda and he evaluated more than 3000 models in three days at Dr. Andrew J. Haas Laboratory, in Chicago, USA.
+The on site and offline tasks were performed with success.</p>
+<p>The goodwill of this project was noteworthy and with the positive impact in so many patients' lives, we were awarded and recognized by the Mechanical Science and Engineering Brazilian Association (ABCM).</p>
+<div class="digital-devices-imgs">
+<img src="assets/img/digital-system/digital-device.jpg" alt="digital device" />
+<div>Digital Device</div>
+<img src="assets/img/digital-system/procedures.jpg" alt="diagram flow" />
+<div>Diagram Flow</div>
+<img src="assets/img/digital-system/interface.jpg" alt="software interface" />
+<div>Software Interface</div>
+</div>
+</div>
+`]
+
         ],
         outerITWorld: [
-            `Capital Markets &amp; Securities Analyst  For Trading Floor Certification<br>
+            `Capital Markets &amp; Securities Analyst For Trading Floor Certification<br>
 1998-1999,  Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil<br>
-<em>Economics for Capital Markets; Financial and Statistical Calculation; Asset Classes; Financial Instruments and Markets; Equity Markets Trend Analysis; Portfolio Management; Brazilian Securities Law; Structure and Dynamics of a Trading Floor Negotiation</em>`,
+<em>Economics for Capital Markets; Financial and Statistical Calculation; Asset Classes; Financial Instruments and Markets; Equity Markets Trend Analysis; Portfolio Management; Brazilian Securities Law; Structure and Dynamics of a Trading Floor Negotiation</em>
+<p class="first-p">The key aspect I learned from this course was risk control for portfolio management. This kind of mindset I apply on my projects, 
+for instance managing the tradeoff to deploy a patch on production, we should take care of the risks involved from a breaking version, 
+stepping in and out as handling a bad asset position to secure the fund health as a whole.</p>
+`,
 `Financial Mathematics with HP 12c<br>
 1997, 40 hours, Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil<br>
-<em>Financial Fundamentals, Simple interest, Compound interest and Amortization, Discounted Cash Flow Analysis, Bond and Depreciation Calculations.</em>`
+<em>Financial Fundamentals, Simple interest, Compound interest and Amortization, Discounted Cash Flow Analysis, Bond and Depreciation Calculations.</em>
+<p class="first-p">I learned the financial power of compound interest which is the most important math equation we should learn.</p>
+<p><em><q>There is no force in the universe more powerful than compound interest</q>, Albert Einstein</em></p>
+`
         ]
     };
 
     /* html templates */
     const templ = {
         accord: (i,n,w) => {
-            return `<button class="accord accord-l${i}">${n}</button><div class="accord-panel">${w}</div>`
+            return `<button class="accord-btn accord-l${i}">${n}</button><div class="accord-panel">${w}</div>`
         },
         href: (u,t) => `<a href="${u}" rel="nofollow">${t}</a>`,
         item: (x) => {
@@ -93,6 +127,24 @@ const CtMain = function(){
     },
     setText = (id, v) => document.getElementById(id).innerHTML = v,
     isArray = x => x.constructor === Array,
+    addAccordeonEvent = (className)=>{
+        const els = document.getElementsByClassName(className);
+        for(const el of els){            
+            if (el.hasAttribute('data-hidden')){
+                el.innerHTML = el.getAttribute('data-hidden')
+            }
+            el.addEventListener('click', function(){
+                const hidden = this.nextElementSibling.style.display === 'block';
+                this.classList.toggle("active");                
+                this.nextElementSibling.style.display = hidden ? 'none' : 'block'
+                if (this.hasAttribute('data-hidden')){
+                    el.innerHTML = hidden ? el.getAttribute('data-hidden') : el.getAttribute('data-shown')
+                    
+                }
+            })
+        }
+        
+    }
     buildItem = x=>isArray(x) ? templ.item(x) : x,
     buildList = ls => ['<ul>', ls.map(x=>`<li>${buildItem(x)}</li>`).join(''), '</ul>'].join(''),
     buildShowcases = () => {
@@ -102,16 +154,17 @@ const CtMain = function(){
 
             const zs = [];
 
-            const addK = k => {
-                if (z[k]) {
-                    zs.push(`<div class="accord-${k}">${z[k]}</div>`)
+            const addK = (k,l) => {
+                let v = z[k];
+                if (v) {
+                    if (l) v = [l,v].join('');
+                    zs.push(`<div class="accord-${k}">${v}</div>`)
                 }
             },
             u = 
             z.u ? z.u : 
             z.k ? ['rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign',z.k,'index.html'].join('/') :
             null;
-
 
             if (u) {
                 zs.push(templ.href(u,z.n))
@@ -121,7 +174,7 @@ const CtMain = function(){
             }
             
             addK('d');
-            addK('tags');
+            addK('tags','skills: ');
 
             if (z.projs) {                
                 z.projs.forEach(p => buildAccord(i+1, zs, p));
@@ -135,17 +188,11 @@ const CtMain = function(){
             )
         };
 
-        const qs = [];
+        const qs = ['<p>Click on the buttons below to see some of my skills in action.</p>'];
+
         buildAccord(0, qs, showCase);
 
-        const x = `${qs.join('')}
-    Interface
-    <ul>
-    <li><a href="rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign/CatPainting/index.html">CatPainting</a></li>
-    <li>MS SQL Server &amp; T-SQL, PostGRE &amp; PL/pgSQL, MongoDB</li>
-    </ul>
-                    `;
-        return x
+        return qs.join('')
     },
     addBlocks = ()=>{
         const panel = document.getElementById('panel');
@@ -167,13 +214,15 @@ mainContent = {
 <p>I graduated in Mechanical Engineering and post-graduated in Computer Science & System Project Management.</p>
 <p>Over the last 10 years, I've been working asynchronously in a full remote position in a small Fintech company that develops stock market trade solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies.</p>
 <p>I'm currently looking for the opportunity to work remotely in IT projects abroad.</p>
+<p>My hour is a commodity that your budget can take advantage of.
+As I work from Brazil, we can together be very happy with the currency exchange rates. So, it's definitely a win–win game for us!</p>
 <p>Available to start work right now on a full or part-time remote job at 4PM-6AM GMT,
-<br/>also flexible for any time zone overlap.</p>
+<br/><u>also flexible for any time zone overlap</u>.</p>
 <p><em>I need employer sponsorship to work within the United States.</em></p>
 <p>
 <span>Please send me a message if you want to talk about how we can team up:</span>
 <textarea class="msg" maxlength="500"></textarea>
-<span class="mailme">remember to include your e-mail in this message to allow me reply you an soon as possible.</span>
+<span class="mailme">remember to <strong>include your e-mail</strong> in this message to allow me reply you an soon as possible.</span>
 <button class="sendbtn">Send</button>
 </p>
 </div>
@@ -210,7 +259,7 @@ mainContent = {
             },
             {
                 body: buildList(data.profiles),
-                index: 5,
+                index: 6,
                 tagImg: 'assets/img/stamps.jpg',
                 tit: 'Profiles'
             },
@@ -221,11 +270,8 @@ mainContent = {
                 tit: 'Education'
             },
             {
-                body: `
-<p dir="auto">ABCM-EMBRAER 2004 prize in undergraduate category.<br>
-<em>A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department.</em></p>
-                `,
-                index: 6,
+                body: buildList(data.awards),
+                index: 5,
                 tagImg: 'assets/img/medals.jpg',
                 tit: 'Awards'
             },
@@ -258,6 +304,9 @@ ${c.body}
         for(const c of mainContents){
             addBlock(c)
         }
+
+        addAccordeonEvent('accord-btn');
+        addAccordeonEvent('toggle-link');
 
     };
 
