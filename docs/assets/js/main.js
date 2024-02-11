@@ -114,7 +114,7 @@ stepping in and out as handling a bad asset position to secure the fund health a
     /* html templates */
     const templ = {
         accord: (i,n,w) => {
-            return `<button class="accord-btn accord-l${i}">${n}</button><div class="accord-panel">${w}</div>`
+            return `<button class="accord-btn accord-l${i}"><div data-hidden="+" data-shown="-"></div>${n}</button><div class="accord-panel">${w}</div>`
         },
         href: (u,t) => `<a href="${u}" rel="nofollow">${t}</a>`,
         item: (x) => {
@@ -128,19 +128,26 @@ stepping in and out as handling a bad asset position to secure the fund health a
     setText = (id, v) => document.getElementById(id).innerHTML = v,
     isArray = x => x.constructor === Array,
     addAccordeonEvent = (className)=>{
-        const els = document.getElementsByClassName(className);
-        for(const el of els){            
+
+        const toggle = (el, hidden) => {
+            if (el === null) return;
             if (el.hasAttribute('data-hidden')){
-                el.innerHTML = el.getAttribute('data-hidden')
+                el.innerHTML = hidden ? el.getAttribute('data-hidden') : el.getAttribute('data-shown')
+                
             }
+            else {
+                toggle(el.firstChild, hidden)
+            }
+        };
+
+        const els = document.getElementsByClassName(className);
+        for(const el of els){
+            toggle(el, true);
             el.addEventListener('click', function(){
                 const hidden = this.nextElementSibling.style.display === 'block';
                 this.classList.toggle("active");                
                 this.nextElementSibling.style.display = hidden ? 'none' : 'block'
-                if (this.hasAttribute('data-hidden')){
-                    el.innerHTML = hidden ? el.getAttribute('data-hidden') : el.getAttribute('data-shown')
-                    
-                }
+                toggle(el, hidden);
             })
         }
         
@@ -179,7 +186,6 @@ stepping in and out as handling a bad asset position to secure the fund health a
             if (z.projs) {                
                 z.projs.forEach(p => buildAccord(i+1, zs, p));
             }
-
             
             ws.push(
                 z.tit ? 
