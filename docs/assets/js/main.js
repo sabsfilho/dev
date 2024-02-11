@@ -172,8 +172,7 @@ stepping in and out as handling a bad asset position to secure the fund health a
             z.u ? z.u : 
             z.k ? ['rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign',z.k,'index.html'].join('/') :
             null;
-
-            if (u) {
+            if (u && z.n) {
                 zs.push(templ.href(u,z.n))
             }
             else {
@@ -200,6 +199,8 @@ stepping in and out as handling a bad asset position to secure the fund health a
 
         return qs.join('')
     },
+    getFirstByClass = (el, cn) => el.getElementsByClassName(cn)[0],
+    getFirstByTag = (el, cn) => el.getElementsByTagName(cn)[0],
     addBlocks = ()=>{
         const panel = document.getElementById('panel');
 /*
@@ -316,11 +317,69 @@ ${c.body}
 
     };
 
+    const addDialog = (pnt,id,tit,msg)=>{
+        const div = document.createElement('div');
+        div.className = 'dlg-pin';
+        div.innerHTML = `
+<div class="dlg">
+<div class="tit">
+        <div class="leg">${tit}</div>
+        <div class="btn-x close">X</div>
+</div>
+<div class="bdy">${msg}</div>
+</div>
+        `;
+        pnt.append(div);
+
+        const toggle = () => {
+            div.style.visibility = div.style.visibility==='visible' ?  'hidden' : 'visible'
+        };
+        
+        getFirstByClass(div, 'close').addEventListener('click', ()=>div.style.visibility='hidden');
+        document.getElementById(id).addEventListener('click', toggle);
+
+        return div
+    };
+
+    const addMailDialog = ()=>{
+        const m = '115,97,98,115,102,105,108,104,111,64,103,109,97,105,108,46,99,111,109'.split(',').map(x=>String.fromCharCode(x)).join('');
+        const pnt = getFirstByClass(document, 'contact'),
+        dlg = addDialog(
+            pnt, 
+            'mailto', 
+            'This is my contact e-mail',
+            `
+<a href="mailto:${m}">${m}</a>
+<a class="copy close mailto" href="#"><span class="tooltipcopy">e-mail copied</span>click to copy</a>
+            `
+        );
+        getFirstByClass(dlg, 'copy').addEventListener('click', function(){
+            const sty = getFirstByClass(dlg, 'tooltipcopy').style;
+            navigator.clipboard.writeText(m);
+            sty.visibility = 'visible';
+            setTimeout(()=>sty.visibility = 'hidden', 2000)
+        });
+        getFirstByTag(document, 'body').addEventListener('click', function(e){
+            const cn = e.srcElement.className;
+            if (
+                dlg.style.visibility==='visible' &&
+                !cn.includes('mailto') &&
+                !cn.includes('bdy') &&
+                !cn.includes('leg')
+            ){
+                getFirstByClass(dlg, 'close').click()
+            }
+        });
+
+    };
+
     const load = ()=>{
 
         addBlocks();
 
         setText('year', new Date().getFullYear());
+
+        addMailDialog();
         
     };
 

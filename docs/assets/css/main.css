@@ -1520,7 +1520,8 @@ a.newer-posts:hover {
 
 li a, 
 .accord-panel a,
-.toggle-link {
+.toggle-link,
+.dlg .bdy a {
   text-decoration: underline;
   color:rgba(38, 57, 89);
   cursor: pointer;
@@ -1528,7 +1529,8 @@ li a,
 
 li a:hover, 
 .accord-panel a:hover,
-.toggle-link:hover {
+.toggle-link:hover,
+.dlg .bdy a:hover {
   text-decoration: underline;
   color:brown
 }
@@ -1597,4 +1599,100 @@ li a:hover,
 }
 .digital-devices-imgs > div {
   font-size: 12px;
+}
+
+/* tooltip */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: rgba(34, 29, 29, 0.863);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  font-size:12px;
+  left:105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltiptext-github{
+  width:180px !important
+}
+
+/* dialog */
+.dlg-pin{
+  opacity: 0.9;
+  visibility: hidden;
+}
+.dlg{
+  width: 300px;
+  background-color:var(--back-color01);
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  font-size:12px;
+  left:150px;
+  border:1px solid brown
+}
+.dlg .tit {
+  color:#fff;
+  height: 30px;
+  background-color:brown;
+  padding: 2px;
+}
+.dlg .tit > .leg{
+  float: left;
+  font-size: 14px;
+  padding: 2px;
+}
+.dlg .tit > .btn-x{
+  float: right;
+  padding:5px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  height: 26px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.dlg .tit > .btn-x:hover{
+  border: 1px solid var(--back-color04);
+  color:var(--back-color04);
+}
+.dlg .bdy{
+  color: var(--back-color04);
+  padding: 20px;
+}
+.dlg .bdy a{
+  font-size:20px;
+  font-weight: bold;
+}
+.dlg .copy{
+  display: block;
+  margin-top: 14px;
+  font-size:12px !important
+}
+
+.dlg .tooltipcopy {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgba(34, 29, 29, 0.863);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  font-size:12px;
 }
