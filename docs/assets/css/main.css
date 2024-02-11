@@ -1544,11 +1544,23 @@ li a:hover,
   color: var(--font-color01);
   background-color: var(--back-color03);
   cursor: pointer;
-  
+  text-align: left;
 }
 .accord-btn:hover{
   color: var(--back-color04);
   border: 2px solid var(--back-color04);
+}
+.accord-btn > :first-child{  
+  display: inline-block;
+  border:2px solid #000;
+  border-radius: 50px;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 16px;
 }
 .accord-panel{
   display: none;
