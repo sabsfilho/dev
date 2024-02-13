@@ -106,6 +106,7 @@ const CtMain = function(){
                 k: 'rebrand/FreeCodeCamp/Certification/BackEndDevelopment',
                 projs: [
                     {k:'boilerplate-express.',n:'Boilerplate Express',tags:'Node.js,Express.js',d:''},
+                    {k:'boilerplate-project-exercisetracker.',n:'Exercise Tracker',tags:'Node.js,Express.js',d:''},
                 ]
             }
         ] 
