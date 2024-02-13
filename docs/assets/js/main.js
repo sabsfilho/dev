@@ -25,12 +25,57 @@ const CtMain = function(){
                     {k:'Penguin',n:'Penguin',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
                     {k:'PhotoGallery',n:'Photo Gallery',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
                     {k:'Piano',n:'Piano',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
-                    {k:'PortfolioDemo',n:'Portfolio Demo',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {u:'https://sabsfilho.github.io/dev/',n:'Portfolio Demo',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
                     {k:'RegistrationForm',n:'Registration Form',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
                     {k:'RothkoPainting',n:'Rothko Painting',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
                     {k:'SurveyForm',n:'SurveyForm',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
-                    {k:'TechnicalDocumentation',n:'Technical Documentation',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
-                    {k:'TributePage',n:'Tribute Page',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''}
+                    {k:'TechnicalDocumentation',n:'Technical Documentation',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''}
+                ]
+            },
+            {
+                tit: 'Javascript JSE6',
+                k: 'rebrand/FreeCodeCamp/Certification/JavaScriptAlgorithmsAndDataStructures',
+                projs: [
+                    {k:'CashRegister/CashRegister',n:'CashRegister',tags:'JSE6',d:''},
+                    {k:'CashRegister/DiceGame',n:'DiceGame',tags:'JSE6',d:''},
+                    {k:'CashRegister/PlatformerGamer',n:'PlatformerGamer',tags:'JSE6',d:''},
+                    {k:'CashRegister/ShoppingCart',n:'ShoppingCart',tags:'JSE6',d:''},
+                    {k:'Palindrome/CalorieCounter',n:'CalorieCounter',tags:'JSE6',d:''},
+                    {k:'Palindrome/DateFormatter',n:'DateFormatter',tags:'JSE6',d:''},
+                    {k:'Palindrome/MusicPlayer',n:'MusicPlayer',tags:'JSE6',d:''},
+                    {k:'Palindrome/PalindromeChecker',n:'PalindromeChecker',tags:'JSE6',d:''},
+                    {k:'Palindrome/RolePlayingGame',n:'RolePlayingGame',tags:'JSE6',d:''},
+                    {k:'PokemonSearchApp/fCCAuthorsPage',n:'fCCAuthorsPage',tags:'JSE6',d:''},
+                    {k:'PokemonSearchApp/fCCForumLeaderboard',n:'fCCForumLeaderboard',tags:'JSE6',d:''},
+                    {k:'PokemonSearchApp/PokemonSearchApp',n:'PokemonSearchApp',tags:'JSE6',d:''},
+                    {k:'RomanNumeralConverter/DecimalToBinaryConverter',n:'DecimalToBinaryConverter',tags:'JSE6',d:''},
+                    {k:'RomanNumeralConverter/FootballTeamCards',n:'FootballTeamCards',tags:'JSE6',d:''},
+                    {k:'RomanNumeralConverter/RomanNumeralConverter',n:'RomanNumeralConverter',tags:'JSE6',d:''},
+                    {k:'RomanNumeralConverter/TodoApp',n:'TodoApp',tags:'JSE6',d:''},
+                    {k:'TelephoneNumberValidator/NumberSorter',n:'NumberSorter',tags:'JSE6',d:''},
+                    {k:'TelephoneNumberValidator/SpamFilter',n:'SpamFilter',tags:'JSE6',d:''},
+                    {k:'TelephoneNumberValidator/Spreadsheet',n:'Spreadsheet',tags:'JSE6',d:''},
+                    {k:'TelephoneNumberValidator/StatisticsCalculator',n:'StatisticsCalculator',tags:'JSE6',d:''},
+                    {k:'TelephoneNumberValidator/TelephoneNumberValidator',n:'TelephoneNumberValidator',tags:'JSE6',d:''},
+                ]
+            },
+            {
+                tit: 'Front End, React, Redux',
+                k: 'rebrand/FreeCodeCamp/Certification/FrontEndDevelopment',
+                projs: [
+                    {k:'25-5-clock/dist',n:'25-5 Clock',tags:'HTML5,SCSS,JSE6,React,Redux',d:''},
+                ]
+            },
+            {
+                tit: 'Data Visualization, Charts, D3.js',
+                k: 'rebrand/FreeCodeCamp/Certification/DataVisualizationProjects',
+                projs: [
+                    {k:'bar-chart-using-d3-js/dist',n:'Bar Chart',tags:'JSE6,D3.js',d:''},
+                    {k:'choropleth-map/dist',n:'Choropleth Map',tags:'JSE6,D3.js,topojson.js',d:''},
+                    {k:'d3',n:'Point Chart',tags:'JSE6,D3.js',d:''},
+                    {k:'heat-map/dist',n:'Heat Map Chart',tags:'JSE6,D3.js',d:''},
+                    {k:'scatterplot-graph/dist',n:'Scatterplot Graph',tags:'JSE6,D3.js',d:''},
+                    {k:'treemap-diagram/dist',n:'Tree Map Diagram',tags:'JSE6,D3.js,API,JSON,webservice',d:''},
                 ]
             }
         ] 
@@ -116,7 +161,7 @@ stepping in and out as handling a bad asset position to secure the fund health a
         accord: (i,n,w) => {
             return `<button class="accord-btn accord-l${i}"><div data-hidden="+" data-shown="-"></div>${n}</button><div class="accord-panel">${w}</div>`
         },
-        href: (u,t) => `<a href="${u}" rel="nofollow">${t}</a>`,
+        href: (u,t) => `<a href="${u}" rel="nofollow" target="_blank">${t}</a>`,
         item: (x) => {
             const zs = [templ.href(x[1],x[0])];
             if (x.length > 2){
@@ -156,7 +201,7 @@ stepping in and out as handling a bad asset position to secure the fund health a
     buildList = ls => ['<ul>', ls.map(x=>`<li>${buildItem(x)}</li>`).join(''), '</ul>'].join(''),
     buildShowcases = () => {
 
-        const buildAccord = (i, ws, z)=>{
+        const buildAccord = (i, ws, z, ks)=>{
             if (!z) return;
 
             const zs = [];
@@ -170,7 +215,8 @@ stepping in and out as handling a bad asset position to secure the fund health a
             },
             u = 
             z.u ? z.u : 
-            z.k ? ['rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign',z.k,'index.html'].join('/') :
+            //z.k ? ['rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign',z.k,'index.html'].join('/') :
+            z.k ? [ks.join(','),z.k,'index.html'].join('/') :
             null;
             if (u && z.n) {
                 zs.push(templ.href(u,z.n))
@@ -182,8 +228,15 @@ stepping in and out as handling a bad asset position to secure the fund health a
             addK('d');
             addK('tags','skills: ');
 
+            if (z.k){
+                ks.push(z.k)
+            }
+
             if (z.projs) {                
-                z.projs.forEach(p => buildAccord(i+1, zs, p));
+                z.projs.forEach(p => buildAccord(i+1, zs, p, [...ks]));
+            }
+            else{
+                
             }
             
             ws.push(
@@ -195,7 +248,7 @@ stepping in and out as handling a bad asset position to secure the fund health a
 
         const qs = ['<p>Click on the buttons below to see some of my skills in action.</p>'];
 
-        buildAccord(0, qs, showCase);
+        buildAccord(0, qs, showCase, []);
 
         return qs.join('')
     },
