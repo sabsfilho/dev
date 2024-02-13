@@ -64,6 +64,10 @@ const CtMain = function(){
                 k: 'rebrand/FreeCodeCamp/Certification/FrontEndDevelopment',
                 projs: [
                     {k:'25-5-clock/dist',n:'25-5 Clock',tags:'HTML5,SCSS,JSE6,React,Redux',d:''},
+                    {k:'drum-machine/dist',n:'Drum Machine',tags:'JSE6,React,Redux',d:''},
+                    {k:'javascript-calculator/dist',n:'Calculator',tags:'JSE6,React,Redux',d:''},
+                    {k:'random-quote-machine/dist',n:'Random Quote Machine',tags:'JSE6,React,Redux',d:''},
+                    {k:'simple-react-markdown-previewer/dist',n:'Simple React Markdown Previewer',tags:'JSE6,React,Redux',d:''},
                 ]
             },
             {
