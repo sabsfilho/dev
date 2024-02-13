@@ -11,7 +11,7 @@ const CtMain = function(){
                 ]
             },
             {
-                tit: 'Web Design & Style',
+                tit: 'Web Design & Style, HTML5, SCSS, Flexbox',
                 k: 'rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign',
                 projs: [
                     {k:'AccessibilityQuiz',n:'Accessibility Quiz',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
@@ -81,6 +81,25 @@ const CtMain = function(){
                     {k:'scatterplot-graph/dist',n:'Scatterplot Graph',tags:'JSE6,D3.js',d:''},
                     {k:'treemap-diagram/dist',n:'Tree Map Diagram',tags:'JSE6,D3.js,API,JSON,webservice',d:''},
                 ]
+            },
+            {
+                tit: 'Relation Database, Bash, PostGRE, PSQL',
+                k: 'rebrand/FreeCodeCamp/Certification/RelationDatabase',
+                projs: [
+                    {k:'bike_rental/BikeRental.sh',n:'Bike Rental',tags:'Bash',d:''},
+                    {k:'five_programs/bingo.sh',n:'Bingo',tags:'Bash',d:''},
+                    {k:'five_programs/countdown.sh',n:'Countdown',tags:'Bash',d:''},
+                    {k:'five_programs/five.sh',n:'Five',tags:'Bash',d:''},
+                    {k:'five_programs/fortune.sh',n:'Fortune',tags:'Bash',d:''},
+                    {k:'five_programs/questionnaire.sh',n:'Questionnaire',tags:'Bash',d:''},
+                    {k:'kitty_ipsum_translator/translate.sh',n:'Kitty Ipsum Translator',tags:'Bash',d:''},
+                    {k:'number_guess.',n:'Number guess',tags:'Bash,PSQL',d:''},
+                    {k:'periodic_table.',n:'Periodic Table',tags:'Bash,PSQL',d:''},
+                    {k:'salon.',n:'Salon',tags:'Bash,PSQL',d:''},
+                    {k:'students/students_info.sh',n:'Students',tags:'Bash,PSQL',d:''},
+                    {k:'worldcup.',n:'Worldcup',tags:'Bash,PSQL',d:''},
+                    
+                ]
             }
         ] 
     };
@@ -106,7 +125,8 @@ const CtMain = function(){
         ],
         profiles: [
             ['FreeCodeCamp','https://www.freecodecamp.org/sabsfilho','An amazing place where I learn new cool techies stuff and practice a lot, building real case solutions.'],
-            ['Microsoft','https://learn.microsoft.com/en-us/users/samuelsantos-1448/','My windows since I was deployed.'],
+            ['Git Hub','http://github.com/sabsfilho','My codespace.'],
+            ['Microsoft','https://learn.microsoft.com/en-us/users/samuelsantos-1448/','My windows since my first deployment.'],
             ['HackerRank','https://www.hackerrank.com/profile/sabsfilho','My gym where I keep myself in good shape for hack activities.'],
             ['CodePen','https://codepen.io/sabsfilho','My front end sandbox.'],
             ['Replit','https://replit.com/@sabsfilho','My back end sandbox.'],
@@ -217,10 +237,21 @@ stepping in and out as handling a bad asset position to secure the fund health a
                     zs.push(`<div class="accord-${k}">${v}</div>`)
                 }
             },
+            fnzk = ()=>{
+                const qs = [ks.join(',')];
+                let zk = z.k;
+                if (zk[zk.length-1]==='.'){
+                    zk = zk.substring(0,zk.length-1)
+                }
+                qs.push(zk);
+                if (z.k.indexOf('.')===-1){
+                    qs.push('index.html')
+                }
+                return qs.join('/')
+            },
             u = 
             z.u ? z.u : 
-            //z.k ? ['rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign',z.k,'index.html'].join('/') :
-            z.k ? [ks.join(','),z.k,'index.html'].join('/') :
+            z.k ? fnzk() :
             null;
             if (u && z.n) {
                 zs.push(templ.href(u,z.n))
