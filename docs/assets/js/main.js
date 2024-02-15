@@ -5,7 +5,7 @@ const CtMain = function(){
             {
                 tit: 'Jobs',
                 projs: [
-                    {p:'',u:'http://h2.putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,SQL SERVER,IIS,AWS',d:`
+                    {p:'',u:'http://h2.putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,Subversion,SQL SERVER,IIS,AWS',d:`
                     <strong>Since 2013 as Software Engineer, Full Stack Developer and DevOps</strong><br>
                     Put.Call.Bot is a software solution that evaluates quantitative analysis from real time
                     Bovespa exchange market data, sending buy and sell signals to broker according to the
@@ -117,11 +117,11 @@ by tick giving time to the trader evaluate better strategies for his portfolio.<
                 tit: 'Back End, npm, Node.js, Express.js, Mongoose.js, AZURE',
                 k: 'rebrand/FreeCodeCamp/Certification/BackEndDevelopment',
                 projs: [
-                    {k:'boilerplate-project-exercisetracker.',n:'Exercise Tracker',tags:'Node.js,Express.js,Mongoose.js, AZURE',d:''},
-                    {k:'boilerplate-project-filemetadata.',n:'File Metadata',tags:'Node.js,Express.js,multer.js, AZURE',d:''},
-                    {k:'boilerplate-project-headerparser.',n:'Header Parser',tags:'Node.js,Express.js, AZURE',d:''},
-                    {u:'https://boilerplate-project-timestamp.azurewebsites.net/',k:'',n:'Time Stamp',tags:'Node.js,Express.js, AZURE',d:''},
-                    {k:'boilerplate-project-urlshortener.',n:'URL Shortener',tags:'Node.js,Express.js, AZURE',d:''},
+                    {k:'boilerplate-project-exercisetracker.',n:'Exercise Tracker',tags:'Node.js,Express.js,Mongoose.js,MONGODB,AZURE',d:''},
+                    {k:'boilerplate-project-filemetadata.',n:'File Metadata',tags:'Node.js,Express.js,multer.js,AZURE',d:''},
+                    {k:'boilerplate-project-headerparser.',n:'Header Parser',tags:'Node.js,Express.js,AZURE',d:''},
+                    {u:'https://boilerplate-project-timestamp.azurewebsites.net/',k:'',n:'Time Stamp',tags:'Node.js,Express.js,AZURE',d:''},
+                    {k:'boilerplate-project-urlshortener.',n:'URL Shortener',tags:'Node.js,Express.js,AZURE',d:''},
                 ]
             }
         ] 
