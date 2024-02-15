@@ -116,7 +116,7 @@ by tick giving time to the trader evaluate better strategies for his portfolio.`
                     {k:'boilerplate-project-exercisetracker.',n:'Exercise Tracker',tags:'Node.js,Express.js,Mongoose.js, AZURE',d:''},
                     {k:'boilerplate-project-filemetadata.',n:'File Metadata',tags:'Node.js,Express.js,multer.js, AZURE',d:''},
                     {k:'boilerplate-project-headerparser.',n:'Header Parser',tags:'Node.js,Express.js, AZURE',d:''},
-                    {k:'boilerplate-project-timestamp.',n:'Time Stamp',tags:'Node.js,Express.js, AZURE',d:''},
+                    {u:'https://boilerplate-project-timestamp.azurewebsites.net/',k:'',n:'Time Stamp',tags:'Node.js,Express.js, AZURE',d:''},
                     {k:'boilerplate-project-urlshortener.',n:'URL Shortener',tags:'Node.js,Express.js, AZURE',d:''},
                 ]
             }
