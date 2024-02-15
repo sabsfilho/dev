@@ -1,5 +1,3 @@
-#1
-
 npx express-generator myExpressApp --view ejs
 npm install -g npm@10.4.0
 npm install http-errors
@@ -11,3 +9,11 @@ DEBUG=boilerplate-project-timestamp:* npm start
 #2
 npm install express
 npm install mongoose
+
+
+deploy link
+.vscode/settings.json
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/7f5eabb5-80f5-4369-88be-b14a6de763f1/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/boilerplate-project-timestamp",
+    "appService.deploySubpath": "docs/rebrand/FreeCodeCamp/Certification/BackEndDevelopment/boilerplate-project-timestamp"
+}
