@@ -5,7 +5,9 @@ const CtMain = function(){
             {
                 tit: 'Jobs',
                 projs: [
-                    {p:'',u:'http://h2.putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,AWS',d:`Put.Call.Bot is a software solution that evaluates quantitative analysis from real time
+                    {p:'',u:'http://h2.putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,SQL SERVER,IIS,AWS',d:`
+                    <strong>Since 2013 as Software Engineer, Full Stack Developer and DevOps</strong><br>
+                    Put.Call.Bot is a software solution that evaluates quantitative analysis from real time
                     Bovespa exchange market data, sending buy and sell signals to broker according to the
                     algorithmic strategy chosen by the trader.<br>
                     This automated trading system is a very powerful web platform that allows our clients work from any web browser or device.<br>
@@ -15,7 +17,9 @@ const CtMain = function(){
                     The user can request a development server to safely build and test their algorithmics. <br>
                     When the work is done, all these strategies can be published to production in the real world environment.<br>
                     The main purpose of PutCallBot is to replace the hard work of following the market tick
-by tick giving time to the trader evaluate better strategies for his portfolio.`},
+by tick giving time to the trader evaluate better strategies for his portfolio.<br><br>
+<a href="assets/doc/PutCallBot_v138_en.pdf">click here to open the Compliance Document sent to XP Broker in March, 2017</a>
+<br><br>`},
                 ]
             },
             {
