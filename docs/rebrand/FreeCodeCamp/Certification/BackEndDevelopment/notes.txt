@@ -1,0 +1,6 @@
+npx express-generator myExpressApp --view ejs
+npm install -g npm@10.4.0
+npm install http-errors
+npm install cors
+
+DEBUG=boilerplate-project-timestamp:* npm start

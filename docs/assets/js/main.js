@@ -110,16 +110,14 @@ by tick giving time to the trader evaluate better strategies for his portfolio.`
                 ]
             },
             {
-                tit: 'Back End, npm, Node.js, Express.js, Mongoose.js',
+                tit: 'Back End, npm, Node.js, Express.js, Mongoose.js, AZURE',
                 k: 'rebrand/FreeCodeCamp/Certification/BackEndDevelopment',
                 projs: [
-                    {k:'boilerplate-express.',n:'Boilerplate Express',tags:'Node.js,Express.js',d:''},
-                    {k:'boilerplate-mongomongoose.',n:'Mongo Mongoose',tags:'Node.js,Express.js,Mongoose.js',d:''},
-                    {k:'boilerplate-project-exercisetracker.',n:'Exercise Tracker',tags:'Node.js,Express.js,Mongoose.js',d:''},
-                    {k:'boilerplate-project-filemetadata.',n:'File Metadata',tags:'Node.js,Express.js,multer.js',d:''},
-                    {k:'boilerplate-project-headerparser.',n:'Header Parser',tags:'Node.js,Express.js',d:''},
-                    {k:'boilerplate-project-timestamp.',n:'Time Stamp',tags:'Node.js,Express.js',d:''},
-                    {k:'boilerplate-project-urlshortener.',n:'URL Shortener',tags:'Node.js,Express.js',d:''},
+                    {k:'boilerplate-project-exercisetracker.',n:'Exercise Tracker',tags:'Node.js,Express.js,Mongoose.js, AZURE',d:''},
+                    {k:'boilerplate-project-filemetadata.',n:'File Metadata',tags:'Node.js,Express.js,multer.js, AZURE',d:''},
+                    {k:'boilerplate-project-headerparser.',n:'Header Parser',tags:'Node.js,Express.js, AZURE',d:''},
+                    {k:'boilerplate-project-timestamp.',n:'Time Stamp',tags:'Node.js,Express.js, AZURE',d:''},
+                    {k:'boilerplate-project-urlshortener.',n:'URL Shortener',tags:'Node.js,Express.js, AZURE',d:''},
                 ]
             }
         ] 
