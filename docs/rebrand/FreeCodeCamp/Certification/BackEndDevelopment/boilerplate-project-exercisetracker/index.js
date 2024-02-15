@@ -1,8 +1,3 @@
-const env = {
-  MONGO_URI:'mongodb+srv://sabsfilho:hPJ1vl3wEO9GfEHo@cluster0.cxqx1yk.mongodb.net/exercise_tracker?retryWrites=true&w=majority'
-
-}
-
 /* BEGIN_ENVIRONMENT */
 const express = require("express");
 const app = express();
@@ -21,7 +16,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 
 const mongoose = require("mongoose");
-mongoose.connect(env.MONGO_URI, {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -122,8 +117,6 @@ app.get("/api/users/:_id/logs", async (req, res) => {
   }
 });
 
-const listener = app.listen(3000, () => {
-  console.log("Your app is listening on port " + listener.address().port);
+var listener = app.listen(process.env.PORT, function () {
+  console.log('Your app is listening on port ' + listener.address().port);
 });
-
-module.exports = app;
