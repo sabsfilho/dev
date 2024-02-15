@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/7f5eabb5-80f5-4369-88be-b14a6de763f1/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/boilerplate-project-timestamp",
+    "appService.deploySubpath": "docs/rebrand/FreeCodeCamp/Certification/BackEndDevelopment/boilerplate-project-timestamp"
+}
