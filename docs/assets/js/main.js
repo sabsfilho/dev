@@ -119,10 +119,10 @@ by tick giving time to the trader evaluate better strategies for his portfolio.<
                 projs: [
                     {u:'https://boilerplate-project-mongodb.azurewebsites.net/',n:'Exercise Tracker',tags:'Node.js,Express.js,Mongoose.js,MONGODB,AZURE',d:''},
                     {u:'https://lab-project-01.azurewebsites.net/api/express',n:'Express Microservice',tags:'Node.js,Express.js,AZURE',d:''},
-                    {k:'https://lab-project-01.azurewebsites.net/api/filemetadata.',n:'File Metadata',tags:'Node.js,Express.js,multer.js,AZURE',d:''},
-                    {k:'https://lab-project-01.azurewebsites.net/api/headerparser.',n:'Header Parser',tags:'Node.js,Express.js,AZURE',d:''},
+                    {u:'https://lab-project-01.azurewebsites.net/api/filemetadata.',n:'File Metadata',tags:'Node.js,Express.js,multer.js,AZURE',d:''},
+                    {u:'https://lab-project-01.azurewebsites.net/api/headerparser.',n:'Header Parser',tags:'Node.js,Express.js,AZURE',d:''},
                     {u:'https://boilerplate-project-timestamp.azurewebsites.net/',k:'',n:'Time Stamp',tags:'Node.js,Express.js,AZURE',d:''},
-                    {k:'https://lab-project-01.azurewebsites.net/api/urlshortener.',n:'URL Shortener',tags:'Node.js,Express.js,AZURE',d:''},
+                    {u:'https://lab-project-01.azurewebsites.net/api/urlshortener.',n:'URL Shortener',tags:'Node.js,Express.js,AZURE',d:''},
                 ]
             }
         ] 
