@@ -6,7 +6,7 @@ const CtMain = function(){
                 tit: 'Jobs',
                 projs: [
                     {p:'',u:'http://h2.putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,Subversion,SQL SERVER,IIS,AWS',d:`
-                    <strong>Since 2013 as Software Engineer, Full Stack Developer and DevOps</strong><br>
+                    <div class="accord-subtit">Since 2013 as Software Engineer, Full Stack Developer and DevOps</div>
                     Put.Call.Bot is a software solution that evaluates quantitative analysis from real time
                     Bovespa exchange market data, sending buy and sell signals to broker according to the
                     algorithmic strategy chosen by the trader.<br>

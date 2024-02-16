@@ -777,7 +777,7 @@ template {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: Arial, sans-serif;
   color: #515151;
   background-color:var(--back-color01);
   margin: 0;
@@ -1002,7 +1002,7 @@ table tfoot td {
   background-color: #e2eaee;
 }
 .about .author-name {
-  font-family: 'PT Serif', serif;
+  font-family: Arial, serif;
   position: relative;
   font-size: 16px;
   text-transform: uppercase;
@@ -1196,7 +1196,7 @@ footer .copyright {
 }
 
 .post .post-content .post-title a {
-  font-family: 'PT Serif', serif;
+  font-family: Arial, serif;
   text-decoration: none;
   color: #263959;
 }
@@ -1574,6 +1574,10 @@ li a:hover,
   border-radius: 0 0 10px 10px;
 }
 .accord-tags{
+  font-weight: bold;
+  font-size:14px
+}
+.accord-subtit{
   font-weight: bold;
   font-size:14px
 }
