@@ -8,3 +8,38 @@ console.log(target);
 
 console.log(returnedTarget === target);
 // Expected output: true
+
+
+https://www.freecodecamp.org/news/the-javascript-promises-handbook/
+readFile(sourceFile)
+  .then(data => processData(data))
+  .then(result => writeFile(result, outputFile))
+  .then(() => console.log('done'))
+  .catch(error => console.error('error:', error));
+
+function getUsers() {
+  return fetch('https://example.com/api/users')
+    .then(result => result.json())
+    .catch(error => {
+      console.error('Error loading users:', error);
+      return Promise.reject(error);
+    });
+}
+
+async function add(a, b) {
+  return a + b;   
+}
+
+add(2, 3).then(sum => {
+   console.log('Sum is:', sum); 
+});
+
+try {
+    const data = await readFile(sourceFile);
+    const result = await processData(data);
+    await writeFile(result, outputFile);
+} catch (error) {
+    console.error('Error occurred while processing:', error);
+}
+
+const users = await Promise.all([getUser(1), getUser(2), getUser(3)]);

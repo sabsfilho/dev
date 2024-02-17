@@ -986,8 +986,9 @@ table tfoot td {
   margin-top: -5px;
   display: block;
   font-style: italic;
+  padding-right: 10px;
 }
-.sendbtn{
+#sendbtn{
   display: block;
   padding: 10px 20px;
   border-radius: 20px;
@@ -997,9 +998,10 @@ table tfoot td {
   float:right;
   cursor: pointer;
 }
-.sendbtn:hover{
-  border:3px solid darkgray;
+#sendbtn:hover{
+  border:3px solid #009;
   background-color: #e2eaee;
+  color:#009
 }
 .about .author-name {
   font-family: Arial, serif;
@@ -1400,7 +1402,6 @@ a.newer-posts:hover {
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .post {
-    width: 48%;
     max-width: 100%;
     margin: 0 0.9% 1.5%;
     -webkit-box-orient: vertical;
@@ -1420,6 +1421,9 @@ a.newer-posts:hover {
   }
   .post .post-content .post-title a {
     font-size: 21px;
+  }
+  [for=email]{
+    display: none;
   }
 }
 
@@ -1638,6 +1642,7 @@ li a:hover,
 .dlg-pin{
   opacity: 0.9;
   visibility: hidden;
+  z-index: 10;
 }
 .dlg{
   width: 300px;
@@ -1699,4 +1704,19 @@ li a:hover,
   position: absolute;
   z-index: 1;
   font-size:12px;
+}
+
+.email-blk{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#email{
+  border-radius: 5px;
+  width: 300px;
+  padding: 5px;
+}
+#msg{
+  border-radius: 5px;
+  padding: 5px;
 }

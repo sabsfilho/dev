@@ -10,8 +10,8 @@ const CtMain = function(){
                     Put.Call.Bot is a software solution that evaluates quantitative analysis from real time
                     Bovespa exchange market data, sending buy and sell signals to broker according to the
                     algorithmic strategy chosen by the trader.<br>
-                    This automated trading system is a very powerful web platform that allows our clients work from any web browser or device.<br>
-                    This system is designed to negotiate stocks or options in a low frequency trading way and manages day trade or swing trade positions as well.<br>
+                    This automated trading system is a very powerful web platform that allows our clients work from any web browser or device.
+                    It is designed to negotiate stocks, options, derivatives and future instruments in a low or high frequency trading way and manages day trade or swing trade positions as well.<br>
                     The trader can work with virtual orders or set to route them to his broker, also one or more broker accounts can be saved and used. <br>
                     Our platform allows the trader to create, debug, test, optimize, and execute trading robots in an exclusive environment totally independent from the production server. <br>
                     The user can request a development server to safely build and test their algorithmics. <br>
@@ -338,12 +338,18 @@ As I work from Brazil, we can together be very happy with the currency exchange 
 <p>Available to start work right now on a full or part-time remote job at 4PM-6AM GMT,
 <br/><u>also flexible for any time zone overlap</u>.</p>
 <p><em>I need employer sponsorship to work within the United States.</em></p>
-<p>
+<div>
 <span>Please send me a message if you want to talk about how we can team up:</span>
-<textarea class="msg" maxlength="500"></textarea>
-<span class="mailme">remember to <strong>include your e-mail</strong> in this message to allow me reply you an soon as possible.</span>
-<button class="sendbtn">Send</button>
-</p>
+<textarea id="msg" class="msg" maxlength="500"></textarea>
+<div class="email-blk">
+<span class="mailme">remember to <strong>include your e-mail</strong> to allow me reply you an soon as possible.</span>
+<div>
+<label for="email">e-mail:</label>
+<input id="email" type="email" placeholder="type your e-mail here" />
+</div>
+</div>
+<button id="sendbtn">Send</button>
+</div>
 </div>
                 `,
                 index:0,
@@ -429,7 +435,7 @@ ${c.body}
 
     };
 
-    const addDialog = (pnt,id,tit,msg)=>{
+    const addDialog = (tit,msg,pnt,btnID)=>{
         const div = document.createElement('div');
         div.className = 'dlg-pin';
         div.innerHTML = `
@@ -441,14 +447,21 @@ ${c.body}
 <div class="bdy">${msg}</div>
 </div>
         `;
-        pnt.append(div);
+        if (pnt){
+            pnt.append(div);
+        }
+        else{
+            document.getElementsByTagName('body')[0].append(div)
+        }
 
         const toggle = () => {
             div.style.visibility = div.style.visibility==='visible' ?  'hidden' : 'visible'
         };
         
         getFirstByClass(div, 'close').addEventListener('click', ()=>div.style.visibility='hidden');
-        document.getElementById(id).addEventListener('click', toggle);
+        if (btnID){
+            document.getElementById(btnID).addEventListener('click', toggle);
+        }
 
         return div
     };
@@ -457,13 +470,13 @@ ${c.body}
         const m = '115,97,98,115,102,105,108,104,111,64,103,109,97,105,108,46,99,111,109'.split(',').map(x=>String.fromCharCode(x)).join('');
         const pnt = getFirstByClass(document, 'contact'),
         dlg = addDialog(
-            pnt, 
-            'mailto', 
             'This is my contact e-mail',
             `
 <a href="mailto:${m}">${m}</a>
 <a class="copy close mailto" href="#"><span class="tooltipcopy">e-mail copied</span>click to copy</a>
-            `
+            `,
+            pnt, 
+            'mailto'
         );
         getFirstByClass(dlg, 'copy').addEventListener('click', function(){
             const sty = getFirstByClass(dlg, 'tooltipcopy').style;
@@ -485,6 +498,43 @@ ${c.body}
 
     };
 
+    const addMessageControl = ()=>{
+        const alertDlg = addDialog('Alert', '');
+        alertDlg.style.position = 'absolute';
+        document.getElementById('sendbtn').addEventListener('click', function(e){
+            const showMsg = m => {
+                getFirstByClass(alertDlg, 'bdy').innerHTML = m;
+                alertDlg.style.visibility = 'visible';
+                const r = msg.getBoundingClientRect();
+                alertDlg.style.top = (r.top+window.scrollY)+'px';
+                alertDlg.style.left = (r.right-400)+'px';
+            };
+            const isValidEmail = () => {
+                return String(email.value)
+                  .toLowerCase()
+                  .match(
+                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                  );
+              };
+            
+            const msg = document.getElementById('msg'),
+            email = document.getElementById('email');
+
+            if (!msg.value){
+                showMsg('Please type a short message about your project.');
+                msg.focus();
+                return
+            }
+            if (!isValidEmail()){
+                showMsg('Please type a valid e-mail to allow me reply you.');
+                email.focus();
+                return
+            }
+
+            alert([email.value,msg.value].join(':'))
+        })
+    };
+
     const load = ()=>{
 
         addBlocks();
@@ -493,6 +543,7 @@ ${c.body}
 
         addMailDialog();
         
+        addMessageControl();
     };
 
     return {
