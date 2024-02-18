@@ -1720,3 +1720,7 @@ li a:hover,
   border-radius: 5px;
   padding: 5px;
 }
+.success-msg{
+  font-weight: bold;
+  font-size: 14px;
+}

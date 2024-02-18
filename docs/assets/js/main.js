@@ -499,10 +499,11 @@ ${c.body}
     };
 
     const addMessageControl = ()=>{
-        const alertDlg = addDialog('Alert', '');
+        const alertDlg = addDialog();
         alertDlg.style.position = 'absolute';
         document.getElementById('sendbtn').addEventListener('click', function(e){
-            const showMsg = m => {
+            const showMsg = (leg,m) => {
+                getFirstByClass(alertDlg, 'leg').innerHTML = leg;
                 getFirstByClass(alertDlg, 'bdy').innerHTML = m;
                 alertDlg.style.visibility = 'visible';
                 const r = msg.getBoundingClientRect();
@@ -521,17 +522,37 @@ ${c.body}
             email = document.getElementById('email');
 
             if (!msg.value){
-                showMsg('Please type a short message about your project.');
+                showMsg('Alert','Please type a short message about your project.');
                 msg.focus();
                 return
             }
             if (!isValidEmail()){
-                showMsg('Please type a valid e-mail to allow me reply you.');
+                showMsg('Alert','Please type a valid e-mail to allow me reply you.');
                 email.focus();
                 return
             }
+            //alert([email.value,msg.value].join(':'));
+            
+            const fd = new FormData();
+            fd.append('email', email.value);
+            fd.append('msg', msg.value);
 
-            alert([email.value,msg.value].join(':'))
+            fetch('https://lab-project-01.azurewebsites.net/api/express/skills-contact', {
+                method: "POST",
+                body: fd
+            })
+            .then(result => {
+                showMsg('Success', `<div class="success-msg">I got your message!<br><br>I'll reply to you soon.<br><br>Thank you so much!<br></div>`);
+                msg.value = '';
+                email.value = '';
+                setTimeout(()=>{
+                    alertDlg.style.visibility = 'hidden'
+                },5000)
+            })            
+            .catch(error => {
+                //showMsg('Error',error);
+                return Promise.reject(error);
+            });
         })
     };
 

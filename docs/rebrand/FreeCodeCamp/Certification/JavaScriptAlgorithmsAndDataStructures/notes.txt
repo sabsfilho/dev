@@ -24,7 +24,21 @@ function getUsers() {
       console.error('Error loading users:', error);
       return Promise.reject(error);
     });
-}
+}  
+            fetch('https://example.com/api/users', {
+                method: "POST",
+                body: JSON.stringify({email:email.value,msg:msg.value}),
+                headers: {"Content-type": "application/json; charset=UTF-8"}
+            })
+            
+            const fd = new FormData();
+            fd.append('email', email.value);
+            fd.append('msg', msg.value);
+
+            fetch('https://lab-project-01.azurewebsites.net/api/express/skills-contact', {
+                method: "POST",
+                body: fd
+            })
 
 async function add(a, b) {
   return a + b;   

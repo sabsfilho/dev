@@ -7,8 +7,9 @@ const urlshortenerApp = require('./urlshortener/index');
 const filemetadataApp = require('./filemetadata/index');
 const expressApp = require('./express/index');
 const timestampApp = require('./timestamp/index');
+const contactApp = require('./contact/index');
 
-router.use(headerparserApp,urlshortenerApp,filemetadataApp,expressApp,timestampApp);
+router.use(headerparserApp,urlshortenerApp,filemetadataApp,expressApp,timestampApp,contactApp);
 
 app.use(
   "/api", 
