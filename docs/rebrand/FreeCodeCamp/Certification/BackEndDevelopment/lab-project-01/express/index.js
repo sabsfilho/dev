@@ -40,11 +40,3 @@ app.post(
   bodyParser.urlencoded({extended: false}),
   (req, res, next) => res.json({name: `${req.body.first} ${req.body.last}`})
 );
-
-
-app.post(
-  "/express/skills-contact",  
-  bodyParser.urlencoded({extended: false}),
-  (req, res, next) => res.json({name: `${req.body.email} ${req.body.msg}`})
-);
-

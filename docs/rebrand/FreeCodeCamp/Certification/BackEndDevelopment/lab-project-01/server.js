@@ -2,14 +2,16 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const router = express.Router();
-const headerparserApp = require('./headerparser/index');
-const urlshortenerApp = require('./urlshortener/index');
-const filemetadataApp = require('./filemetadata/index');
-const expressApp = require('./express/index');
-const timestampApp = require('./timestamp/index');
-const contactApp = require('./contact/index');
 
-router.use(headerparserApp,urlshortenerApp,filemetadataApp,expressApp,timestampApp,contactApp);
+router.use(
+  require('./headerparser/index'),
+  require('./urlshortener/index'),
+  require('./filemetadata/index'),
+  require('./express/index'),
+  require('./timestamp/index'),
+  require('./contact/index'),
+  require('./exercisetracker/index')
+);
 
 app.use(
   "/api", 
