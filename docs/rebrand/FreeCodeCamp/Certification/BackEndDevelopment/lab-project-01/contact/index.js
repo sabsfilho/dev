@@ -1,5 +1,8 @@
 const express = require("express");
 const app = express();
+const multer  = require('multer')
+const upload = multer({ dest: 'uploads/' })
+
 module.exports = app;
 
 app.use('/contact', express.static("contact/public"));
@@ -8,36 +11,41 @@ app.get("/contact", function (req, res) {
   res.sendFile(__dirname + "/views/index.html");
 });
 
-bodyParser = require("body-parser");
+const mongoose = require("mongoose");
 
-app.use('/contact', bodyParser.urlencoded({extended: false}));
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
+const Schema = mongoose.Schema;
+
+const contactSkillSchema = new Schema({
+  email: String,
+  ip: String,
+  msg: String
+});
+
+const ContactSkill = mongoose.model("ContactSkill", contactSkillSchema);
+
+app.get('/contact/skills', async (req, res) =>{
+  const xs = await ContactSkill.find({});
+  res.send(xs);  
+});
 
 app.post(
   "/contact/skills",  
-  bodyParser.urlencoded({extended: false}),
-  (req, res, next) => {
-    /*
-    const contact = new ContactSkills(req.body);
-
-    contact.save((err, data) => {
-      if (err) {
-        done(err);
-      } else {
-        done(null, data);
-      }
+  upload.none(),
+  async (req, res, next) => {
+    const contact = new ContactSkill({
+      email: req.body.email,
+      ip: req.headers["x-forwarded-for"],
+      msg: req.body.msg
     });
-*/
-console.log(req.body.email);
+
+    await contact.save();
+
     return res.json({ok: true})
   }
 );
-
-router.post("/mongoose-model", function (req, res, next) {
-  // try to create a new instance based on their model
-  // verify it's correctly defined in some way
-  let p;
-  p = new Person(req.body);
-  res.json(p);
-});
 
