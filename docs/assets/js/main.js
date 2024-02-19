@@ -531,13 +531,12 @@ ${c.body}
                 email.focus();
                 return
             }
-            //alert([email.value,msg.value].join(':'));
-            
+
             const fd = new FormData();
             fd.append('email', email.value);
             fd.append('msg', msg.value);
 
-            fetch('https://lab-project-01.azurewebsites.net/api/express/skills-contact', {
+            fetch('https://lab-project-01.azurewebsites.net/api/contact/skills', {
                 method: "POST",
                 body: fd
             })
@@ -550,7 +549,7 @@ ${c.body}
                 },5000)
             })            
             .catch(error => {
-                //showMsg('Error',error);
+                showMsg('Error', error);
                 return Promise.reject(error);
             });
         })
