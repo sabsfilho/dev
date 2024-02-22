@@ -58,6 +58,8 @@ Build C# applications using core concepts and object-oriented programming princi
 
 - [HackerRank](https://www.hackerrank.com/profile/sabsfilho)
 
+- [CodeWars](https://www.codewars.com/users/sabsfilho)
+
 - [CodePen](https://codepen.io/sabsfilho)
 
 - [CodeAlly](https://codeally.io/cv/1925e7e676abb9663fe62f5e)
