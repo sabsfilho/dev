@@ -1,6 +1,6 @@
 void Main()
 {
-	new SinglyLinkedList().Load();
+	new SinglyLinkedList().Test();
 }
 
 class SinglyLinkedList{
@@ -83,6 +83,39 @@ class SinglyLinkedList{
 		
 	}
 	
+	public void InsertSorted(int data){
+		if (head == null) {
+			InsertFirst(data);
+			return;
+		}
+		
+		var n = new ListNode(data);
+		
+		var x = head;
+		if (x.next == null){
+			if (data < (int)x.data) {
+				n.next = x;
+				head = n;
+			}
+			else {			
+				x.next = n;
+			}
+			return;
+		}
+		while(x != null && x.next != null){
+			if (data < (int)x.next.data) {
+				n.next = x.next;
+				x.next = n;
+				break;
+			}
+			else {
+				x = x.next;
+			}
+		}
+		x.next = n;
+		
+	}
+	
 	public void Delete(int i){
 	// one based position
 		if (head == null) return;
@@ -121,6 +154,39 @@ class SinglyLinkedList{
 		return x;
 	}
 	
+	public void RemoveDuplicates() {
+	
+		if (head == null) return;
+		
+		var x = head;
+		while(x != null && x.next != null){
+			if (x.data.Equals(x.next.data)){
+				x.next = x.next.next;				
+			}
+			else {
+				x = x.next;
+			}
+		}
+	
+	}
+	
+	public void RemoveNode(object data){
+		var x = head;
+		ListNode prev = null;
+		while(x != null){
+			if (x.data.Equals(data)){
+				if (prev == null) {
+					head = head.next;
+					return;
+				}
+				prev.next = x.next;
+				return;
+			}
+			prev = x;
+			x = x.next;
+		}
+	}
+	
 	public void Reverse() {
 	
 		if (head == null) return;
@@ -138,7 +204,98 @@ class SinglyLinkedList{
 		head = prev;
 	}
 	
-	public void Load() {
+	public bool HasLoop() {
+	
+		if (head == null) return false;
+		
+		ListNode fast = head;
+		ListNode slow = head;
+		
+		while(fast != null && fast.next != null) {
+			fast = fast.next.next;
+			slow = slow.next;
+			if (fast != null && fast.data.Equals(slow.data)){
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
+	ListNode GetStartingNodeLoop(ListNode slow){
+		var x = head;
+		while(x != slow) {
+			x = x.next;
+			slow = slow.next;
+		}
+		return x;
+	}
+	
+	public ListNode GetStartingNodeLoop() {
+	
+		if (head == null) return null;
+		
+		ListNode fast = head;
+		ListNode slow = head;
+		
+		while(fast != null && fast.next != null) {
+			fast = fast.next.next;
+			slow = slow.next;
+			if (fast != null && fast.data.Equals(slow.data)){
+				return GetStartingNodeLoop(slow);
+			}
+		}
+		
+		return null;
+	}
+	
+	private void RemoveLoop(ListNode slow){
+		var t = head;
+		while(t != slow){
+			t = t.next;
+			slow = slow.next;
+		}
+		slow.next = null;
+	}
+	
+	public void RemoveLoop() {
+		var fast = head;
+		var slow = head;
+		
+		while (fast != null && fast.next != null) {
+			fast = fast.next.next;
+			slow = slow.next;
+			if (slow.next == fast.next) {
+				RemoveLoop(slow);
+				return;
+			}
+		}
+	}
+	
+	public ListNode MergeSort(ListNode a, ListNode b){
+		ListNode r = new ListNode(0);
+		
+		while(a != null && b != null){
+			if ((int)a.data < (int)b.data) {
+				r.next = a;
+				a = a.next;
+			}
+			else {
+				r.next = b;
+				b = b.next;
+			}
+		}
+		if (a == null){
+			r.next = b;
+		}
+		else {
+			r.next = a;
+		}
+		
+		return r.next;
+	}
+	
+	public void Test() {
 		head = new ListNode(10);
 		var second = new ListNode(1);
 		var third = new ListNode(8);
@@ -148,11 +305,21 @@ class SinglyLinkedList{
 		second.next = third;
 		third.next = fourth;
 		
+		// LOOP TEST !!!
+		/*
+		fourth.next = second;		
+		GetStartingNodeLoop().data.Dump();		
+		RemoveLoop();
+		HasLoop().Dump();		
+		return;
+		*/
+		
 		InsertFirst(50);
 		InsertLast(400);
 		
 		Insert(2,1);
 		
+		RemoveNode(11);
 		//Delete(6);
 		//Delete(2);
 		
@@ -163,13 +330,39 @@ class SinglyLinkedList{
 		Console.WriteLine("######");
 		
 		Print();
+		
+		head = null;		
+		for (int i=1;i<6;i++){
+			InsertLast(i);
+		}
+		Insert(2,2);
+		Insert(2,3);
+		Print();
+		RemoveDuplicates();
+		Print();
+		
+		
+		head = null;
+		var xs = new int[] { 10, 1, 16, 8 };		
+		foreach(var x in xs){
+			InsertSorted(x);
+		}
+		Print();
+		
+		
 	}
 	
 	public void Print(){
 		
 		Console.WriteLine(string.Concat("n[2]=", GetNode(2).data));
-		Console.WriteLine(string.Concat("f[8]=", FindNode(8, null).data));
-		Console.WriteLine(string.Concat("fEND[2]=", FindNodeFromEnd(2).data));
+		var z = FindNode(8, null);
+		if (z != null){
+			Console.WriteLine(string.Concat("f[8]=", z.data));
+		}
+		z = FindNodeFromEnd(2);
+		if (z != null) {
+			Console.WriteLine(string.Concat("fEND[2]=", z.data));
+		}
 		
 		var n = head;
 		int j = 0;
