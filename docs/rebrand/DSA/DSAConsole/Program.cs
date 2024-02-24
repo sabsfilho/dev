@@ -1,3 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("DSAConsole");
-Stack_LeetCode_NextGreaterNumber.Print();
+//QueueLinkedList<int>.Load();
+Queue_LeetCode_BinaryNumbers.Print();
