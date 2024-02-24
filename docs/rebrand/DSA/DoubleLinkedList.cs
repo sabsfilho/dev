@@ -42,12 +42,14 @@ public class DoubleLinkedList<T>{
 		var h = new ListNode<T>(default(T));
 		var t = h;
 		foreach(var a in arr) {
-			var n = new ListNode<T>(a);
+			var n = new ListNode<T>(a);            
 			t.next = n;
+            n.prev = t;
 			t = n;
 			Length++;
 		}
 		head = h.next;
+        head.prev = null;
 		tail = t;
 	}
 	
