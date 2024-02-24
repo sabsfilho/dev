@@ -1,0 +1,15 @@
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/bin/Debug/net7.0/DSAConsole
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/bin/Debug/net7.0/DSAConsole.deps.json
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/bin/Debug/net7.0/DSAConsole.runtimeconfig.json
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/bin/Debug/net7.0/DSAConsole.dll
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/bin/Debug/net7.0/DSAConsole.pdb
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/obj/Debug/net7.0/DSAConsole.csproj.AssemblyReference.cache
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/obj/Debug/net7.0/DSAConsole.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/obj/Debug/net7.0/DSAConsole.AssemblyInfoInputs.cache
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/obj/Debug/net7.0/DSAConsole.AssemblyInfo.cs
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/obj/Debug/net7.0/DSAConsole.csproj.CoreCompileInputs.cache
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/obj/Debug/net7.0/DSAConsole.dll
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/obj/Debug/net7.0/refint/DSAConsole.dll
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/obj/Debug/net7.0/DSAConsole.pdb
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/obj/Debug/net7.0/DSAConsole.genruntimeconfig.cache
+/workspaces/dev/docs/rebrand/DSA/DSAConsole/obj/Debug/net7.0/ref/DSAConsole.dll
