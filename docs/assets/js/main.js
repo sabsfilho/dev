@@ -194,7 +194,7 @@ The on site and offline tasks were performed with success.</p>
 <em>Economics for Capital Markets; Financial and Statistical Calculation; Asset Classes; Financial Instruments and Markets; Equity Markets Trend Analysis; Portfolio Management; Brazilian Securities Law; Structure and Dynamics of a Trading Floor Negotiation</em>
 <p class="first-p">The key aspect I learned from this course was risk control for portfolio management. This kind of mindset I apply on my projects, 
 for instance managing the tradeoff to deploy a patch on production, we should take care of the risks involved from a breaking version, 
-stepping in and out as handling a bad asset position to secure the fund health as a whole.</p>
+stepping in and out as handling a bad asset position to secure the fund health as a whole. I also learned that Risk Management means what to do when things go bad and this concept should be applied in too many aspects in our lives.</p>
 `,
 `Financial Mathematics with HP 12c<br>
 1997, 40 hours, Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil<br>
