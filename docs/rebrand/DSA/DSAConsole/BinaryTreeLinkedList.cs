@@ -136,9 +136,9 @@ class BinaryTreeLinkedList{
             return n;
         }
         if (v < n.data){
-            return Search(n, v);
+            return Search(n.left, v);
         }
-        return Search(n, v);
+        return Search(n.right, v);
     }
 
     static void SetNodes(TreeNode p, TreeNode left, TreeNode right){
@@ -184,5 +184,9 @@ class BinaryTreeLinkedList{
         PrintBFS_Queue(n);
         */
         Console.WriteLine($"FindMax={FindMax(n)}");
+
+        Console.WriteLine("Search");
+        var z = Search(n, 3);
+        PrintDFS_InOrder_Recursive(z);
     }
 }
