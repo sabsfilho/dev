@@ -3,4 +3,4 @@ Console.WriteLine("DSAConsole");
 //QueueLinkedList<int>.Load();
 //Queue_LeetCode_BinaryNumbers.Print();
 //BinaryTreeLinkedList.Build();
-BinaryTree_LeetCode_SearchKeyInSortedMatrix.Print();
+Array_LeetCode_SearchKeyInSortedMatrix.Print();
