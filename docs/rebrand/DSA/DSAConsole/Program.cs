@@ -5,4 +5,6 @@ Console.WriteLine("DSAConsole");
 //BinaryTreeLinkedList.Build();
 //Array_LeetCode_SearchKeyInSortedMatrix.Print();
 //Array_LeetCode_PrintMatrixInSpiralForm.Print();
-MaxPriorityQueue.Print();
+//MaxPriorityQueue.Print();
+//Array_LeetCode_SearchPosition.Print();
+MergeSortedArrays.Print();
