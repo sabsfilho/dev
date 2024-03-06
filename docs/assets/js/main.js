@@ -6,7 +6,7 @@ const CtMain = function(){
                 tit: 'Jobs',
                 projs: [
                     {p:'',u:'http://h2.putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,Subversion,SQL SERVER,IIS,AWS',d:`
-                    <div class="accord-subtit">Since 2013 as Software Engineer, Full Stack Developer and DevOps</div>
+                    <div class="accord-subtit">Since 2013 as Full Stack Developer and DevOps</div>
                     Put.Call.Bot is a software solution that evaluates quantitative analysis from real time
                     Bovespa exchange market data, sending buy and sell signals to broker according to the
                     algorithmic strategy chosen by the trader.<br>
@@ -148,7 +148,7 @@ by tick giving time to the trader evaluate better strategies for his portfolio.<
             ['Foundational C# with Microsoft @ FreeCodeCamp - December 11, 2023','https://www.freecodecamp.org/certification/sabsfilho/foundational-c-sharp-with-microsoft','Build C# applications using core concepts and object-oriented programming principles.'],
         ],
         profiles: [
-            ['FreeCodeCamp','https://www.freecodecamp.org/sabsfilho','An amazing place where I learn new cool techies stuff and practice a lot, building real case solutions.'],
+            ['FreeCodeCamp','https://www.freecodecamp.org/sabsfilho','My learning place to assimilate new cool techies stuff and practice a lot, building real case solutions.'],
             ['Git Hub','http://github.com/sabsfilho','My codespace.'],
             ['Microsoft','https://learn.microsoft.com/en-us/users/samuelsantos-1448/','My windows since my first deployment.'],
             ['HackerRank','https://www.hackerrank.com/profile/sabsfilho','My gym where I keep myself in good shape for hack activities.'],
@@ -202,7 +202,10 @@ stepping in and out as handling a bad asset position to secure the fund health a
 <p class="first-p">I learned the financial power of compound interest which is the most important math equation we should learn.</p>
 <p><em><q>There is no force in the universe more powerful than compound interest</q>, Albert Einstein</em></p>
 `
-        ]
+        ]/*,
+        entrepreneurship: [
+            'entrepreneurship Adventures = teleprompter, casar É fácil, bomdeclick, homenzinho'
+        ]*/
     };
 
     /* html templates */
@@ -331,8 +334,9 @@ mainContent = {
                 body:`
 <div class="bio">
 <p>I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management in Brazilian IT, Banking and Fintech companies.</p>
-<p>I graduated in Mechanical Engineering and post-graduated in Computer Science & System Project Management.</p>
-<p>Over the last 10 years, I've been working asynchronously in a full remote position in a small Fintech company that develops stock market trade solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies.</p>
+<p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro, one of the most prestigious universities in Brazil, and worked in the Robotics Lab until graduation.
+I post-graduated in Computer Science & System Project Management from Pontifícia Universidade Católica - PUC also a renowned university in Brazil.</p>
+<p>Over the last 10 years, I've been working asynchronously as a Senior Full-Stack Developer in a full remote position in a small Fintech company that develops stock market trade solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies.</p>
 <p>I'm currently looking for the opportunity to work remotely in IT projects abroad.</p>
 <p>My hour is a commodity that your budget can take advantage of.
 As I work from Brazil, we can together be very happy with the currency exchange rates. So, it's definitely a win–win game for us!</p>
