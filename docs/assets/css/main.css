@@ -1557,7 +1557,7 @@ li a:hover,
   border: 2px solid var(--back-color04);
 }
 .accord-btn > :first-child{  
-  display: inline-block;
+  float:left;
   border:2px solid #000;
   border-radius: 50px;
   width: 22px;
@@ -1568,12 +1568,16 @@ li a:hover,
   font-family: monospace;
   font-size: 16px;
 }
+.multiline > :first-child{ 
+  margin-bottom: 25px;
+}
+
 .accord-panel{
   display: none;
   border-left: 2px var(--font-color01) solid;
   border-right: 2px var(--font-color01) solid;
   border-bottom: 2px var(--font-color01) solid;
-  padding:5px 15px 15px 15px;  
+  padding:15px;  
   background-color: var(--back-color01);
   border-radius: 0 0 10px 10px;
 }
@@ -1584,6 +1588,12 @@ li a:hover,
 .accord-subtit{
   font-weight: bold;
   font-size:14px
+}
+.expand > a {
+  display: none;
+}
+.expand > .post-content {
+  width:100% !important
 }
 .active{
   opacity: 80%;
@@ -1723,4 +1733,8 @@ li a:hover,
 .success-msg{
   font-weight: bold;
   font-size: 14px;
+}
+
+.accord-panel ul {
+  padding-left: 15px
 }

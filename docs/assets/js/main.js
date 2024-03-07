@@ -1,5 +1,21 @@
 const CtMain = function(){
 
+    const experience = {
+        projs: [
+            {
+                tit: 'Put.Call.Bot, Quant Trading Fintech, RJ-Brazil<br/>Working remote since 2013<br/>Full Stack C# Developer and DevOps',
+                bdy: 'exp_pcb'
+            },
+            {
+                tit: 'BoxBrazil, Logistics Startup, RJ-Brazil<br/>October 2010 - September 2013<br/>Full Stack C# Developer and DevOps',
+                bdy: 'exp_bxbr'
+            },
+            {
+                tit: 'Itau Previtec, Banking, RJ-Brazil<br/>July 2000 - October 2010<br/>Project Manager and Senior Software Engineer',
+                bdy: 'exp_itprv'
+            }
+        ]
+    };
     const showCase = {
         projs: [
             {
@@ -148,7 +164,7 @@ by tick giving time to the trader evaluate better strategies for his portfolio.<
             ['Foundational C# with Microsoft @ FreeCodeCamp - December 11, 2023','https://www.freecodecamp.org/certification/sabsfilho/foundational-c-sharp-with-microsoft','Build C# applications using core concepts and object-oriented programming principles.'],
         ],
         profiles: [
-            ['FreeCodeCamp','https://www.freecodecamp.org/sabsfilho','My learning place to assimilate new cool techies stuff and practice a lot, building real case solutions.'],
+            ['FreeCodeCamp','https://www.freecodecamp.org/sabsfilho','My learning place to assimilate new cool techies stuff and practice a lot in real case scenarios'],
             ['Git Hub','http://github.com/sabsfilho','My codespace.'],
             ['Microsoft','https://learn.microsoft.com/en-us/users/samuelsantos-1448/','My windows since my first deployment.'],
             ['HackerRank','https://www.hackerrank.com/profile/sabsfilho','My gym where I keep myself in good shape for hack activities.'],
@@ -211,7 +227,8 @@ stepping in and out as handling a bad asset position to secure the fund health a
     /* html templates */
     const templ = {
         accord: (i,n,w) => {
-            return `<button class="accord-btn accord-l${i}"><div data-hidden="+" data-shown="-"></div>${n}</button><div class="accord-panel">${w}</div>`
+            const multiline = n.includes('<br') ? ' multiline' : '';
+            return `<button class="accord-btn accord-l${i}${multiline}"><div data-hidden="+" data-shown="-"></div>${n}</button><div class="accord-panel">${w}</div>`
         },
         href: (u,t) => `<a href="${u}" rel="nofollow" target="_blank">${t}</a>`,
         item: (x) => {
@@ -245,13 +262,36 @@ stepping in and out as handling a bad asset position to secure the fund health a
                 this.classList.toggle("active");                
                 this.nextElementSibling.style.display = hidden ? 'none' : 'block'
                 toggle(el, hidden);
+                const w = window.innerWidth,
+                p = el.parentElement.parentElement.classList;
+                if (!hidden && w > 990) {
+                    p.add('expand')
+                }
+                else {
+                    if (p.contains('expand')){
+                        const chs = el.parentElement.children;
+                        let hasExpanded = false;
+                        for(const ch of chs) {
+                            if (
+                                ch.tagName.toLowerCase() == 'button' &&
+                                ch.classList.contains('active')
+                            ){
+                                hasExpanded = true;
+                                break
+                            }
+                        }
+                        if (!hasExpanded){
+                        p.remove('expand')
+                        }
+                    }
+                }
             })
         }
         
     }
     buildItem = x=>isArray(x) ? templ.item(x) : x,
     buildList = ls => ['<ul>', ls.map(x=>`<li>${buildItem(x)}</li>`).join(''), '</ul>'].join(''),
-    buildShowcases = () => {
+    buildGroup = (descr, content) => {
 
         const buildAccord = (i, ws, z, ks)=>{
             if (!z) return;
@@ -298,8 +338,8 @@ stepping in and out as handling a bad asset position to secure the fund health a
             if (z.projs) {                
                 z.projs.forEach(p => buildAccord(i+1, zs, p, [...ks]));
             }
-            else{
-                
+            else if (z.bdy) {
+                zs.push(`<div class="ext-bdy" data-bdy="${z.bdy}">carregando...</div>`)                
             }
             
             ws.push(
@@ -309,14 +349,28 @@ stepping in and out as handling a bad asset position to secure the fund health a
             )
         };
 
-        const qs = ['<p>Click on the buttons below to see some of my skills in action.</p>'];
+        const qs = [`<p>${descr}</p>`];
 
-        buildAccord(0, qs, showCase, []);
+        buildAccord(0, qs, content, []);
 
         return qs.join('')
     },
+    buildShowcases = () => buildGroup('Click on the buttons below to see some of my skills in action.', showCase),
+    buildExperiences = () => buildGroup('Click on the buttons below to see my work experience.', experience),
     getFirstByClass = (el, cn) => el.getElementsByClassName(cn)[0],
     getFirstByTag = (el, cn) => el.getElementsByTagName(cn)[0],
+    loadExternalBody = () => {
+        const els = document.getElementsByClassName('ext-bdy');
+        for(const el of els) {
+            fetch(`assets/html/portfolio/${el.getAttribute('data-bdy')}.html`)
+            .then(x => x.text())
+            .then(x => el.innerHTML = x)        
+            .catch(error => {
+                return Promise.reject(error);
+            })
+        }
+
+    },
     addBlocks = ()=>{
         const panel = document.getElementById('panel');
 /*
@@ -388,26 +442,32 @@ As I work from Brazil, we can together be very happy with the currency exchange 
                 tit: 'Certifications'
             },
             {
+                body: buildExperiences(),
+                index: 4,
+                tagImg: 'assets/img/trophies4.jpg',
+                tit: 'Work Experience'
+            },
+            {
                 body: buildList(data.profiles),
-                index: 6,
+                index: 7,
                 tagImg: 'assets/img/stamps.jpg',
                 tit: 'Profiles'
             },
             {
                 body: buildList(data.education),
-                index: 4,
+                index: 5,
                 tagImg: 'assets/img/education.jpg',
                 tit: 'Education'
             },
             {
                 body: buildList(data.awards),
-                index: 5,
+                index: 6,
                 tagImg: 'assets/img/medals.jpg',
                 tit: 'Awards'
             },
             {
                 body: buildList(data.outerITWorld),
-                index: 7,
+                index: 8,
                 tagImg: 'assets/img/milky-way.jpg',
                 tit: 'Outer IT World'
             }
@@ -569,6 +629,8 @@ ${c.body}
         addMailDialog();
         
         addMessageControl();
+
+        loadExternalBody();
     };
 
     return {
