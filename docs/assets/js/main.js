@@ -398,7 +398,7 @@ I post-graduated in Computer Science & System Project Management from Pontifíci
 <p>Over the last 10 years, I've been working asynchronously as a Senior Full-Stack Developer in a full remote position in a small Fintech company that develops stock market trade solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies.</p>
 <p>I'm currently looking for the opportunity to work remotely in IT projects abroad.</p>
 <p>My hour is a commodity that your budget can take advantage of.
-As I work from Brazil, we can together be very happy with the currency exchange rates. So, it's definitely a win–win game for us!</p>
+As I work from the seashore of the wonderful City of Rio de Janeiro, Brazil, we can together be very happy with the currency exchange rates. So, it's definitely a win–win game for us!</p>
 <p>Available to start work right now on a full or part-time remote job at 4PM-6AM GMT,
 <br/><u>also flexible for any time zone overlap</u>.</p>
 <p><em>I need employer sponsorship to work within the United States.</em></p>
