@@ -262,8 +262,13 @@ stepping in and out as handling a bad asset position to secure the fund health a
                 this.classList.toggle("active");                
                 this.nextElementSibling.style.display = hidden ? 'none' : 'block'
                 toggle(el, hidden);
-                const w = window.innerWidth,
-                p = el.parentElement.parentElement.classList;
+                const w = window.innerWidth;
+                let eln = el;
+                while(eln !== null && eln.tagName.toLowerCase() !== 'article'){
+                    eln = eln.parentElement;
+                }
+                const p = eln.classList;
+
                 if (!hidden && w > 990) {
                     p.add('expand')
                 }
