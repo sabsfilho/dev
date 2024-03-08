@@ -152,7 +152,7 @@ by tick giving time to the trader evaluate better strategies for his portfolio.<
             'HTML5, CSS, SCSS, Sass, Jekyll',
             'AWS, Azure',
             'Project Management (Kanban ✔️, SCRUM, Waterfall)',
-            'Git, GitHub, Apache Subversion, TortoiseSVN'
+            'Git, GitHub, VisualSVN Subversion, TortoiseSVN'
         ],
         certifications: [
             ['Back End Development and APIs @ FreeCodeCamp - January 31, 2024','https://www.freecodecamp.org/certification/sabsfilho/back-end-development-and-apis','Build microservices with npm, Node.js, Express.js, Mongoose.js and Mongo Database.'],
