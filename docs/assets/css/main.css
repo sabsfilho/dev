@@ -4,6 +4,7 @@
   --back-color03:#b9c7e9;
   --back-color04:#111316;
   --font-color01:#515151;
+  --font-color02:#790303;
 }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -953,6 +954,13 @@ table tfoot td {
           border-radius: 100%;
   overflow: hidden;
   background-color: #333030;
+}
+
+.about .lnk{
+  color:var(--font-color01)
+}
+.about .lnk:hover{
+  color:var(--font-color02)
 }
 
 .cover-author-image img {

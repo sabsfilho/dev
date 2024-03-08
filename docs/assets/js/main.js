@@ -3,11 +3,11 @@ const CtMain = function(){
     const experience = {
         projs: [
             {
-                tit: 'Put.Call.Bot, Quant Trading Fintech, RJ-Brazil<br/>Working remote since 2013<br/>Full Stack C# Developer and DevOps',
+                tit: 'Put.Call.Bot, Quant Trading System Fintech, RJ-Brazil<br/>Working remote since September 2013<br/>C# .NET Full Stack Developer',
                 bdy: 'exp_pcb'
             },
             {
-                tit: 'BoxBrazil, Logistics Startup, RJ-Brazil<br/>October 2010 - September 2013<br/>Full Stack C# Developer and DevOps',
+                tit: 'BoxBrazil, Logistics Startup, RJ-Brazil<br/>October 2010 - September 2013<br/>C# .NET Full Stack Developer',
                 bdy: 'exp_bxbr'
             },
             {
@@ -21,8 +21,8 @@ const CtMain = function(){
             {
                 tit: 'Jobs',
                 projs: [
-                    {p:'',u:'http://h2.putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,Subversion,SQL SERVER,IIS,AWS',d:`
-                    <div class="accord-subtit">Since 2013 as Full Stack Developer and DevOps</div>
+                    {p:'',u:'http://h2.putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,Subversion,SQL SERVER,IIS,AWS Cloud',d:`
+                    <div class="accord-subtit">Since 2013 as C# .NET Full Stack Developer</div>
                     Put.Call.Bot is a software solution that evaluates quantitative analysis from real time
                     Bovespa exchange market data, sending buy and sell signals to broker according to the
                     algorithmic strategy chosen by the trader.<br>
@@ -392,10 +392,10 @@ mainContent = {
             {
                 body:`
 <div class="bio">
-<p>I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management in Brazilian IT, Banking and Fintech companies.</p>
-<p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro, one of the most prestigious universities in Brazil, and worked in the Robotics Lab until graduation.
-I post-graduated in Computer Science & System Project Management from Pontifícia Universidade Católica - PUC also a renowned university in Brazil.</p>
-<p>Over the last 10 years, I've been working asynchronously as a Senior Full-Stack Developer in a full remote position in a small Fintech company that develops stock market trade solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies.</p>
+<p>I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management in Brazilian IT, Banking, Startup and Fintech companies.</p>
+<p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro - UFRJ, one of the most prestigious universities in Brazil, and worked in their Robotics Lab until graduation. I post-graduated in Computer Science & System Project Management from Pontifícia Universidade Católica - PUC also a renowned university in Brazil.</p>
+<p>Over the last 10 years, I've been working asynchronously as a Senior C# .NET Full Stack Developer in a full remote position in a small Fintech company that develops stock market trading solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies.</p>
+<p>Impacting real users who are wealthy and high-profile banking customers, this Fintech project is a dream come true for people that love software engineering and problem-solving routine because of its technical challenges we face everyday. It is a real world sandbox in production, where I do a lot of research, learn and experiment new techie acknowledgments in countless use case scenarios, that can be applied beyond borders in many IT projects of companies around the world. So, I am sure I can bring value and a humble collaboration to my future partners, sharing thoughts and having an active listening approach to my colleagues opinions, growing a deeper connection based in empathy, respect and friendliness.</p>
 <p>I'm currently looking for the opportunity to work remotely in IT projects abroad.</p>
 <p>My hour is a commodity that your budget can take advantage of.
 As I work from the seashore of the wonderful City of Rio de Janeiro, Brazil, we can together be very happy with the currency exchange rates. So, it's definitely a win–win game for us!</p>
@@ -474,7 +474,7 @@ As I work from the seashore of the wonderful City of Rio de Janeiro, Brazil, we 
                 body: buildList(data.outerITWorld),
                 index: 8,
                 tagImg: 'assets/img/milky-way.jpg',
-                tit: 'Outer IT World'
+                tit: 'Outer IT World Courses'
             }
         ].sort((a,b)=>b.index-a.index);
 
