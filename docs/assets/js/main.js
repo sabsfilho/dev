@@ -35,6 +35,7 @@ const CtMain = function(){
                     The main purpose of PutCallBot is to replace the hard work of following the market tick
 by tick giving time to the trader evaluate better strategies for his portfolio.<br><br>
 <a href="assets/doc/PutCallBot_v138_en.pdf">click here to open the Compliance Document sent to XP Broker in March, 2017</a>
+<div><img src="assets/img/SystemDesign.jpg" /></div>
 <br><br>`},
                 ]
             },
