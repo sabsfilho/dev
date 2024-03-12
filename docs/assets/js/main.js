@@ -15,8 +15,14 @@ const CtMain = function(){
                 bdy: 'exp_itprv'
             }
         ]
-    };
-    const showCase = {
+    },
+    buildImagesPanel = (k, arr) => {
+        const xs = ['<div class="ImagesPanel">'];
+        arr.forEach(x=>xs.push(`<div><div>${x[0]}</div><img src="assets/img/${k}/${x[1]}.jpg" /></div>`));
+        xs.push('</div>')
+        return xs.join('')
+    },
+    showCase = {
         projs: [
             {
                 tit: 'Jobs',
@@ -34,8 +40,20 @@ const CtMain = function(){
                     When the work is done, all these strategies can be published to production in the real world environment.<br>
                     The main purpose of PutCallBot is to replace the hard work of following the market tick
 by tick giving time to the trader evaluate better strategies for his portfolio.<br><br>
-<a href="assets/doc/PutCallBot_v138_en.pdf">click here to open the Compliance Document sent to XP Broker in March, 2017</a>
-<div><img src="assets/img/SystemDesign.jpg" /></div>
+Following this is a document that I made explaining this project better.<br>
+<a href="assets/doc/PutCallBot_v138_en.pdf">click here to open the Compliance Document sent to XP Broker in March, 2017</a><br><br>
+This project was inspired by the Renaissance Technologies Hedge Fund which was the first company using quantitative models derived from mathematical and statistical analysis in an Automated Trading System (ATS). Their Medallion fund has generated average annual returns of 66 percent.
+If you are even more interested about our project I recommend this book that tells the amazing story about Jim Simon, who is considered the greatest money maker in modern financial history.<br>
+<a href="https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X">The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution Hardcover - Amazon Store</a>
+${buildImagesPanel('pcb', 
+    [
+        ['the system general concept', 'SystemDesign'],
+        ['the future - machine learning pedicting model with TensorFlow LSTM using Google Colab', 'LSTMPredictingModel'],
+        ['a swing trade strategy shown by the portfolio manager screen','PortfolioManager'],
+        ['a day trade strategy using automation and the manual place order screen','PlaceOrderWindow'],
+        ['market data, bid and offer price, online position data and more on the multi view trading screen','TradingScreen'],
+        ['portfolio results against many financial benchmarks by the strategy performance chart','StrategyPerformanceChart']
+    ])}
 <br><br>`},
                 ]
             },
@@ -155,6 +173,7 @@ by tick giving time to the trader evaluate better strategies for his portfolio.<
             'Project Management (Kanban ✔️, SCRUM, Waterfall)',
             'Git, GitHub, VisualSVN Subversion, TortoiseSVN'
         ],
+        softskills: 'Friendliness,Active Listening,Collaboration,Adaptability,Research,Problem Solving,Self-taught Mindset'.split(','),
         certifications: [
             ['Back End Development and APIs @ FreeCodeCamp - January 31, 2024','https://www.freecodecamp.org/certification/sabsfilho/back-end-development-and-apis','Build microservices with npm, Node.js, Express.js, Mongoose.js and Mongo Database.'],
             ['Relation Database Certification @ FreeCodeCamp - January 29, 2024','https://www.freecodecamp.org/certification/sabsfilho/relational-database-v8','Create, query a relational database using PostgreSQL, PSQL, VS Code and Linux Bash commands. Build scripts for version control system commands using Git.'],
@@ -436,44 +455,50 @@ As I work from the seashore of the wonderful City of Rio de Janeiro, Brazil, we 
                 tit: 'Skills'
             },
             {
-                body: buildShowcases(),
+                body: buildList(data.softskills),
                 index: 2,
+                tagImg: 'assets/img/softskills.jpg',
+                tit: 'Core Skills'
+            },
+            {
+                body: buildShowcases(),
+                index: 3,
                 tagImg: 'assets/img/library.jpg',
                 tit: 'Showcases'
             },
             {
                 body: buildList(data.certifications),
-                index: 3,
+                index: 4,
                 tagImg: 'assets/img/lego-bricks.jpg',
                 tit: 'Certifications'
             },
             {
                 body: buildExperiences(),
-                index: 4,
+                index: 5,
                 tagImg: 'assets/img/trophies4.jpg',
                 tit: 'Work Experience'
             },
             {
                 body: buildList(data.profiles),
-                index: 7,
+                index: 8,
                 tagImg: 'assets/img/stamps.jpg',
                 tit: 'Profiles'
             },
             {
                 body: buildList(data.education),
-                index: 5,
+                index: 6,
                 tagImg: 'assets/img/education.jpg',
                 tit: 'Education'
             },
             {
                 body: buildList(data.awards),
-                index: 6,
+                index: 7,
                 tagImg: 'assets/img/medals.jpg',
                 tit: 'Awards'
             },
             {
                 body: buildList(data.outerITWorld),
-                index: 8,
+                index: 9,
                 tagImg: 'assets/img/milky-way.jpg',
                 tit: 'Outer IT World Courses'
             }

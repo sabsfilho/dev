@@ -1746,3 +1746,10 @@ li a:hover,
 .accord-panel ul {
   padding-left: 15px
 }
+.ImagesPanel > div > :first-child {
+  text-align: center;
+  font-size:14px;
+  font-weight: bold;
+  margin-top:20px;
+  margin-bottom:5px;
+}
