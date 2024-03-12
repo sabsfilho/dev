@@ -48,7 +48,7 @@ If you are even more interested about our project I recommend this book that tel
 ${buildImagesPanel('pcb', 
     [
         ['the system general concept', 'SystemDesign'],
-        ['the future - machine learning pedicting model with TensorFlow LSTM using Google Colab', 'LSTMPredictingModel'],
+        ['the future - machine learning predicting model with TensorFlow LSTM using Google Colab', 'LSTMPredictingModel'],
         ['a swing trade strategy shown by the portfolio manager screen','PortfolioManager'],
         ['a day trade strategy using automation and the manual place order screen','PlaceOrderWindow'],
         ['market data, bid and offer price, online position data and more on the multi view trading screen','TradingScreen'],
