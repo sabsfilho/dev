@@ -40,7 +40,8 @@ app.post(
     const contact = new ContactSkill({
       email: req.body.email,
       ip: req.headers["x-forwarded-for"],
-      msg: req.body.msg
+      msg: req.body.msg,
+      dt: Date.now()
     });
 
     await contact.save();
