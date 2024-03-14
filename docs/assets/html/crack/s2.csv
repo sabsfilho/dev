@@ -1,0 +1,7 @@
+﻿a TCP/IP network uses a three-way handshake to establish a client-server connection, where:
+
+The client sends an SYN request to check whether the server has open ports.
+
+The server with open ports responds by transmitting an SYN-ACK packet (acknowledgment packet).
+
+The client acknowledges the response by returning an ACK packet to the server.

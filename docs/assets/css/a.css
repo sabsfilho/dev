@@ -1,0 +1,45 @@
+﻿:root{
+  --back-color02:#83A0E6;
+  --back-color03:#b9c7e9;
+}
+
+html {
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  box-sizing: border-box;
+}
+body {
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.btn{
+	cursor:pointer;
+  padding:5px;
+  font-weight: bold;
+}
+.btn + * { 
+  display: none;
+}
+.tit1{
+  background-color: var(--back-color02);
+}
+.tit1:hover{
+  background-color: var(--back-color03);
+}
+.tit2{
+  background-color: var(--back-color03);
+}
+.tit2:hover{
+  background-color: var(--back-color02);
+}
+.tit2 + *{
+  font-size: 20px;
+  padding:10px
+}
+i{
+	font-size:10px
+}

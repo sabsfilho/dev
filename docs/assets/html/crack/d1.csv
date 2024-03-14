@@ -1,0 +1,16 @@
+
+what are we going to design today ?
+
+functional requirements
+
+number of users
+how many users ?
+and how many daily active users ?
+how many files to be uploaded ?
+whats the average file size ?
+file limit per user
+number of daily requests
+size of these requests or files
+storage RDBMS (mysql, postgre), nosql (mongodb, dynamobd, cassandra)
+load balance round robin concept
+bandwidth traffic

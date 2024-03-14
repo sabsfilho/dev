@@ -1,0 +1,7 @@
+﻿It is a client-side code injection attack where an adversary executes malicious scripts to perform negative actions in an application.
+
+It typically occurs due to needing more security considerations in the development cycle.
+
+Data validation is the best way to combat an XSS vulnerability, both on the server and on the client side.
+
+Encryption and input validation is fundamental

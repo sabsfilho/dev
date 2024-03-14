@@ -1,0 +1,7 @@
+﻿In the BoxBrazil e-commerce project we suffered a brute force attack coming from inside the AWS network that the firewall couldn't filter.
+ 
+I implemented a strict password policy via system-level enforcement in most of all my web services. so guaranteed no access to our database and information without strong authentication, strong password requirements and one direction encryption.
+
+And those resources that are public and not sensible information , I block the offending IP request returning a bad request 400 code,
+
+So this platform worked properly during the attack and until AWS support resolved the attack.

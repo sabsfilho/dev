@@ -1,0 +1,39 @@
+﻿1. Injection
+
+Injection flaws, such as SQL, NoSQL, OS and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.
+
+2. Broken Authentication
+
+Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys or session tokens, or to exploit other implementation flaws to assume users’ identities.
+
+3. Sensitive Data Exposure
+
+Many web applications and APIs do not properly protect sensitive data, such as financial data, healthcare data and other personally identifiable information (PII). Attackers may steal or modify weakly protected data to conduct credit card fraud, identity theft or other crimes.
+
+4. XML External Entities (XXE)
+
+Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution and denial-of-service attacks.
+
+5. Broken Access Control
+
+Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights and more.
+
+6. Security Misconfiguration
+
+Security misconfiguration is the most commonly seen issue in the OWASP Top Ten. This is often a result of insecure default configurations, incomplete or ad hoc configurations, open cloud storage, misconfigured HTTP headers and verbose error messages containing sensitive information.
+
+7. Cross Site Scripting (XSS)
+
+XSS flaws occur when an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user-supplied data using a browser API that can create HTML or JavaScript.
+
+8. Insecure Deserialization
+
+Insecure deserialization often leads to remote code execution. Even so, they can be used to perform attacks, including replay attacks, injection attacks and privilege escalation attacks.
+
+9. Using Components with Known Vulnerabilities
+
+Components, such as libraries, frameworks and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover.
+
+10. Insufficient Logging and Monitoring
+
+Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems — and tamper, extract or destroy data.

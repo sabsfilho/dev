@@ -1,0 +1,11 @@
+﻿the last time I was in a crunch was last week when my stakeholder demanded to change the profile of our staging server to production 
+and even more he requested to activate the real trading signals to the broker.
+
+I had published a new feature to this server to be evaluated before deploying to production, but unfortunately, this feature started to throw an exception in a situation that didn't happen in our development phase.
+
+Because this server became a server with a production profile, I had to wait until the stock market operational period ended. 
+Luckily this error crashed a tiny portion of the system functionality.
+
+To avoid this kind of situation happening again we need to stick to the standard of the project which states we must not get rid of our staging environment.
+
+We should instantiate another production machine.
