@@ -123,7 +123,7 @@
                 nxt.style.display = hidden ? 'none' : 'block';
 				if (z && !nxt.innerHTML) {			
 					nxt.innerHTML = 'loading...';
-					fetch(`assets/html/crack/${z}.csv`)
+					fetch(`assets/html/crack/${z}.html`)
 					.then(x => x.text())
 					.then(x => nxt.innerHTML = parse(x))        
 					.catch(error => {
