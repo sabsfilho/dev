@@ -2,6 +2,9 @@
 
     const bs = {
 		B3:'starting...',
+		B17:'Why are you leaving your current job?',
+		B18:'What are you looking for in a new position?',
+		B19:'How would your boss and coworkers describe you?',
 		B4:'Tell me something about yourself MEDIUM',
 		B0:'Tell me something about yourself LONG',
 		B11:'How would you describe yourself? SHORT-SOFT SKILLS',
@@ -18,6 +21,45 @@
 		B14:'How have your talents helped you succeed in different areas of your life?',
 		B15:'What do you visualize for your career?',
 		B16:'What would be your top priorities in your next role?'
+	},
+	scs = {
+		SC1: 'What technical skills or tools are you proficient in that are directly relevant to this role?',
+		SC2: 'Can you provide examples of how you have applied your skills in previous projects or tasks?',
+		SC3: 'Are there any specific certifications or training programs you have completed that enhance your abilities for this position?',
+		SC4: 'How do you stay updated and continue to develop your skills in your field?',
+		SC5: 'Tell me about a time you demonstrated leadership skills',
+		SC6: 'Helper'
+	},
+	ps = {
+		PS1: 'Can you provide an example of a complex problem you encountered at work and walk me through the steps you took to solve it?',
+		PS2: 'What is the most creative idea or project youve generated in your current role?',
+		PS3: 'Tell me about a time when you identified a process or workflow that needed improvement. What did you do about it?',
+		PS4: 'Have you ever had a deadline you werent able to meet? What happened?',
+		PS5: 'Describe a time when you had to make a decision based on limited information or under time pressure. How did you handle that?',
+		PS0: 'Helper'
+	},
+	tcs = {
+		TC1: 'Do you prefer teamwork or working independently?',
+		TC2: 'Tell me about a time you worked well as part of a team.',
+		TC3: 'How do you handle disagreements or conflicts within a team?',
+		TC4: 'Have you collaborated with individuals from different departments?',
+		TC5: 'Have you ever had difficulty working with a manager or other team members?',
+		TC6: 'Helper'
+	},
+	cps = {
+		CP1: 'Where do you see yourself professionally in the next few years?',
+		CP2: 'Would you say that this position aligns with your professional goals?',
+		CP3: 'Whats one thing you do every day that brings you closer to reaching your career goals?',
+		CP4: 'What do you hope to accomplish within the next few years at this company?',
+		CP5: 'How do you plan to stay motivated and committed to your career goals in the face of challenges or setbacks?',
+		CP6: 'Helper'
+	},
+	sbs = {
+		SB1: 'Can you provide an overview of your salary expectations for this role?',
+		SB2: 'Are there any specific benefits or perks that you value and would like to see included in your compensation package?',
+		SB3: 'Can you share any considerations or factors that influenced your salary expectations for this position?',
+		SB4: 'What are your priorities when it comes to the overall compensation package, including salary, benefits, and potential growth opportunities?',
+		SB5: 'Helper'
 	},
 	cs = {
 		C0: 'C# Interview Questions'
@@ -36,6 +78,11 @@
 	},
 	gs = {
 		'Behavioral': bs,
+		'Skills and Competencies': scs,
+		'Problem-solving and Critical Thinking': ps,
+		'Teamwork and Collaboration': tcs,
+		'Career Planning': cps,
+		'Salary and Benefits': sbs,
 		'C#': cs,
 		'Security': secs,
 		'Design': ds,
