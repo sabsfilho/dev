@@ -70,7 +70,8 @@
 		S2: 'What is a three-way handshake?',
 		S3: 'What are some factors that can cause software vulnerabilities?',
 		S4: 'How would you prevent hackers from conducting this kind of attack?',
-		S5: 'Open Web Application Security Project (OWASP)'
+		S5: 'Open Web Application Security Project (OWASP)',
+		S6: 'ISO/IEC 27001:2022'
 	},
 	ds = {
 		D0: 'GoF Design Patterns',
@@ -123,7 +124,7 @@
                 nxt.style.display = hidden ? 'none' : 'block';
 				if (z && !nxt.innerHTML) {			
 					nxt.innerHTML = 'loading...';
-					fetch(`assets/html/crack/${z}.html`)
+					fetch(`assets/html/crack/${z}.csv`)
 					.then(x => x.text())
 					.then(x => nxt.innerHTML = parse(x))        
 					.catch(error => {

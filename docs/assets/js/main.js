@@ -3,11 +3,11 @@ const CtMain = function(){
     const experience = {
         projs: [
             {
-                tit: 'Put.Call.Bot, Quant Trading System Fintech, RJ-Brazil<br/>Working remote since September 2013<br/>C# .NET Full Stack Developer',
+                tit: 'Put.Call.Bot, Quant Trading System Fintech, RJ-Brazil<br/>Working remote since September 2013<br/>JavaScript C# .NET Full Stack Developer',
                 bdy: 'exp_pcb'
             },
             {
-                tit: 'BoxBrazil, Logistics Startup, RJ-Brazil<br/>October 2010 - September 2013<br/>C# .NET Full Stack Developer',
+                tit: 'Box.Brazil, Logistics Startup, RJ-Brazil<br/>October 2010 - September 2013<br/>JavaScript C# .NET Full Stack Developer',
                 bdy: 'exp_bxbr'
             },
             {
@@ -28,7 +28,7 @@ const CtMain = function(){
                 tit: 'Jobs',
                 projs: [
                     {p:'',u:'http://h2.putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,Subversion,SQL SERVER,IIS,AWS Cloud',d:`
-                    <div class="accord-subtit">Since 2013 as C# .NET Full Stack Developer</div>
+                    <div class="accord-subtit">Since 2013 as JavaScript C# .NET Full Stack Developer</div>
                     Put.Call.Bot is a software solution that evaluates quantitative analysis from real time
                     Bovespa exchange market data, sending buy and sell signals to broker according to the
                     algorithmic strategy chosen by the trader.<br>
@@ -41,7 +41,7 @@ const CtMain = function(){
                     The main purpose of PutCallBot is to replace the hard work of following the market tick
 by tick giving time to the trader evaluate better strategies for his portfolio.<br><br>
 Following this is a document that I made explaining this project better.<br>
-<a href="assets/doc/PutCallBot_v138_en.pdf">click here to open the Compliance Document sent to XP Broker in March, 2017</a><br><br>
+<a href="assets/doc/PutCallBot_v138_en.pdf">click here to open some pages of the Compliance Document sent to XP Broker in March, 2017</a><br><br>
 This project was inspired by the Renaissance Technologies Hedge Fund which was the first company using quantitative models derived from mathematical and statistical analysis in an Automated Trading System (ATS). Their Medallion fund has generated average annual returns of 66 percent.
 If you are even more interested about our project I recommend this book that tells the amazing story about Jim Simon, who is considered the greatest money maker in modern financial history.<br>
 <a href="https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X">The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution Hardcover - Amazon Store</a>
@@ -173,7 +173,7 @@ ${buildImagesPanel('pcb',
             'Project Management (Kanban ✔️, SCRUM, Waterfall)',
             'Git, GitHub, VisualSVN Subversion, TortoiseSVN'
         ],
-        softskills: 'Friendliness,Active Listening,Collaboration,Adaptability,Research,Problem Solving,Self-taught Mindset'.split(','),
+        softskills: ' T-shaped person,Friendliness,Active Listening,Collaboration,Adaptability,Research,Problem Solving,Self-taught Mindset'.split(','),
         certifications: [
             ['Back End Development and APIs @ FreeCodeCamp - January 31, 2024','https://www.freecodecamp.org/certification/sabsfilho/back-end-development-and-apis','Build microservices with npm, Node.js, Express.js, Mongoose.js and Mongo Database.'],
             ['Relation Database Certification @ FreeCodeCamp - January 29, 2024','https://www.freecodecamp.org/certification/sabsfilho/relational-database-v8','Create, query a relational database using PostgreSQL, PSQL, VS Code and Linux Bash commands. Build scripts for version control system commands using Git.'],
@@ -414,8 +414,16 @@ mainContent = {
 <div class="bio">
 <p>I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management in Brazilian IT, Banking, Startup and Fintech companies.</p>
 <p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro - UFRJ, one of the most prestigious universities in Brazil, and worked in their Robotics Lab until graduation. I post-graduated in Computer Science & System Project Management from Pontifícia Universidade Católica - PUC also a renowned university in Brazil.</p>
-<p>For the last 10 years I have been working asynchronously as a Full Stack Developer specializing in C# .NET in a full remote position in a small Fintech company that develops stock market trading solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies.</p>
+<p>I am a researcher by nature and one of my research projects was awarded and recognized with the ABCM-EMBRAER 2004 prize.</p>
+<p>I am a T-shaped person collaborating and nurturing multiple areas of connections. As I am a developer with a mechanical engineering, academic research and financial background, I can easily cross beyond borders building strong bridges with network, security, and business teams.</p>
+<p>For the last 10 years I have been working asynchronously as a Full Stack Developer specializing in JavaScript and C# .NET.  in a full remote position in a small Fintech company that develops stock market trading solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies.</p>
+<a class="toggle-link" data-hidden="click here to see more info" data-shown="show less"></a>
+<div class="toggle-panel">
 <p>Impacting real demanding users who are wealthy and high-profile banking customers, this Fintech project is a dream come true for people that love software engineering and problem-solving routine because of its technical challenges we face everyday. It is a real world sandbox in production, where I do a lot of research, learn and experiment new techie acknowledgments in countless use case scenarios, that can be applied beyond borders in many IT projects of companies around the world. So, I am sure I can bring value and a humble collaboration to my future partners, sharing thoughts and having an active listening approach to my colleagues opinions, growing a deeper connection based in empathy, respect and friendliness.</p>
+<p>All the business logic implementations I try to apply some design patterns concepts detailed in the Gang of Four book, also I like to get inspired by some SOLID ideas and Domain-Driven Design to help non-coders to understand what I've meant to deliver. Before coding, I collect all kinds of requirements or specifications to clearly describe and tell a good user story, a task or use case scenario. This procedure helps me continue improving the concept and also deliver small pieces to a business partner follows its evaluation.</p>
+<p>Besides the business logic in the backend side written in C#, for the frontend I also created an extensive JavaScript framework library to help build dynamic and responsive web interfaces, including dialog windows, forms, dynamic and smart spreadsheets, reports, interactive charts, and client-server communication consuming our REST API services.</p>
+<p>Nowadays I am migrating some old modules that use legacy .NET web services to a modern microservice concept using Node.js and React.js. I recently got some  proficiency certifications in the MERN stack that helped me get the support I needed to start this transition.</p>
+<p>Recently, I started a personal project to use some Deep Learning techniques using the ML.NET Framework with the purpose of getting better results in our prediction models. For this project I started to use some libraries and models using Python, Pandas, Jupyter, Seaborn, Scikit-learn, Keras and TensorFlow.</p>
 <p>I'm currently looking for the opportunity to work remotely in IT projects abroad.</p>
 <p>My hour is a commodity that your budget can take advantage of.
 As I work from the seashore of the wonderful City of Rio de Janeiro, Brazil, we can together be very happy with the currency exchange rates. So, it's definitely a win–win game for us!</p>
@@ -433,6 +441,7 @@ As I work from the seashore of the wonderful City of Rio de Janeiro, Brazil, we 
 </div>
 </div>
 <button id="sendbtn">Send</button>
+</div>
 </div>
 </div>
                 `,

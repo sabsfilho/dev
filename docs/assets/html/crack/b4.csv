@@ -1,10 +1,16 @@
 ﻿I've been working for more than 25 years in software development in Brazilian Banking, Startup and Fintech companies.
 
-For the last 10 years I have been working remotely in a Fintech as a Full Stack Developer specializing in C# .NET.
+
+
+For the last 10 years I have been working remotely in a Fintech as a Full Stack Developer specializing in JavaScript and C# .NET.
 
 This Fintech provides stock market trading solutions, including an automated trading system, using Quant strategies.
 
 I designed, developed and implemented all the system architecture and the business logic.
+
+Besides the process and tasks in the backend side written in C#, for the frontend I also created an extensive javascript framework library to help build dynamic and responsive web interfaces, including dialog windows, forms, dynamic and smart spreadsheets, reports, interactive charts, and client-server communication consuming our REST API services.
+
+Nowadays I am migrating some old modules that use legacy .NET web services to a modern microservice concept using Node.js and React.js. I recently got some proficiency certifications in the MERN stack that helped me get the support I needed to start this transition.
 
 I also designed all the infrastructure in AWS cloud.
 
