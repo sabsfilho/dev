@@ -423,7 +423,7 @@ mainContent = {
 <p>All the business logic implementations I try to apply some design patterns concepts detailed in the Gang of Four book, also I like to get inspired by some SOLID ideas and Domain-Driven Design to help non-coders to understand what I've meant to deliver. Before coding, I collect all kinds of requirements or specifications to clearly describe and tell a good user story, a task or use case scenario. This procedure helps me continue improving the concept and also deliver small pieces to a business partner follows its evaluation.</p>
 <p>Besides the business logic in the backend side written in C#, for the frontend I also created an extensive JavaScript framework library to help build dynamic and responsive web interfaces, including dialog windows, forms, dynamic and smart spreadsheets, reports, interactive charts, and client-server communication consuming our REST API services.</p>
 <p>Nowadays I am migrating some old modules that use legacy .NET web services to a modern microservice concept using Node.js and React.js. I recently got some  proficiency certifications in the MERN stack that helped me get the support I needed to start this transition.</p>
-<p>Recently, I started a personal project to use some Deep Learning techniques using the ML.NET Framework with the purpose of getting better results in our prediction models. For this project I started to use some libraries and models using Python, Pandas, Jupyter, Seaborn, Scikit-learn, Keras and TensorFlow.</p>
+<p>Recently, I started a personal project to use some Deep Learning techniques using the ML.NET Framework with the purpose of getting better results in our prediction models. For this project I started to use some libraries and models using Python, Pandas, Jupyter, Seaborn, Scikit-learn, Keras and TensorFlow coding in VSCode and Google Colab.</p>
 <p>I'm currently looking for the opportunity to work remotely in IT projects abroad.</p>
 <p>My hour is a commodity that your budget can take advantage of.
 As I work from the seashore of the wonderful City of Rio de Janeiro, Brazil, we can together be very happy with the currency exchange rates. So, it's definitely a win–win game for us!</p>
@@ -572,7 +572,7 @@ ${c.body}
     };
 
     const addMailDialog = ()=>{
-        const m = '115,97,98,115,102,105,108,104,111,64,103,109,97,105,108,46,99,111,109'.split(',').map(x=>String.fromCharCode(x)).join('');
+        const m = '115,97,109,117,101,108,46,115,97,110,116,111,115,46,101,110,103,105,110,101,101,114,64,103,109,97,105,108,46,99,111,109'.split(',').map(x=>String.fromCharCode(x)).join('');
         const pnt = getFirstByClass(document, 'contact'),
         dlg = addDialog(
             'This is my contact e-mail',
@@ -583,6 +583,7 @@ ${c.body}
             pnt, 
             'mailto'
         );
+        getFirstByClass(dlg, 'dlg').classList.add('dlgmail');
         getFirstByClass(dlg, 'copy').addEventListener('click', function(){
             const sty = getFirstByClass(dlg, 'tooltipcopy').style;
             navigator.clipboard.writeText(m);

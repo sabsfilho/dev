@@ -44,4 +44,15 @@ class Queue_LeetCode_BinaryNumbers {
         }
         return w;
     }
+	
+	private static void ConvertToBinary(int n) {
+		var fifo = new Queue<int>();
+		fifo.Enqueue(1);
+		for(int i = 0; i < n. i++){
+			int x = fifo.Dequeue();
+			Console.WriteLine(x);
+			fifo.Enqueue(x * 10);
+			fifo.Enqueue(x * 10 + 1);
+		}
+	}
 }

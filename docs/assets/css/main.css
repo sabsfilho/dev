@@ -1724,6 +1724,11 @@ li a:hover,
   font-size:12px;
 }
 
+
+.dlgmail{
+  width: 400px !important
+}
+
 .email-blk{
   display: flex;
   justify-content: space-between;
