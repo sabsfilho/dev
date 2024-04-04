@@ -415,7 +415,7 @@ mainContent = {
 <p>I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management in Brazilian IT, Banking, Startup and Fintech companies.</p>
 <p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro - UFRJ, one of the most prestigious universities in Brazil, and worked in their Robotics Lab until graduation. I post-graduated in Computer Science & System Project Management from Pontifícia Universidade Católica - PUC also a renowned university in Brazil.</p>
 <p>I am a researcher by nature and one of my research projects was awarded and recognized with the ABCM-EMBRAER 2004 prize.</p>
-<p>I am a T-shaped person collaborating and nurturing multiple areas of connections. As I am a developer with a mechanical engineering, academic research and financial background, I can easily cross beyond borders building strong bridges with network, security, and business teams.</p>
+<p>I am a T-shaped person collaborating and nurturing multiple areas of connections. As I am a developer with a mechanical engineering, academic research and financial background, I can easily cross beyond borders building strong bridges with network, security, compliance, sales and business teams.</p>
 <p>For the last 10 years I have been working asynchronously as a Full Stack Developer specializing in JavaScript and C# .NET.  in a full remote position in a small Fintech company that develops stock market trading solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies.</p>
 <a class="toggle-link" data-hidden="click here to see more info" data-shown="show less"></a>
 <div class="toggle-panel">
