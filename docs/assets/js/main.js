@@ -27,26 +27,26 @@ const CtMain = function(){
             {
                 tit: 'Jobs',
                 projs: [
-                    {p:'',u:'http://h2.putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,Subversion,SQL SERVER,IIS,AWS Cloud',d:`
+                    {p:'',u:'http://putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,Subversion,SQL SERVER,IIS,AWS Cloud',d:`
                     <div class="accord-subtit">Since 2013 as JavaScript C# .NET Full Stack Developer</div>
-                    Put.Call.Bot is a software solution that evaluates quantitative analysis from real time
-                    Bovespa exchange market data, sending buy and sell signals to broker according to the
-                    algorithmic strategy chosen by the trader.<br>
-                    This automated trading system is a very powerful web platform that allows our clients work from any web browser or device.
-                    It is designed to negotiate stocks, options, derivatives and future instruments in a low or high frequency trading way and manages day trade or swing trade positions as well.<br>
-                    The trader can work with virtual orders or set to route them to his broker, also one or more broker accounts can be saved and used. <br>
-                    Our platform allows the trader to create, debug, test, optimize, and execute trading robots in an exclusive environment totally independent from the production server. <br>
-                    The user can request a development server to safely build and test their algorithmics. <br>
-                    When the work is done, all these strategies can be published to production in the real world environment.<br>
-                    The main purpose of PutCallBot is to replace the hard work of following the market tick
-by tick giving time to the trader evaluate better strategies for his portfolio.<br><br>
-Following this is a document that I made explaining this project better.<br>
-<a href="assets/doc/PutCallBot_v138_en.pdf">click here to open some pages of the Compliance Document sent to XP Broker in March, 2017</a><br><br>
-This project was inspired by the Renaissance Technologies Hedge Fund which was the first company using quantitative models derived from mathematical and statistical analysis in an Automated Trading System (ATS). Their Medallion fund has generated average annual returns of 66 percent.
-If you are even more interested about our project I recommend this book that tells the amazing story about Jim Simon, who is considered the greatest money maker in modern financial history.<br>
-<a href="https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X">The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution Hardcover - Amazon Store</a>
+					<br>
+					<p><img class="pcb-logo" src="assets/img/pcb/PCBFolders.jpg" alt="company logo" /></p>
+					<p>Put.Call.Bot is a software solution that evaluates quantitative analysis from real time Bovespa exchange market data, sending buy and sell signals to brokers according to the algorithmic strategy chosen by the trader.</p>
+					<p>By providing investment robots that operate 100% automatically, Put.Call.Bot positions itself at the forefront of the financial revolution, offering solutions that transcend traditional methods. These automated systems are designed to analyze real-time data, identify market opportunities, and execute transactions swiftly, all without human intervention.</p>
+                    <p>This approach not only increases the effectiveness of operations but also significantly reduces the potential for errors resulting from impulsive or emotional decisions. The trust placed in Put Call Bot's sophisticated algorithms reflects the company's dedication to providing its clients with a safer, transparent, and more effective investment experience.</p>
+					<p>This automated trading system is a very powerful web platform that allows our clients to work from any web browser or device. It is designed to negotiate stocks, options, derivatives and future instruments in a low or high frequency trading way and manages day trade or swing trade positions as well.</p>
+                    <p>The trader can work with virtual orders or set to route them to his broker, also one or more broker accounts can be saved and used.</p>
+                    <p>Our platform allows the trader to create, debug, test, optimize, and execute trading robots in an exclusive environment totally independent from the production server, and also a development server can be requested by them to safely build and test their algorithms.</p>
+                    <p>When the work is done, all these strategies can be published to production in the real world environment. The main purpose of PutCallBot is to replace the hard work of following the market tick by tick giving time to the trader to evaluate better strategies for his portfolio.</p>
+					<p>Following this is a document that I made explaining this project better.<br>
+					<a href="assets/doc/PutCallBot_v138_en.pdf">click here to open some pages of the Compliance Document sent to XP Broker in March, 2017</a>
+					</p>
+					<p>This project was inspired by the Renaissance Technologies Hedge Fund which was the first company using quantitative models derived from mathematical and statistical analysis in an Automated Trading System (ATS). Their Medallion fund has generated average annual returns of 66 percent.
+					If you are even more interested about our project I recommend this book that tells the amazing story about Jim Simon, who is considered the greatest money maker in modern financial history.<br>
+					<a href="https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X">The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution Hardcover - Amazon Store</a></p>
 ${buildImagesPanel('pcb', 
     [
+        ['Automated Trading System for Hedge Fund Managers', 'PCBDesk'],
         ['the system general concept', 'SystemDesign'],
         ['the future - machine learning predicting model with TensorFlow LSTM using Google Colab', 'LSTMPredictingModel'],
         ['a swing trade strategy shown by the portfolio manager screen','PortfolioManager'],
@@ -54,7 +54,8 @@ ${buildImagesPanel('pcb',
         ['market data, bid and offer price, online position data and more on the multi view trading screen','TradingScreen'],
         ['portfolio results against many financial benchmarks by the strategy performance chart','StrategyPerformanceChart']
     ])}
-<br><br>`},
+<div class="pcb-logo"><div>Put.Call.Bot Technologies</div>
+<img src="assets/img/pcb/PCBLogo.jpg" alt="company logo" /></div>`},
                 ]
             },
             {
@@ -326,7 +327,7 @@ stepping in and out as handling a bad asset position to secure the fund health a
             const addK = (k,l) => {
                 let v = z[k];
                 if (v) {
-                    if (l) v = [l,v].join('');
+                    if (l) v = [l,v.split(',').join(', ')].join('');
                     zs.push(`<div class="accord-${k}">${v}</div>`)
                 }
             },

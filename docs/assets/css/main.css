@@ -1758,3 +1758,11 @@ li a:hover,
   margin-top:20px;
   margin-bottom:5px;
 }
+.pcb-logo {
+  text-align: center;
+  margin:20px 0
+}
+.pcb-logo > :first-child{
+	font-size: 12px;
+    font-weight: bold;
+}
