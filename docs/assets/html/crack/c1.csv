@@ -1,0 +1,111 @@
+﻿Dependency injection=is a design pattern that helps achieve Inversion of Control, inject your services and dependencies into your controllers, middleware, and other components
+Middleware=receives and processes HTTP requests and responses within the application's pipeline.
+Scaffolding=generates code automatically based on a database schema
+SignalR=enables real-time ni directional communication between clients and servers
+LINQ=declarative syntax to query and manipulate data using
+Event-driven architecture=Azure Service Bus, RabbitMQ, and Kafka using Dependency Injection container
+Tag Helpers=simplify creating and managing HTML elements in Razor views
+Unit testing=XUnit,NUnit
+Identity=provides authentication and authorization features
+data validation by using data annotations and trigger validation calling the ModelState.IsValid
+BackgroundTasks=BackgroundService,long-running operations that are executed asynchronously in a separate thread
+
+1. What is ASP.NET Core, and what are its advantages over traditional ASP.NET?
+ASP.NET Core is an open-source, cross-platform web framework. It's a significant upgrade from traditional ASP.NET, offering better performance, enhancing modularity and increasing scalability. Its advantages of this include incorporating built-in support for dependency injection, enabling a more efficient hosting model and providing the capability to run on multiple platforms. This flexibility allows developers to build and deploy modern web applications more efficiently.
+
+2. Explain how the .NET Core framework differs from the .NET Framework?
+.NET Core is a cross-platform, open-source framework that helps developers build cloud applications. It supports multiple platforms, whereas .NET Framework only supports one platform. .NET Core is modular, which makes it easier to create lightweight applications with only the components. It also has better performance because of various optimisations and improvements.
+
+3. What is the role of middleware in ASP.NET Core, and how do you configure it?
+Middleware in ASP.NET Core receives and processes HTTP requests and responses within the application's pipeline. You can group middleware components to perform various tasks, such as routing, authenticating and caching. To configure middleware, I use the Configure method in the Startup class. I can define the order of middleware components inside this method by calling the 'Use' extension methods on the IApplicationBuilder instance, ensuring that each component execution in a specific sequence.
+
+4. Distinguish ConfigureServices from Configure methods in the Startup class.
+Developers use the ConfigureServices method in the Startup class for registering services and configuring dependency injection in the application. It comes before the Configure method and has an IServiceCollection parameter, which allows developers to add and configure services. The Configure method helps create the application's request processing pipeline by configuring middleware components. It takes an IApplicationBuilder parameter, which defines the middleware components' order. In summary, ConfigureServices is for service registration and dependency injection configuration, while Configure is for middleware configuration.
+
+5. What is dependency injection in ASP.NET Core, and how is it implemented?
+Dependency injection is a design pattern that helps achieve Inversion of Control (IoC) between classes and their dependencies, making the code more maintainable and testable. It is a pattern used to create loosely coupled code. ASP.NET Core incorporates dependency injection as a key feature and enables the automatic creation and management of component dependencies. To implement dependency injection, I register services in the ConfigureServices method of the Startup class, using methods like AddTransient, AddScoped or AddSingleton. I then include the relevant services as constructor parameters in the components, and the framework automatically resolves and provides the relevant instances.
+I read about Inversion of Control in my earlier days in Robotic Lab from a book writen by Martin Fowler.
+
+6. How do you create and consume RESTful APIs in ASP.NET Core?
+In ASP.NET Core, creating a RESTful API involves using the MVC pattern with controllers and actions that handle HTTP requests and responses. I create a new controller from ControllerBase and define action methods to handle HTTP verbs like GET, POST, PUT and DELETE. I use routing attributes like [Route] and [ApiController] to specify the API's endpoint and behaviour. To consume RESTful APIs, I use HttpClient for making requests and processing responses or third-party libraries to provide higher-level abstractions for API consumption.
+
+7. What is the role of the Model-View-Controller (MVC) pattern in ASP.NET Core?
+The Model-View-Controller (MVC) pattern is a design that helps developers using ASP.NET Core to divide an application's goals into three components. These components include Models, Views and Controllers. Models represent the application's data and business logic. Views display the data to the user, and Controllers handle user input and manage interactions between Models and Views. In an ASP.NET Core application, the MVC pattern helps create a structure with organisation, making it easier to develop, maintain and scale the application by promoting the separation of concerns.
+
+8. What are Tag Helpers in ASP.NET Core, and how do you use them?
+Tag Helpers in ASP.NET Core is a way to simplify creating and managing HTML elements in Razor views. They enable server-side code to participate in creating and rendering HTML elements, making it easier to maintain the markup. I implement Tag Helpers as C# classes that target specific HTML elements or attributes. To use Tag Helpers, we add the appropriate namespace in the ' _ViewImports.cshtml' file and then use the Tag Helpers in Razor views by simply using the corresponding HTML elements or attributes. It's an approach that allows for more readable and maintainable code in views.
+
+9. How do you implement authentication and authorisation in an ASP.NET Core application?
+In an ASP.NET Core application, developers can use the Identity system to implement authentication, which handles user registration, facilitates login and manages passwords. I start by configuring the Identity system in the Startup class, adding the relevant services and setting up the middleware. After setting up Identity, I can use built-in components like SignInManager and UserManager to handle user authentication in the application. For authorisation, I use the [Authorize] attribute on controller actions or entire controllers to restrict access depending on the user's authentication status or roles. We can also implement custom authorisation policies for better access control.
+
+10. What is the working mechanism of Kestrel web server in .NET Core?
+Kestrel is a cross-platform web server built into .NET Core that is designed to be fast and scalable. Kestrel is responsible for accepting incoming HTTP requests and processing them before passing them on to the application code. Kestrel supports both HTTP/1.1 and HTTP/2 protocols and can be used as a standalone server or behind a reverse proxy.
+
+11. How do you set up and utilize logging in a .NET Core application?
+To set up logging in a .NET Core application, you can use the built-in logging framework, which supports a variety of logging providers such as Console, Debug, EventLog, and Azure. You can configure logging in the Program.cs file using the CreateHostBuilder method, which allows you to specify the logging provider and its configuration options. To use logging in your application code, you can inject an instance of the ILogger interface into your classes and use its methods to log messages at different levels of severity.
+
+12. Can you provide an explanation for Middleware in .NET Core?
+Middleware in .NET Core is a pipeline of components that are used to handle incoming HTTP requests and generate corresponding HTTP responses. Middleware components can be added to the pipeline in any order, and each component has the ability to modify the request or response as it passes through the pipeline. Middleware can be used for a variety of purposes such as routing, authentication, authorization, caching, and logging.
+
+13. What are the steps to implement security in a .NET Core web application?
+The steps to implement security in a .NET Core web application can vary depending on the specific requirements, but some general steps include:
+
+Enabling HTTPS: Use HTTPS to encrypt the communication between the client and server, and enable HSTS to prevent downgrade attacks.
+Authentication: Use a supported authentication mechanism such as Identity, JSON Web Token - JWT, or OAuth to verify the identity of the user.
+Authorization: Define policies to determine which users are authorized to access specific resources or perform specific actions.
+Cross-site scripting (XSS) prevention: Use the built-in anti-XSS features or a third-party library to prevent malicious script injection attacks.
+Cross-site request forgery (CSRF) prevention: Use anti-forgery tokens to prevent attackers from submitting unauthorized requests on behalf of the user.
+Input validation: Validate user input to prevent injection attacks and other security vulnerabilities.
+
+14. How do you manage configuration in a .NET Core application?
+.NET Core provides the Configuration API for managing configuration in an application. Configuration can be stored in various sources, such as JSON files, XML files, environment variables, command line arguments, and more. The Configuration API allows you to load configuration data from multiple sources, override values from lower priority sources with values from higher priority sources, and access configuration values in a strongly-typed manner.
+
+15. What distinguishes a synchronous method from an asynchronous method in .NET Core?
+Synchronous methods block the thread they're running on until they complete, while asynchronous methods allow the thread to continue executing other code while they're running. Asynchronous methods in .NET Core use the async and await keywords to enable asynchronous programming, and typically return a Task or Task<T> object that represents the asynchronous operation.
+
+16. How do you handle exceptions in a .NET Core application?
+In .NET Core, exceptions can be handled using try-catch blocks. When an exception is thrown, the runtime will search up the call stack for the nearest try-catch block that can handle the exception. You can also use global exception handling by registering a middleware that catches unhandled exceptions and logs them or returns an appropriate HTTP response.
+
+17. How do you carry out unit testing in a .NET Core application?
+Unit testing is an essential part of software development to ensure the quality and correctness of code. In .NET Core, you can use the built-in testing framework, Xunit, to write unit tests. Xunit allows you to create test classes and test methods that run automated tests on your code. You can use assertions to check if the results of your tests match the expected outcome. You can also use other testing frameworks like NUnit and MSTest if you prefer. To run the tests, you can use a test runner like Visual Studio Test Explorer, .NET CLI, or a Continuous Integration (CI) tool like Azure DevOps
+
+18. What is the meaning of Razor Pages in .NET Core?
+Razor Pages is a framework for creating web applications in .NET Core. It is a lightweight and easy-to-learn framework that allows you to create web pages with a model-view-controller (MVC) pattern. With Razor Pages, you can create dynamic web pages by combining HTML markup with C# code. Razor Pages also supports code-behind files that separate the UI logic from the page logic, making it easier to maintain and test your code. Razor Pages is a popular choice for building web applications in .NET Core because it is simple, flexible, and scalable.
+
+19. What are the procedures to enable localization and globalization in a .NET Core application?
+Localization and globalization are important features for creating web applications that support multiple languages and cultures. In .NET Core, you can enable localization and globalization by following these steps:
+
+Add the Microsoft.Extensions.Localization package to your project.
+
+Configure your application to use the appropriate culture and localization options in the Startup class.
+
+Create resource files for each supported culture and add localized strings to them.
+
+Use the IStringLocalizer service to retrieve localized strings in your code.
+
+Use the app.UseRequestLocalization middleware to enable localization and set the default culture for your application.
+
+20. Could you define the concept of Identity in .NET Core?
+Identity is a framework in .NET Core that provides authentication and authorization features for web applications. With Identity, you can manage user accounts, roles, and permissions in your application. Identity supports various authentication methods, including forms authentication, Windows authentication, and social logins like Facebook and Google. You can also customize the authentication and authorization features to meet the specific needs of your application. Identity is a powerful and flexible framework that simplifies the management of user accounts and authentication in .NET Core.
+
+21. How do you incorporate Caching in a .NET Core application?
+Caching is a technique for improving the performance and scalability of web applications by storing frequently accessed data in memory or a cache store. In .NET Core, you can incorporate caching into your application by using the built-in caching framework, which supports both in-memory caching and distributed caching. To use caching in your application, you can follow these steps:
+
+Add the Microsoft.Extensions.Caching.Memory or Microsoft.Extensions.Caching.StackExchangeRedis package to your project.
+Configure caching options in the Startup class.
+Inject the IMemoryCache or IDistributedCache service into your code.
+Store frequently accessed data in the cache using the cache provider's Set method.
+Retrieve cached data using the cache provider's Get method.
+Set cache expiration policies to ensure that cached data is refreshed periodically.
+
+22. What is the idea behind SignalR in .NET Core?
+SignalR is a framework in .NET Core that enables real-time communication between clients and servers. With SignalR, you can build web applications that support bi-directional communication, allowing real-time updates and notifications. SignalR uses WebSockets and other techniques to achieve real-time communication, and it supports a variety of platforms, including web browsers, mobile devices, and desktop applications. SignalR is a powerful and flexible framework that simplifies the implementation of real-time communication in .NET Core applications.
+
+23. How do you execute background tasks in a .NET Core application?
+Background tasks are long-running operations that are executed asynchronously in a separate thread or process. In .NET Core, you can execute background tasks by using the built-in BackgroundService class or a third-party library like Hangfire. The BackgroundService class provides a simple way to run a background task as a hosted service in your application. To use BackgroundService, you need to create a new class that inherits from BackgroundService and implements the ExecuteAsync method. You can then register the service in the Startup class and configure it to run as a hosted service. Hangfire, on the other hand, is a more powerful library that provides advanced features like scheduling, recurring jobs, and dashboard monitoring.
+
+24. How do you implement data validation in a .NET Core application?
+ata validation is an important aspect of web application development to ensure the correctness and integrity of user input. In .NET Core, you can implement data validation by using data annotations, which are attributes that you can apply to model properties to specify validation rules. For example, you can use the Required attribute to specify that a property is required, or the Range attribute to specify a range of acceptable values. You can also create custom validation attributes to implement more complex validation rules. To trigger validation, you can call the ModelState.IsValid property in your controller action, which returns a Boolean value indicating whether the model is valid.
+
+25. How do you enable real-time communication in a .NET Core application?
+Real-time communication is a key feature of modern web applications that allows users to receive updates and notifications in real-time. In .NET Core, you can enable real-time communication by using SignalR, which is a framework that provides bi-directional communication between clients and servers. To enable SignalR in your application, you need to create a SignalR hub that defines the methods that clients can invoke, and configure the server to use SignalR middleware. You also need to add client-side code that connects to the SignalR hub and handles incoming messages.

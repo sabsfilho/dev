@@ -17,7 +17,6 @@ A constructor is a member function with the same name as its class. The construc
 5. What are Jagged Arrays?
 The Array which comprises elements of type array is called Jagged Array. The elements in Jagged Arrays can be of various dimensions and sizes.
 
-
 6. What is the difference between out and ref parameters?
 When an argument is passed as a ref, it must be initialized before it can be passed to the method. An out parameter, on the other hand, need not to be initialized before passing to a method.
 

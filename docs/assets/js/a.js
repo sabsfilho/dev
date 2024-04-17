@@ -62,7 +62,10 @@
 		SB5: 'Helper'
 	},
 	cs = {
-		C0: 'C# Interview Questions'
+		C0: 'C# Interview Questions',
+		C1: 'C# .NET Core Interview Questions - Basic',
+		C2: 'C# .NET Core Interview Questions - Intermediate',
+		C3: 'C# .NET Core Interview Questions - Advanced'
 	},
 	secs = {
 		S0: 'What techniques would you use to prevent a brute-force login attack?',
