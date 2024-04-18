@@ -191,8 +191,7 @@ ${buildImagesPanel('pcb',
             ['HackerRank','https://www.hackerrank.com/profile/sabsfilho','My gym where I keep myself in good shape for hack activities.'],
             ['CodeWars', 'https://www.codewars.com/users/sabsfilho', 'My another gym...'],
             ['CodePen','https://codepen.io/sabsfilho','My front end sandbox.'],
-            ['Replit','https://replit.com/@sabsfilho','My back end sandbox.'],
-            ['CodeAlly','https://codeally.io/cv/1925e7e676abb9663fe62f5e','My job sandbox.']
+            ['Replit','https://replit.com/@sabsfilho','My back end sandbox.']
         ],
         education: [
             ['Computer Science &amp; System Project Management @ Pontifícia Universidade Católica - PUC','https://www.puc-rio.br','2005-2006, Rio de Janeiro, RJ - Brazil'],
