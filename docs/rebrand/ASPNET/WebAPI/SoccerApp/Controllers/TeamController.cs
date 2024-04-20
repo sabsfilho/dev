@@ -2,10 +2,10 @@ using SoccerApp.Handlers;
 using SoccerApp.Models;
 
 namespace SoccerApp.TeamController;
-public class TeamController
-{
+public class TeamController{
     public static IEnumerable<Team> GetTeamsByCountry(string country){
-        TeamHandler.LoadTeams(country);
+        return TeamHandler.LoadTeams(country);
+        /*
         return
             Enumerable.Range(1, 5).Select(index =>
                 new Team()
@@ -14,6 +14,6 @@ public class TeamController
                     Name = country,
                     CountryCode = country.Substring(0,2).ToLower()
                 })
-                .ToArray();
+                .ToArray();*/
     }
 }
