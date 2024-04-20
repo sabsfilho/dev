@@ -18,7 +18,7 @@
     }
 
     const loadCountryList = (cb)=>{
-            fetch('https://trial.mobiscroll.com/content/countries.json', {
+            fetch('/assets/flag-icons/country.json', {
                 method: 'GET'
               })
               .then(response => response.json()) 
@@ -26,43 +26,42 @@
               .catch(err => console.log(err))
     };
 
-    const buildCountrySelection = (pnt)=>{
+    const addCountryPanel = (pnt)=>{
+        
+    };
+
+    const addCountrySelection = (pnt)=>{
+        const panel = $('<div class="countryselection"></div>'),
+        accord = $('<div class="clubs"></div>').accordion({ collapsible: true });
+        pnt.append(panel);        
+        pnt.append(accord);
 
         loadCountryList((d)=>{
             const xs = [];
-            d.forEach(x => xs.push(x.text));
-            const panel = $('<div class="country-selection"></div>'),
-            input = $('<input id="countryinput" placeholder="type a country name here">');
+            d.forEach(x => xs.push({ value: x.name, code: x.code }));
+            const input = $('<input class="countryinput" placeholder="type a country name here">');
             panel.append(input);
-            pnt.append(panel);
+            const setValue = item=>`<span class="fi fi-${item.code}"></span><span>${item.value}</span>`;
             input.autocomplete({
                 minLength: 1,
-                source: xs,/*
-                focus: function( event, ui ) {
-                $( "#country-input" ).val( ui.item.text );
-                return false;
-                },
-                select: function( event, ui ) {
-                $( "#project" ).val( ui.item.text );
-                $( "#project-id" ).val( ui.item.value );
-                $( "#project-description" ).html( ui.item.desc );
-                $( "#project-icon" ).attr( "src", "images/" + ui.item.icon );
-        
-                return false;
-                }*/
+                source: xs
             })
-            /*.autocomplete( "instance" )._renderItem = function( ul, item ) {
+            .autocomplete( "instance" )._renderItem = function( ul, item ) {
                 return $( "<li>" )
-                .append( item)
+                .append(setValue(item))
                 .appendTo( ul );
-            }*/
+            };
+            const addBtn = $(`<button class="ui-button ui-widget ui-corner-all ui-button-icon-only" title="clique para adicionar o país selecionado">
+              <span class="ui-icon ui-icon-plusthick"></span> clique para adicionar o país selecionado
+            </button>`).click(function(){addCountryPanel(pnt)});
+            panel.append(addBtn)
         });
 
     };
 
     const addClubSelection = (pnt) =>{
-        const panel = $('<div class="club-selection"></div>'),
-        countrySelector = buildCountrySelection(panel);        
+        const panel = $('<div class="club-selection"></div>');
+        addCountrySelection(panel);
 
         pnt.append(panel)
     };
