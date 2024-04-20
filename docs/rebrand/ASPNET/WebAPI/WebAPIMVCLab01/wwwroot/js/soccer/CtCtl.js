@@ -1,21 +1,6 @@
 ﻿const CtCtl = function() {
-      
-    const addButton = (act, method, nm, o) => {
-        var btn = document.createElement('button');
-        btn.innerText = nm;
-        btn.onclick = () => {
-            fetch(act, {
-                method: method,
-                body: JSON.stringify(o),
-                headers: {"Content-type": "application/json; charset=UTF-8"}
-              })
-              .then(response => response.json()) 
-              .then(json => console.log(json))
-              .catch(err => console.log(err))
-        };
-        document.getElementsByTagName('body')[0].appendChild(btn);
 
-    }
+    const setValue = item =>`<span class="fi fi-${item.code}"></span><span class="countryname">${item.value}</span>`;
 
     const loadCountryList = (cb)=>{
             fetch('/assets/flag-icons/country.json', {
@@ -26,25 +11,42 @@
               .catch(err => console.log(err))
     };
 
-    const addCountryPanel = (pnt)=>{
-        
+    const countrySet = new Map();
+
+    const addCountryPanel = (pnt, accord)=>{
+        const item = pnt.data('item');
+        if (countrySet.has(item.code)) return;
+        countrySet.set(item.code);
+        accord.append(`<h3>${setValue(item)}</h3>`);
+        const bdy = $(`<div><div class="countrydescription"><div>Continent: ${item.continent}</div><div>Capital: ${item.capital}</div></div></div>`);
+        accord.append(bdy);
+        accord.accordion( "refresh");
+        pnt.find('.countryinput').val('');
     };
 
     const addCountrySelection = (pnt)=>{
         const panel = $('<div class="countryselection"></div>'),
-        accord = $('<div class="clubs"></div>').accordion({ collapsible: true });
+        accord = $('<div class="clubs"></div>').accordion({ collapsible: true, active: false });
         pnt.append(panel);        
         pnt.append(accord);
 
         loadCountryList((d)=>{
             const xs = [];
-            d.forEach(x => xs.push({ value: x.name, code: x.code }));
+            d.forEach(x => xs.push({ 
+                value: x.name, 
+                code: x.code,
+                capital: x.capital,
+                continent: x.continent
+            }));
             const input = $('<input class="countryinput" placeholder="type a country name here">');
             panel.append(input);
-            const setValue = item=>`<span class="fi fi-${item.code}"></span><span>${item.value}</span>`;
             input.autocomplete({
                 minLength: 1,
-                source: xs
+                source: xs,                
+                select: function( event, ui ) {
+                    pnt.data('item', ui.item );
+                    return true;
+                }
             })
             .autocomplete( "instance" )._renderItem = function( ul, item ) {
                 return $( "<li>" )
@@ -53,7 +55,7 @@
             };
             const addBtn = $(`<button class="ui-button ui-widget ui-corner-all ui-button-icon-only" title="clique para adicionar o país selecionado">
               <span class="ui-icon ui-icon-plusthick"></span> clique para adicionar o país selecionado
-            </button>`).click(function(){addCountryPanel(pnt)});
+            </button>`).click(function(){addCountryPanel(pnt, accord)});
             panel.append(addBtn)
         });
 

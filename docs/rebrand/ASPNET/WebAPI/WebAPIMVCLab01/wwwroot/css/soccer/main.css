@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .club-selection{
-    width:200px;
+    width:400px;
     border:1px solid black;
 }
 .countryinput{
@@ -12,4 +12,15 @@
 }
 .countryselection{
     display: flex;
+}
+.countryname{
+    margin-left: 5px;
+}
+.countrydescription{
+    display: flex;
+}
+.countrydescription > div{
+    white-space: nowrap;    
+    margin-right: 20px;
+    font-size: 12px;
 }
