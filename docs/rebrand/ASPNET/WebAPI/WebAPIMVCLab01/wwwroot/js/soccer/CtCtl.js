@@ -22,6 +22,12 @@
         accord.append(bdy);
         accord.accordion( "refresh");
         pnt.find('.countryinput').val('');
+        fetch('SoccerTeamManager/teamsbycountry/bra')
+          .then(response => response.json()) 
+          .then(function(ds){
+            console.log(ds)
+          })
+          .catch(err => console.log(err))
     };
 
     const addCountrySelection = (pnt)=>{

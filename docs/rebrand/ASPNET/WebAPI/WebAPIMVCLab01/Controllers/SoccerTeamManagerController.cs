@@ -17,4 +17,16 @@ public class SoccerTeamManagerController : Controller
     {
         return View();
     }
+    [Route("SoccerTeamManager/TeamsByCountry/{country}")]
+    [HttpGet]
+    public string GetTeamsByCountry(string country)
+    {
+        using (var client = new HttpClient())
+        {
+            country = "bra";
+            var x = client.GetStringAsync($"https://psychic-barnacle-px56gvvpvv6c94x6-5229.app.github.dev/teamsbycountry/{country}");
+            x.Wait();
+            return x.Result;
+        }
+    }
 }
