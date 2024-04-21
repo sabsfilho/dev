@@ -4,23 +4,56 @@
     justify-content: center;
 }
 .club-selection{
-    width:400px;
+    box-sizing:content-box;
+    min-width: 25em;
+    height:500px;
     border:1px solid black;
 }
-.countryinput{
+.input{
     width:100%
 }
-.countryselection{
+.selection{
     display: flex;
 }
-.countryname{
+.name{
     margin-left: 5px;
 }
-.countrydescription{
+.description{
     display: flex;
 }
-.countrydescription > div{
+.description > div{
     white-space: nowrap;    
     margin-right: 20px;
     font-size: 12px;
+}
+.countryinfo{
+    margin-bottom: 20px;
+}
+.clubs{
+    display: flex;
+    flex-direction: column;
+}
+.teamicon{
+    width: 60px;
+    height: 60px;
+}
+.teamtitle{
+    display: flex;
+}
+.teamname{
+    font-size: 20px;
+}
+.teamtitledescription{
+    font-size: 12px;
+    white-space: nowrap;
+}
+.teampanel > .clubs > h3 {
+    display: inline-flex;
+    min-width: 340px;
+}
+.teampanel > .clubs > h3 > :first-child{
+    float: left;
+}
+.ui-accordion .ui-accordion-content{
+    padding:1em 1em !important
 }

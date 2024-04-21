@@ -23,8 +23,7 @@ public class SoccerTeamManagerController : Controller
     {
         using (var client = new HttpClient())
         {
-            country = "bra";
-            var x = client.GetStringAsync($"https://psychic-barnacle-px56gvvpvv6c94x6-5229.app.github.dev/teamsbycountry/{country}");
+            var x = client.GetStringAsync($"https://soccermanagerapp.azurewebsites.net/teamsbycountry/{country}");
             x.Wait();
             return x.Result;
         }

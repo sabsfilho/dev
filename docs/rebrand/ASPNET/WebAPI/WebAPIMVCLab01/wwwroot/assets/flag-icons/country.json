@@ -90,6 +90,7 @@
   {
     "capital": "Buenos Aires",
     "code": "ar",
+    "code3": "arg",
     "continent": "South America",
     "flag_1x1": "flags/1x1/ar.svg",
     "flag_4x3": "flags/4x3/ar.svg",
@@ -293,6 +294,7 @@
   {
     "capital": "Brasília",
     "code": "br",
+    "code3": "bra",
     "continent": "South America",
     "flag_1x1": "flags/1x1/br.svg",
     "flag_4x3": "flags/4x3/br.svg",
@@ -826,6 +828,7 @@
   {
     "capital": "Berlin",
     "code": "de",
+    "code3": "ger",
     "continent": "Europe",
     "flag_1x1": "flags/1x1/de.svg",
     "flag_4x3": "flags/4x3/de.svg",
@@ -1085,6 +1088,7 @@
   {
     "capital": "Tokyo",
     "code": "jp",
+    "code3": "jpn",
     "continent": "Asia",
     "flag_1x1": "flags/1x1/jp.svg",
     "flag_4x3": "flags/4x3/jp.svg",

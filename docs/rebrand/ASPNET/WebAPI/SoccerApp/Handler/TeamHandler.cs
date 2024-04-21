@@ -9,7 +9,11 @@ public class TeamHandler{
         return GetJSON(country);
     }
     static Team[] GetJSON(string country){
-        string pathJSON = string.Concat(AppContext.BaseDirectory, $"fileIO/teams/{country}.json");
+        string dir = string.Concat(AppContext.BaseDirectory, $"fileIO/teams");
+        if (!Directory.Exists(dir)){
+            Directory.CreateDirectory(dir);
+        }
+        string pathJSON = $"{dir}/{country}.json";
         if (!File.Exists(pathJSON)){
             var html = GetHTML(country);
             Team[] teams = Parse(country, html);
