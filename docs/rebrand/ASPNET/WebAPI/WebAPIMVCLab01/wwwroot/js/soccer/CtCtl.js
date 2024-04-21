@@ -9,7 +9,7 @@
         </div>`;
 
     const loadCountryList = (cb)=>{
-            fetch('/assets/flag-icons/country.json', {
+            fetch('/assets/flag-icons/country_v2.json', {
                 method: 'GET'
               })
               .then(response => response.json()) 
