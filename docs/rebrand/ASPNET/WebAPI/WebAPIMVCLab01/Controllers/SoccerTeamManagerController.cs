@@ -28,4 +28,15 @@ public class SoccerTeamManagerController : Controller
             return x.Result;
         }
     }
+    [Route("SoccerTeamManager/PlayersByTeam/{team}")]
+    [HttpGet]
+    public string GetPlayersByTeam(string team)
+    {
+        using (var client = new HttpClient())
+        {
+            var x = client.GetStringAsync($"https://soccermanagerapp.azurewebsites.net/playersbyteam/{team}");
+            x.Wait();
+            return x.Result;
+        }
+    }
 }

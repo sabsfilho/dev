@@ -18,7 +18,7 @@ static string ReadCode3(string country){
 
 static void InsertCountryCode3(){
 	var xs = File.ReadAllLines(@"C:\Users\Owner\Downloads\country0.json").ToList();
-	xs.Take(10).Dump();
+	//xs.Take(10).Dump();
 	
 	List<string> ys = null;
 	var zs = new List<string>();

@@ -1,3 +1,4 @@
+using SoccerApp.PlayerController;
 using SoccerApp.TeamController;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +21,10 @@ app.UseHttpsRedirection();
 
 app.MapGet("/teamsbycountry/{country}", (string country) => TeamController.GetTeamsByCountry(country) )
 .WithName("GetTeamsByCountry")
+.WithOpenApi();
+
+app.MapGet("/playersbyteam/{country}/{teamId}", (string country, string teamId) => PlayerController.GetPlayersByTeam(country, teamId) )
+.WithName("GetPlayersByTeam")
 .WithOpenApi();
 
 app.Run();
