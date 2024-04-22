@@ -6,13 +6,34 @@ namespace SoccerApp.Handlers;
 
 public class TeamPlayerHandler{
     public static Player[] LoadTeamPlayers(string country, string teamId){
+        var xs = LoadTeamPlayersInternal(country, teamId);
+        if (xs == null) { 
+            return LoadTeamPlayersInternal(country, teamId)!;
+        }
+        return xs!;
+    }
+    static Player[]? LoadTeamPlayersInternal(string country, string teamId){
         var tps = GetJSON(country, teamId);
         if (tps == null) return Array.Empty<Player>();
-        if (tps.Players == null){
+        if (tps.TeamId == 0 || tps.PlayerIds == null) {
+            Delete(country, teamId);
+        }
+        if (tps.Players == null && tps.PlayerIds != null){
             return PlayerHandler.LoadPlayers(country, tps.PlayerIds!);
         }
         else {
             return tps.Players;
+        }
+    }
+
+
+
+    private static void Delete(string country, string teamId)
+    {
+        string dir = GetPath(country, teamId);
+        string pathJSON = $"{dir}/{teamId}.json";
+        if (File.Exists(pathJSON)){
+            File.Delete(pathJSON);
         }
     }
 
@@ -76,6 +97,8 @@ public class TeamPlayerHandler{
             tms.Add(p);
             PlayerHandler.WriteFile(p);
         }
+        tp.TeamId = int.Parse(teamId);
+        tp.PlayerIds = tms.Select(x => x.Id).ToArray();
         tp.Players = tms.ToArray();
         return tp;
     }

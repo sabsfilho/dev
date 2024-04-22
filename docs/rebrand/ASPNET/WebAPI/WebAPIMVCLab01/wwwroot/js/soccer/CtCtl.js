@@ -25,7 +25,17 @@
           .then(response => response.json()) 
           .then(cb)
           .catch(err => console.log(err))
-};
+    };
+
+    const loadPlayerList = (pnt,cb)=>{
+        const country = pnt.data('countryItem').code3;
+        const team = pnt.data('item').id;
+        fetch(`SoccerTeamManager/playersbyteam/${country}/${team}`)
+          .then(response => response.json()) 
+          .then(cb)
+          .catch(err => console.log(err))
+    };
+
     const countrySet = new Map();
     const teamSet = new Map();
 
@@ -49,17 +59,31 @@
         if (teamSet.has(item.id)) return;
         teamSet.set(item.id);
         accord.append(`<h3>${setTeamTitle(item)}</h3>`);
-        const bdy = $(`<div><div class="teaminfo"><div class="description">${item.value} ${item.year} ${item.location}</div></div></div>`);
-        accord.append(bdy);        
+        const bdy = $('<div></div>');
         pnt.find('.input').val('');        
-        const teampanel = $('<div class="teampanel"></div>');
-        bdy.append(teampanel);
-        accord.accordion( "refresh");
+        loadPlayerList(pnt,function(d){
+            console.log(d);
+            for(let x of d) {
+                bdy.append(`
+                <div class="playerpanel">
+                    <div><img class="playericon" src="https://cdn.soccerwiki.org/images/player/${x.id}.png"></div>
+                    <div>
+                    <div>${x.name}</div>
+                    <div>${x.position}</div>
+                    <div>Rank=${x.rank}</div>
+                    <div>Squad Number=${x.squadNumber}</div>
+                    </div>
+                </div>
+                `);    
+            }
+            accord.append(bdy);
+            accord.accordion( "refresh");
+        });
     };
 
     const addTeamSelection = (pnt)=>{
         const panel = $('<div class="selection"></div>'),
-        accord = $('<div class="clubs"></div>').accordion({ collapsible: true, active: false,heightStyle: "fill" });
+        accord = $('<div class="clubs"></div>').accordion();
         pnt.append(panel);        
         pnt.append(accord);
 

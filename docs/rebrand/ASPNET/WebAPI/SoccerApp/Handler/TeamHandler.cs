@@ -19,7 +19,11 @@ public class TeamHandler{
         return dir;
     }
     static string GetTeamPath(string country, string teamId){
-        return string.Concat(GetTeamsPath(country), "/team/", teamId, ".json");
+        var dir = string.Concat(GetTeamsPath(country), "/team");
+        if (!Directory.Exists(dir)){
+            Directory.CreateDirectory(dir);
+        }
+        return string.Concat(dir, "/", teamId, ".json");
     }
     static Team[] GetJSON(string country){
         string dir = GetTeamsPath(country);
@@ -99,9 +103,7 @@ public class TeamHandler{
             };
             var json = JsonSerializer.Serialize(tm);
             File.WriteAllText(GetTeamPath(country, tm.Id.ToString()), json);
-            if (tms.Count < 50){
             LoadTeam(tm);
-            }
             tms.Add(tm);
             i++;
         }
