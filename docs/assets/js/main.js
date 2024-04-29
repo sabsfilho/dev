@@ -412,7 +412,7 @@ mainContent = {
             {
                 body:`
 <div class="bio">
-<p>I am a seasoned Full Stack Developer specializing in the Microsoft & MERN stacks with more than 25 years coding in software development and team management in Banking, Startup and Fintech companies.</p>
+<p>I am a seasoned Full Stack Developer specializing in the Microsoft & MERN stacks with more than 25 years in software development and team management in Banking, Startup and Fintech companies.</p>
 <p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro - UFRJ, one of the most prestigious universities in Brazil, and worked in their Robotics Lab until graduation. I post-graduated in Computer Science & System Project Management from Pontifícia Universidade Católica - PUC also a renowned university in Brazil.</p>
 <p>I am a researcher by nature and one of my research projects was awarded and recognized with the ABCM-EMBRAER 2004 prize.</p>
 <p>I am a T-shaped person collaborating and nurturing multiple areas of connections. As I am a developer with a mechanical engineering, academic research and financial background, I can easily cross beyond borders building strong bridges with network, security, compliance, sales and business teams.</p>
