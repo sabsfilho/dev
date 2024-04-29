@@ -1,0 +1,1 @@
+docs/rebrand/DSA/SelfDSA/prime-number.cs
