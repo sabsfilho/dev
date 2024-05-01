@@ -1,0 +1,16 @@
+﻿body{
+	margin:0;
+	margin-top:50px;
+	padding:0;
+	font-family:arial;
+	font-size:80px
+}
+#txt{
+	display:none
+}
+#mask{
+	position:absolute;
+	width:1000px;
+	height:500px;
+	background-color:gray
+}

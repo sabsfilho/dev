@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Samuel Santos Skills</title>
+	<meta name="robots" content="noindex, nofollow" />
+	<link rel="shortcut icon" href="../../../assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="a.css">
+	<script src="a.js"></script>
+</head>
+<body>
+<div id="txt">
+Hello Everyone!
+
+My name is Samuel Santos and I am going to talk about a technical challenge that I faced in the past.
+I selected a huge problem from my current Fintech company that provides a software solution that evaluates quantitative analysis from real time Bovespa exchange market data, sending buy and sell signals to brokers according to the algorithmic strategy chosen by the trader. It’s important to say that our automated trading system is a very powerful web platform that allows our clients to work from any web browser or device.
+
+It's an amazing project. Impacting real demanding users who are wealthy and high-profile banking customers.. I mean a high pressure environment but no problem.
+
+By the way, in our platform, it is also possible to send manual orders and let the robot manage them. The trader can work with virtual orders or set to route them to his broker. One or more broker accounts can be saved and used. I managed our platform integration with the IT teams from the largest Brazilian brokers, like BTG and XP Group using the Financial Information eXchange protocol.
+Our first integration was settled with XP Broker using a direct tunnel inside their virtual private network. The XP Broker is the biggest broker in Brazil and its services are used by all of our customers.
+
+In the beginning of this project I implemented a VPN solution to solve an unknown compatibility issue that caused a 40% loss of packages and connectivity instability between our AWS VPC and the VPN of XP Broker. I sniffed the package trail and realized that the problem was inside the AWS network. Unfortunately the AWS engineers were not giving a solution in a reasonable time, so I had to research an alternative. I’d like to let it clear that I am not a network specialist but I found a flexible SDN solution provided by Cohesive Networks. I created a Linux machine from an Amazon Machine Image with their solution, configured it in our VPC and set the two tunnels with the Cisco switcher solution in the XP Broker network endpoint. The package loss went to zero and our platform stopped losing trade signals. Like any broker or stock trade transaction environment, our trade platform needs a streaming channel with a very strict network throughput and failover process.
+So, I learned from this experience that I can’t always trust the cloud guru's recommendation and wait for so long for their response.
+
+I think I have more time so…
+I’d like to mention another big, very big challenge for us here. Unfortunately, in 2019, the XP Broker compliance board decided to suspend our streaming services with their endpoints, interrupting our direct communication tunnel. The reason was we represent individual investors and only large fund managers and asset control groups would be granted this direct channel and their VPN access. They offered for private investors or family offices that are our main customers a black box broker platform named Metatrader. So, I had to quickly find an answer for our survival. I did a deep research on the Metatrader platform and I found an open door that I could take advantage of. I coded this solution using C++ language. Gratitude for my Robotics Lab college years. So, I think it doesn’t matter our language or stack skills, in the end everything is transformed into bits. How we figure out a solution fastly is the key.. So, it means without this workaround I hacked into the Metatrader platform, our project would be discontinued. So I am very proud to come up with an alternative solution in a couple of days researching.
+I am very happy to say that nowadays we are integrated to all of our client brokers using this proprietary tailor-made solution which I’ve built directly on their electronic trading platform.
+As a matter of fact, this Fintech project is a dream come true for people that love software engineering and problem-solving routine because of its technical challenges we face everyday. 
+So, that’s it!
+Thanks for watching!
+Bye!
+</div>
+</body>
+</html>
