@@ -190,6 +190,7 @@ ${buildImagesPanel('pcb',
             ['Microsoft','https://learn.microsoft.com/en-us/users/samuelsantos-1448/','My windows since my first deployment.'],
             ['HackerRank','https://www.hackerrank.com/profile/sabsfilho','My gym where I keep myself in good shape for hack activities.'],
             ['CodeWars', 'https://www.codewars.com/users/sabsfilho', 'My another gym...'],
+            ['CodeWars', 'https://leetcode.com/u/sabsfilho/', 'and one more gym...'],
             ['CodePen','https://codepen.io/sabsfilho','My front end sandbox.'],
             ['Replit','https://replit.com/@sabsfilho','My back end sandbox.']
         ],
