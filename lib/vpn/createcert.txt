@@ -1,0 +1,39 @@
+Create the OpenSSL Config
+
+First set up a Virtual network Gateway in Azure.
+
+Set up a Point-to-Site connection for OpenSSL. This is described here. It’s all straight forward, the tricky part is the creation of certs. You will end up with a Virtual Network on Azure and a VPN gateway if you follwo this tutorial. When creating the Point-to-Site connection choose tunnel tpye OpenVPN.
+https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-point-to-site-resource-manager-portal
+
+Create the certificates. This is described here as well. It all boils down to a few PowerShell commands.
+Export the certificates (both root and client cert) as described here You will end up with a .cer file and a .pfx file.
+https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-certificates-linux-openssl
+
+generate the self-signed root certificate.
+openssl genrsa -out caKey.pem 2048
+openssl req -x509 -new -nodes -key caKey.pem -subj "/CN=VPN CA" -days 3650 -out caCert.pem
+
+Print the self-signed root certificate public data in base64 format.
+openssl x509 -in caCert.pem -outform der | base64 -w0 && echo
+
+generate a client certificate
+export PASSWORD="Gate@5400"
+export USERNAME="CODESPACE-01"
+
+# Generate a private key
+openssl genrsa -out "${USERNAME}Key.pem" 2048
+
+# Generate a CSR (Certificate Sign Request)
+openssl req -new -key "${USERNAME}Key.pem" -out "${USERNAME}Req.pem" -subj "/CN=${USERNAME}"
+
+# Sign the CSR using the CA certificate and CA key
+openssl x509 -req -days 365 -in "${USERNAME}Req.pem" -CA caCert.pem -CAkey caKey.pem -CAcreateserial -out "${USERNAME}Cert.pem" -extfile <(echo -e "subjectAltName=DNS:${USERNAME}\nextendedKeyUsage=clientAuth")
+
+	
+    Hint: You will need the server cert to be able to set up the point to site connection. For this you can simply open your .cer file in a texteditor and copy the content into the “Public certifacte data” field in Azure Portal. Do not copy the “—-BEGIN CERTIFICATE …” and “—–END …” lines, just the content.
+    If you are finished hit the “Download VPN client” button in Azure Portal on your Point-to-Site configuration. Azure Portal
+https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-cert-linux
+
+
+sudo openvpn --config vpnconfig.ovpn&
+sudo pkill openvpn
