@@ -195,7 +195,7 @@ ${buildImagesPanel('pcb',
             ['Replit','https://replit.com/@sabsfilho','My back end sandbox.']
         ],
         education: [
-            ['Computer Science &amp; System Project Management @ Pontifícia Universidade Católica - PUC','https://www.puc-rio.br','2005-2006, Rio de Janeiro, RJ - Brazil'],
+            ['Computer Science &amp; System Project Management @ Pontifical Catholic University of Rio de Janeiro - PUC','https://www.puc-rio.br','2005-2006, Rio de Janeiro, RJ - Brazil'],
             ['Mechanical Engineer @ Federal University of Rio de Janeiro - UFRJ','http://www.mecanica.ufrj.br/ufrj-em/','1995-2001, Rio de Janeiro, RJ - Brazil']
         ],
         awards: [
