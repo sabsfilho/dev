@@ -1,0 +1,23 @@
+#Azure Developer CLI
+
+#azd relies on Bicep(equals Terraform) templates to create resources in Azur
+#infrastructure as code
+
+deploy template
+azd init -t "Azure-Samples/todo-csharp-sql"
+set name
+azd auth login
+azd up
+azd monitor --live
+
+#just deploy
+azd deploy
+
+#just provision -- good to add new database to Bicep
+azd provision
+
+# CI/CD PIPELINE
+azd pipeline config
+
+#clear resources
+azd down

@@ -172,7 +172,8 @@ ${buildImagesPanel('pcb',
             'HTML5, CSS, SCSS, Sass, Jekyll',
             'AWS, Azure',
             'Project Management (Kanban ✔️, SCRUM, Waterfall)',
-            'Git, GitHub, VisualSVN Subversion, TortoiseSVN'
+            'Git, GitHub, VisualSVN Subversion, TortoiseSVN',
+            'Visual Studio, VSCode'
         ],
         softskills: ' T-shaped person,Friendliness,Active Listening,Collaboration,Adaptability,Research,Problem Solving,Self-taught Mindset'.split(','),
         certifications: [
@@ -231,7 +232,7 @@ The on site and offline tasks were performed with success.</p>
 <em>Economics for Capital Markets; Financial and Statistical Calculation; Asset Classes; Financial Instruments and Markets; Equity Markets Trend Analysis; Portfolio Management; Brazilian Securities Law; Structure and Dynamics of a Trading Floor Negotiation</em>
 <p class="first-p">The key aspect I learned from this course was risk control for portfolio management. This kind of mindset I apply on my projects, 
 for instance managing the tradeoff to deploy a patch on production, we should take care of the risks involved from a breaking version, 
-stepping in and out as handling a bad asset position to secure the fund health as a whole. I also learned that Risk Management means what to do when things go bad and this concept should be applied in too many aspects in our lives.</p>
+stepping in and out as handling a bad asset position to secure the fund health as a whole. I also learned that Risk Management means what to do before and when things go bad and this concept should be applied in too many aspects in our lives.</p>
 `,
 `Financial Mathematics with HP 12c<br>
 1997, 40 hours, Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil<br>
@@ -414,9 +415,9 @@ mainContent = {
                 body:`
 <div class="bio">
 <p>I am a seasoned Full Stack Developer specializing in the Microsoft & MERN stacks with more than 25 years in software development and team management in Banking, Startup and Fintech companies.<div class="vid"><embed width="350" height="197" src="https://docs.google.com/file/d/1MZBidAZR2YWW03qooKx6P0SD5ZKGfTT7/preview"></div></p>
-<p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro - UFRJ, one of the most prestigious universities in Brazil, and worked in their Robotics Lab until graduation. I post-graduated in Computer Science & System Project Management from Pontifícia Universidade Católica - PUC also a renowned university in Brazil.</p>
+<p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro - UFRJ, one of the most prestigious universities in Brazil, and worked in their Robotics Lab until graduation. I post-graduated in Computer Science & System Project Management from Pontifical Catholic University of Rio de Janeiro - PUC-RIO also a renowned university in Brazil.</p>
 <p>I am a researcher by nature and I am very proud to say that one of my research projects was awarded and recognized with the ABCM-EMBRAER 2004 prize.</p>
-<p>I am a T-shaped person collaborating and nurturing multiple areas of connections. As I am a developer with a mechanical engineering, academic research and financial background, I can easily cross beyond borders building strong bridges with network, security, compliance, sales and business teams.</p>
+<p>My CEO usually says that I am a T-shaped person collaborating and nurturing multiple areas of connections. As I am a developer with a mechanical engineering, academic research and financial background, I can easily cross beyond borders building strong bridges with network, security, compliance, sales and business teams.</p>
 <p>For the last 10 years I have been working asynchronously as a Full Stack Developer specializing in JavaScript and C# .NET.  in a full remote position in a Fintech company that develops stock market trading solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies.</p>
 <a class="toggle-link" data-hidden="click here to see more info" data-shown="show less"></a>
 <div class="toggle-panel">

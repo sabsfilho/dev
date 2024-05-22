@@ -1,0 +1,43 @@
+https://community.abp.io/posts/deploy-your-abp-framework-mvc-project-to-azure-container-apps-r93u9c6d
+
+https://docs.abp.io/en/abp/latest/Startup-Templates/Application
+
+https://www.youtube.com/watch?v=Lqh1j1H5pkg
+
+#Prepare linux
+
+sudo apt upgrade
+
+sudo apt update
+
+sudo apt-get install xdg-utils
+
+#Install ABP CLI Tool
+dotnet tool install -g Volo.Abp.Cli
+
+#Create Your ABP Solution
+mkdir ABPSolution
+cd ABPSolution
+abp new ABPTodoApp -u angular
+
+abp install-libs
+
+#Create the Database
+cd /workspaces/SoccerForFunApp/ABPToDoApp/aspnet-core/src/ABPTodoApp.DbMigrator
+dotnet run
+
+#Must important set properties/launchSettings.js to run using http and https in profiles
+/workspaces/SoccerForFunApp/ABPToDoApp/aspnet-core/src/ABPTodoApp.HttpApi.Host/Properties/launchSettings.json
+
+#Run the App
+cd /workspaces/SoccerForFunApp/ABPToDoApp/aspnet-core/src/ABPTodoApp.HttpApi.Host
+dotnet run
+
+/swagger/index.html
+
+dotnet dev-certs https --trust
+
+#Run Angular
+cd /workspaces/SoccerForFunApp/ABPToDoApp/angular
+npm i -g @angular/cli
+npm run start -- --host=0.0.0.0 --public-host=${CODESPACE_NAME}-4200.preview.app.github.dev
