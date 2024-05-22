@@ -1,0 +1,7 @@
+Azure SQL Server
+# get public ip
+curl ifconfig.me
+# Firewall > Networking > set ip
+68.154.26.146
+# get ado net connection
+
