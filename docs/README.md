@@ -1,4 +1,4 @@
-# Software Engineer & Full Stack Senior Developer
+# Senior Software Engineer & Full Stack Developer
 ### C#, JavaScript & SQL
 
 I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management in Brazilian IT, Banking and Fintech companies.  
