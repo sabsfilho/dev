@@ -169,8 +169,10 @@ ${buildImagesPanel('pcb',
             'C#, .NET, .NET Core, Entity Framework',
             'MS SQL Server &amp; T-SQL, PostGRE &amp; PL/pgSQL, MongoDB',
             'JavaScript ES6, jQuery, Node.js, Express, React, Mongoose, RESTful',
+            'Tradingview Lightweight Charts js library, D3.js, HTML Canvas API',
             'HTML5, CSS, SCSS, Sass, Jekyll',
             'AWS, Azure',
+            'Azure Key Vault, Bicep',
             'Project Management (Kanban ✔️, SCRUM, Waterfall)',
             'Git, GitHub, VisualSVN Subversion, TortoiseSVN',
             'Visual Studio, VSCode'
@@ -197,7 +199,7 @@ ${buildImagesPanel('pcb',
         ],
         education: [
             ['Computer Science &amp; System Project Management @ Pontifical Catholic University of Rio de Janeiro - PUC','https://www.puc-rio.br','2005-2006, Rio de Janeiro, RJ - Brazil'],
-            ['Mechanical Engineer @ Federal University of Rio de Janeiro - UFRJ','http://www.mecanica.ufrj.br/ufrj-em/','1995-2001, Rio de Janeiro, RJ - Brazil']
+            ['Mechanical Engineering @ Federal University of Rio de Janeiro - UFRJ','http://www.mecanica.ufrj.br/ufrj-em/','1995-2001, Rio de Janeiro, RJ - Brazil']
         ],
         awards: [
             ['ABCM-EMBRAER 2004 prize in undergraduate category','https://abcm.org.br/symposium-series/SSM_Vol2/Section_II_Industrial_Instrumentation/SSM2_II_05.pdf',`
