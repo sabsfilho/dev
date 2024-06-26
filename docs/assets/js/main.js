@@ -172,7 +172,7 @@ ${buildImagesPanel('pcb',
             'MS SQL Server &amp; T-SQL, PostgreSQL &amp; PL/pgSQL',
             'MongoDB/Azure & EF Core, DynamoDB/AWS & Object Model',
 			'.NET CLI, AWS.CLI',
-			'Docker Container, AWS Lambda Serverless Function',
+			'Docker Container, AWS Lambda Serverless Function, AWS S3 Bucket',
 			'<strong>VS Code using Dev Container running Docker in Ubuntu/Linux Virtual Machine</strong>',
 			'ASP.NET Core using minimal API, ASP.NET MVC and Controller-based API',
             'JavaScript ES6, jQuery, Node.js, Express, React, Mongoose, RESTful',
@@ -424,7 +424,7 @@ mainContent = {
                 body:`
 <div class="bio">
 <p>I am a seasoned Full Stack Developer specializing in the Microsoft & MERN stacks with more than 25 years in software development and team management in Banking, Startup and Fintech companies.<div class="vid"><embed width="350" height="197" src="https://docs.google.com/file/d/1MZBidAZR2YWW03qooKx6P0SD5ZKGfTT7/preview"></div></p>
-<p>Currently I am working on a brownfield project, being responsible to modernize our .NET Framework ecosystem from a monolithic architecture based in Virtual Machines running Windows Servers to a Service Oriented Architecture, using AWS Lambda Serverless Function, DynamoDB, AWS RDS for SQL Server, .NET 8, Entity Framework, Docker images and applying the .NET Microservices Architecture. I am coding on a VS Code Dev Container running Docker on a Ubuntu/Linux EC2 Instance and using GitHub for version control. Before getting this project approval, I developed a .NET Core Web App consuming  resources of my personal Azure account in order to build a prototype and create a viability study for this modernization.</p>
+<p>Currently I am working on a brownfield project, being responsible to modernize our .NET Framework ecosystem from a monolithic architecture based in Virtual Machines running Windows Servers to a Service Oriented Architecture, using AWS Lambda Serverless Function, DynamoDB, AWS RDS for SQL Server, AWS S3 Bucket, .NET 8, Entity Framework, Docker images and applying the .NET Microservices Architecture. I am coding on a VS Code Dev Container running Docker on a Ubuntu/Linux EC2 Instance and using GitHub for version control. Before getting this project approval, I developed a .NET Core Web App consuming  resources of my personal Azure account in order to build a prototype and create a viability study for this modernization.</p>
 <p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro - UFRJ, one of the most prestigious universities in Brazil, and worked in their Robotics Lab until graduation. I post-graduated in Computer Science & System Project Management from Pontifical Catholic University of Rio de Janeiro - PUC-RIO also a renowned university in Brazil.</p>
 <p>I am a researcher by nature and I am very proud to say that one of my research projects was awarded and recognized with the ABCM-EMBRAER 2004 prize.</p>
 <p>My CEO usually says that I am a T-shaped person collaborating and nurturing multiple areas of connections. As I am a developer with a mechanical engineering, academic research and financial background, I can easily cross beyond borders building strong bridges with network, security, compliance, sales and business teams.</p>
