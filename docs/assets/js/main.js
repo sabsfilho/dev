@@ -34,7 +34,7 @@ const CtMain = function(){
 					<p>Put.Call.Bot is a software solution that evaluates quantitative analysis from real time Bovespa exchange market data, sending buy and sell signals to brokers according to the algorithmic strategy chosen by the trader.</p>
 					<p>By providing investment robots that operate 100% automatically, Put.Call.Bot positions itself at the forefront of the financial revolution, offering solutions that transcend traditional methods. These automated systems are designed to analyze real-time data, identify market opportunities, and execute transactions swiftly, all without human intervention.</p>
                     <p>This approach not only increases the effectiveness of operations but also significantly reduces the potential for errors resulting from impulsive or emotional decisions. The trust placed in Put Call Bot's sophisticated algorithms reflects the company's dedication to providing its clients with a safer, transparent, and more effective investment experience.</p>
-					<p>This automated trading system is a very powerful web platform that allows our clients to work from any web browser or device. It is designed to negotiate stocks, options, derivatives and future instruments in a low or high frequency trading way and manages day trade or swing trade positions as well.</p>
+					<p>This automated trading system is a very powerful no-code web platform that allows our clients to work from any web browser or device. It is designed to negotiate stocks, options, derivatives and future instruments in a low or high frequency trading way and manages day trade or swing trade positions as well.</p>
                     <p>The trader can work with virtual orders or set to route them to his broker, also one or more broker accounts can be saved and used.</p>
                     <p>Our platform allows the trader to create, debug, test, optimize, and execute trading robots in an exclusive environment totally independent from the production server, and also a development server can be requested to safely build and test their algorithms.</p>
                     <p>When the work is done, all these strategies can be published to production in the real world environment. The main purpose of PutCallBot is to replace the hard work of following the market tick by tick giving time to the trader to evaluate better strategies for his portfolio.</p>
@@ -47,13 +47,15 @@ const CtMain = function(){
 ${buildImagesPanel('pcb', 
     [
         ['Automated Trading System for Hedge Fund Managers', 'PCBDesk'],
-        ['the system general concept', 'SystemDesign'],
+        ['modernization project - working in progress, men at work', 'PutCallBotHighLevelModelDesign'],
+        ['the system general concept - legacy architecture', 'SystemDesign'],
         ['the future - machine learning predicting model with TensorFlow LSTM using Google Colab', 'LSTMPredictingModel'],
         ['a swing trade strategy shown by the portfolio manager screen','PortfolioManager'],
         ['a day trade strategy using automation and the manual place order screen','PlaceOrderWindow'],
         ['market data, bid and offer price, online position data and more on the multi view trading screen','TradingScreen'],
         ['portfolio results against many financial benchmarks by the strategy performance chart','StrategyPerformanceChart'],
         ['BI chart report for candle pattern research','SimilarCandle'],
+        ['no-code platform design - strategy configuration','NoCodePlatform'],
         ['candle strategy script builder with realtime parameter values view','CandleExpressionBuilder']
     ])}
 <div class="pcb-logo"><div>Put.Call.Bot Technologies</div>
@@ -424,7 +426,7 @@ mainContent = {
                 body:`
 <div class="bio">
 <p>I am a seasoned Full Stack Developer specializing in the Microsoft & MERN stacks with more than 25 years in software development and team management in Banking, Startup and Fintech companies.<div class="vid"><embed width="350" height="197" src="https://docs.google.com/file/d/1MZBidAZR2YWW03qooKx6P0SD5ZKGfTT7/preview"></div></p>
-<p>Currently I am working on a brownfield project, being responsible to modernize our .NET Framework ecosystem from a monolithic architecture based in Virtual Machines running Windows Servers to a Service Oriented Architecture, using AWS Lambda Serverless Function, DynamoDB, AWS RDS for SQL Server, AWS S3 Bucket, .NET 8, Entity Framework, Docker images and applying the .NET Microservices Architecture. I am coding on a VS Code Dev Container running Docker on a Ubuntu/Linux EC2 Instance and using GitHub for version control. Before getting this project approval, I developed a .NET Core Web App consuming  resources of my personal Azure account in order to build a prototype and create a viability study for this modernization.</p>
+<p class="currentmemo">&ldquo;Currently I am working on a brownfield project, being responsible to modernize our .NET Framework ecosystem from a monolithic architecture based in Virtual Machines running Windows Servers to a Service Oriented Architecture, using AWS Lambda Serverless Function, DynamoDB, AWS RDS for SQL Server, AWS S3 Bucket, .NET 8, Entity Framework, Docker images and applying the .NET Microservices Architecture. I am coding on a VS Code Dev Container running Docker on a Ubuntu/Linux EC2 Instance and using GitHub for version control. Before getting this project approval, I developed a .NET Core Web App consuming  resources of my personal Azure account in order to build a prototype and create a viability study for this modernization.&rdquo;</p>
 <p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro - UFRJ, one of the most prestigious universities in Brazil, and worked in their Robotics Lab until graduation. I post-graduated in Computer Science & System Project Management from Pontifical Catholic University of Rio de Janeiro - PUC-RIO also a renowned university in Brazil.</p>
 <p>I am a researcher by nature and I am very proud to say that one of my research projects was awarded and recognized with the ABCM-EMBRAER 2004 prize.</p>
 <p>My CEO usually says that I am a T-shaped person collaborating and nurturing multiple areas of connections. As I am a developer with a mechanical engineering, academic research and financial background, I can easily cross beyond borders building strong bridges with network, security, compliance, sales and business teams.</p>
