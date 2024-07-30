@@ -1,0 +1,8 @@
+curl "https://sabsfilho.github.io/dev/rebrand/aws/create-ubuntu-instance.sh" /
+> create-ubuntu-instance.sh
+less create-ubuntu-instance.sh
+chmod +x create-ubuntu-instance.sh
+#click here to get your public ip
+./create-ubuntu-instance.sh "TYPE HERE YOUR PUBLIC IP"
+
+
