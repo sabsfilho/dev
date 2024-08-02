@@ -1,0 +1,4 @@
+curl "https://sabsfilho.github.io/dev/rebrand/aws/create-aws-lambda-user-roles.sh" > create-aws-lambda-user-roles.sh
+cat create-aws-lambda-user-roles.sh
+chmod +x create-aws-lambda-user-roles.sh
+#./create-aws-lambda-user-roles.sh
