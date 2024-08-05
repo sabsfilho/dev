@@ -1786,3 +1786,6 @@ li a:hover,
 	height:120px;
 	margin-left: 10px
 }
+.accord-panel p, .accord-panel li{
+	text-align:justify
+}
