@@ -456,7 +456,7 @@ mainContent = {
 <p>I'm currently looking for the opportunity to work remotely in IT projects abroad.</p>
 <p>My hour is a commodity that your budget can take advantage of.
 As I work from the seashore of the wonderful City of Rio de Janeiro, Brazil, we can together be very happy with the currency exchange rates. So, it's definitely a win–win game for us!</p>
-<p>Available to start work right now on a full or part-time remote job at 4PM-6AM GMT,
+<p>Available to start work right now on a full or part-time remote job,
 <br/><u>also flexible for any time zone overlap</u>.</p>
 <p><em>I need employer sponsorship to work within the United States.</em></p>
 <div>
