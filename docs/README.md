@@ -1,10 +1,10 @@
 # Senior Software Engineer & Full Stack Developer
 ### C#, JavaScript & SQL
 
-I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management in Brazilian IT, Banking and Fintech companies.  
+I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management, helping people in Brazilian IT, Banking and Fintech companies.  
 I graduated in Mechanical Engineering, post-graduated in CS & System Project Management and I'm currently looking for the opportunity to work remotely in IT projects abroad.  
-Available to start work right now on a full or part-time remote job at 4PM-6AM GMT, also flexible for any time zone overlap.  
-_I need employer sponsorship to work within the United States._
+Too much to say, too much to tell...
+Let's team up someday, somewhere, somehow !!!
 
 ## Skills
 - C#, .NET
