@@ -199,7 +199,7 @@ ${buildImagesPanel('pcb',
             'Azure Key Vault, AWS Secret Keys, Bicep',
             'Project Management (Kanban ✔️, SCRUM, Waterfall)',
             'Git, GitHub, VisualSVN Subversion, TortoiseSVN',
-            'Visual Studio, VSCode'
+            'Visual Studio, VSCode, Notepad++ ✔️'
         ],
         softskills: ' T-shaped person,Friendliness,Active Listening,Collaboration,Adaptability,Research,Problem Solving,Self-taught Mindset'.split(','),
         certifications: [
@@ -426,6 +426,17 @@ stepping in and out as handling a bad asset position to secure the fund health a
     },
     addBlocks = ()=>{
         const panel = document.getElementById('panel');
+		
+		const vids = `<div class="vid">
+<div>
+<embed src="https://docs.google.com/file/d/1OY46AiLuqPmG4PJScHkDyuAQZ7xETApT/preview">
+<div>Short Introduction</div>
+</div>
+<div>
+<embed src="https://docs.google.com/file/d/1MZBidAZR2YWW03qooKx6P0SD5ZKGfTT7/preview">
+<div>About Me Presentation</div>
+</div>
+</div>`;
 /*
 mainContent = {
     body,
@@ -440,7 +451,7 @@ mainContent = {
             {
                 body:`
 <div class="bio">
-<p>I am a seasoned Full Stack Developer specializing in the Microsoft & MERN stacks with more than 25 years in software development and team management, helping people in Banking, Startup and Fintech companies.<div class="vid"><embed width="350" height="197" src="https://docs.google.com/file/d/1MZBidAZR2YWW03qooKx6P0SD5ZKGfTT7/preview"></div></p>
+<p>I am a seasoned Full Stack Developer specializing in the Microsoft & MERN stacks with more than 25 years in software development and team management, helping people in Banking, Startup and Fintech companies.${vids}</p>
 <p class="currentmemo">&ldquo;Currently I am working on a brownfield project, being responsible to modernize our .NET Framework ecosystem from a monolithic architecture based in Virtual Machines running Windows Servers to a Service Oriented Architecture, using AWS Lambda Serverless Function, DynamoDB, AWS RDS for SQL Server, AWS S3 Bucket, AWS Event Bridge, .NET 8, Entity Framework, Docker images and applying the .NET Microservices Architecture.<img class="AWSLambdaFunction" src="assets/img/AWSLambdaFunction.jpg"> I am coding on a VS Code Dev Container running a Docker in Docker approach on a Ubuntu/Linux EC2 Instance and using GitHub for version control. Before getting this project approval, I developed a .NET Core Web App consuming  resources of my personal Azure account in order to build a prototype and create a viability study for this modernization. I've crafted an <a target="_blank" href="https://docs.google.com/document/d/1Yg7iscwM2IChCxy66aYhOB4-kA_9cgu6XC3Ar5RNn5k/edit?usp=sharing">all-in-one guide (click to open)</a> to help me train my colleagues to publish .NET 8 microservices to AWS Lambda Function, using really cool stuff and also reducing our costs !&rdquo;</p>
 <p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro - UFRJ, one of the most prestigious universities in Brazil, and worked in their Robotics Lab until graduation. I post-graduated in Computer Science & System Project Management from Pontifical Catholic University of Rio de Janeiro - PUC-RIO also a renowned university in Brazil.</p>
 <p>I am a researcher by nature and I am very proud to say that one of my research projects was awarded and recognized with the ABCM-EMBRAER 2004 prize.</p>
