@@ -8,10 +8,16 @@ void Main()
 	BinarySearch(xs, 1).Dump();
 
 }
+static bool BinarySearchHas(int[] xs, int t)
+{
+	Array.Sort(xs);
+	
+	return
+		BinarySearchPos(xs, t) > - 1;
+
+}
 
 static int BinarySearch(int[] arr, int v){
-
-	Array.Sort(arr);
 	int i = 0;
 	int j = arr.Length - 1;
 	while(i <= j){
