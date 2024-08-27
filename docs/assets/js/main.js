@@ -49,7 +49,7 @@ ${buildImagesPanel('pcb',
     [
         ['Automated Trading System for Hedge Fund Managers', 'PCBDesk'],
         ['modernization project - working in progress, men at work', 'PutCallBotHighLevelModelDesign'],
-        ['system oriented architecture and cloud native high level design after modernization', 'PutCallBotSOAHighLevelDesign'],
+        ['system oriented architecture and cloud native high level design after modernization <i>and traction (\'cause money talks...)</i>', 'PutCallBotSOAHighLevelDesign'],
         ['the system general concept - legacy architecture - high level design for non-techies (stakeholders, customers)', 'SystemDesign'],
         ['the future - machine learning predicting model with TensorFlow LSTM using Google Colab', 'LSTMPredictingModel'],
         ['a swing trade strategy shown by the portfolio manager screen','PortfolioManager'],
