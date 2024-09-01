@@ -199,10 +199,15 @@ ${buildImagesPanel('pcb',
             'Tradingview Lightweight Charts js library, D3.js, HTML Canvas API',
             'HTML5, CSS, SCSS, Sass, Jekyll',
             'AWS, Azure',
-            'Azure Key Vault, AWS Secret Keys, Bicep',
-            'Project Management (Kanban ✔️, SCRUM, Waterfall)',
+            'Azure Key Vault, AWS Secret Keys',
+			'AWS CodePipeline, Azure Bicep, Jenkins, GitHub Actions, NUnit',
             'Git, GitHub, VisualSVN Subversion, TortoiseSVN',
-            'Visual Studio, VSCode, Notepad++ ✔️'
+            'Project Management (Kanban ✔️, SCRUM, Waterfall)',
+            'Visual Studio, VSCode, Notepad++ ✔️',
+			'System Integration using <i>API, TCP, HTTP, FTP, Stream, WebHook, WebSocket</i>',
+			'Eletronic Trading System (ETS) Integration to <i>Brazilian Exchange, XP Broker, BTG, Genial, Terra, Cedro, Nelogica</i>',
+			'Payment Integration to <i>Authorize.NET by Visa, Fiserv-First Data, Bradesco, Banco do Brasil, Itau, Brazilian Banks using (CNAB), PagSeguro, MercadoPago, PayPal</i>',
+			'Logistics company Integration to <i>DHL, USPS, Correios</i>'
         ],
         softskills: ' T-shaped person,Friendliness,Active Listening,Collaboration,Adaptability,Research,Problem Solving,Self-taught Mindset'.split(','),
         certifications: [
