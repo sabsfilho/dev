@@ -205,7 +205,7 @@ ${buildImagesPanel('pcb',
             'Project Management (Kanban ✔️, SCRUM, Waterfall)',
             'Visual Studio, VSCode, Notepad++ ✔️',
 			'System Integration using <i>API, TCP, HTTP, FTP, Stream, WebHook, WebSocket</i>',
-			'Eletronic Trading System (ETS) Integration to <i>Brazilian Exchange, XP Broker, BTG, Genial, Terra, Cedro, Nelogica</i>',
+			'Eletronic Trading System (ETS) Integration to <i>TD Ameritrade, Brazilian Exchange, XP Broker, BTG, Genial, Terra, Cedro, Nelogica</i>',
 			'Payment Integration to <i>Authorize.NET by Visa, Fiserv-First Data, Bradesco, Banco do Brasil, Itau, Brazilian Banks using (CNAB), PagSeguro, MercadoPago, PayPal</i>',
 			'Logistics company Integration to <i>DHL, USPS, Correios</i>'
         ],
