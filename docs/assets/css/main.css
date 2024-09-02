@@ -1751,6 +1751,9 @@ li a:hover,
 .accord-panel ul {
   padding-left: 15px
 }
+.ImagesPanel > div {
+  text-align: center;
+ }
 .ImagesPanel > div > :first-child {
   text-align: center;
   font-size:14px;
