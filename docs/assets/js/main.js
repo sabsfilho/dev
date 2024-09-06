@@ -25,7 +25,7 @@ const CtMain = function(){
     showCase = {
         projs: [
             {
-                tit: 'Jobs',
+                tit: 'Full Stack, Product Development, Quant Automated Trade System Platform',
                 projs: [
                     {p:'',u:'http://putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,Subversion,SQL SERVER,IIS,AWS Cloud',d:`
                     <div class="accord-subtit">Since 2013 as JavaScript C# .NET Full Stack Developer</div>
@@ -68,6 +68,19 @@ ${buildImagesPanel('pcb',
 <img src="assets/img/pcb/PCBLogo.jpg" alt="company logo" /></div>`},
                 ]
             },
+            {
+                tit: 'Backend, Software Design, Platform Module, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda',
+                projs: [
+                    {p:'',u:'https://github.com/sabsfilho/EC2Scheduler',k:'',n:'EC2Scheduler (click here to open GitHub project repository)',tags:'C#,.NET 8,GitHub,Docker,VS Code,DevContainer,.NET CLI,AWS CLI,NUnit,AWS Cloud',d:`
+					<p>AWS Lambda Function microservice to control Cron Jobs and AWS EC2 resources.</p>
+					<p><img class="pcb-logo" src="articles/AWSLambdaDockerInDockerGraviton/images/AWSLambdaAndDockerInDockerSmall.jpg" alt="company logo" /></p>
+					<p>The purpose of this microservice is to control AWS Elastic Compute Cloud EC2 resources, executing Scheduled Tasks or Cron Jobs.</p>
+					<p>It provides a pipeline to allow some infrastructure maintenance procedures to be executed by our internal services. I tailored this project to be public on my GitHub repository for training my colleagues. I didn't implement any internal pieces that would expose some complexities of our business logic.</p>
+					<p>This project is also used as the Backend module by a Frontend .NET8 project, which is a Web Application written in Javascript and React, and using Tailwind.css. I am working on a public version to allow me to put it into my open GitHub repository and then release a more complete Full Stack system.</p>
+					<p>I wrote an all-in-one guide to help me and my colleagues to create a straightforward walk through to create a boilerplate for AWS Lambda Serverless Function from Zero to Hero. using the cost effective Graviton Arm64 processor from a VS Code Docker In Docker Dev Container running on Linux/Ubuntu EC2 Instance. <a href="https://www.linkedin.com/pulse/publish-net-8-microservice-aws-lambda-function-using-cost-santos-vsiqe">Click here and check it out!</a></p>
+					`}
+				]
+			},
             {
                 tit: 'Web Design & Style, HTML5, SCSS, Flexbox',
                 k: 'rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign',
@@ -170,20 +183,7 @@ ${buildImagesPanel('pcb',
                     {u:'https://lab-project-01.azurewebsites.net/api/timestamp',k:'',n:'Time Stamp',tags:'Node.js,Express.js,AZURE',d:''},
                     {u:'https://lab-project-01.azurewebsites.net/api/urlshortener.',n:'URL Shortener',tags:'Node.js,Express.js,AZURE',d:''},
                 ]
-            },
-            {
-                tit: 'Backend, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda',
-                projs: [
-                    {p:'',u:'https://github.com/sabsfilho/EC2Scheduler',k:'',n:'EC2Scheduler (click here to open GitHub project repository)',tags:'C#,.NET 8,GitHub,Docker,VS Code,DevContainer,.NET CLI,AWS CLI,NUnit,AWS Cloud',d:`
-					<p>AWS Lambda Function microservice to control Cron Jobs and AWS EC2 resources.</p>
-					<p><img class="pcb-logo" src="articles/AWSLambdaDockerInDockerGraviton/images/AWSLambdaAndDockerInDockerSmall.jpg" alt="company logo" /></p>
-					<p>The purpose of this microservice is to control AWS Elastic Compute Cloud EC2 resources, executing Scheduled Tasks or Cron Jobs.</p>
-					<p>It provides a pipeline to allow some infrastructure maintenance procedures to be executed by our internal services. I tailored this project to be public on my GitHub repository for training my colleagues. I didn't implement any internal pieces that would expose some complexities of our business logic.</p>
-					<p>This project is also used as the Backend module by a Frontend .NET8 project, which is a Web Application written in Javascript and React, and using Tailwind.css. I am working on a public version to allow me to put it into my open GitHub repository and then release a more complete Full Stack system.</p>
-					<p>I wrote an all-in-one guide to help me and my colleagues to create a straightforward walk through to create a boilerplate for AWS Lambda Serverless Function from Zero to Hero. using the cost effective Graviton Arm64 processor from a VS Code Docker In Docker Dev Container running on Linux/Ubuntu EC2 Instance. <a href="https://www.linkedin.com/pulse/publish-net-8-microservice-aws-lambda-function-using-cost-santos-vsiqe">Click here and check it out!</a></p>
-					`}
-				]
-			}
+            }
         ] 
     };
 
