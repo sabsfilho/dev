@@ -25,7 +25,7 @@ const CtMain = function(){
     showCase = {
         projs: [
             {
-                tit: 'Full Stack, Product Development, Quant Automated Trade System Platform',
+                tit: 'Full Stack, Product Development, <b>Quant Automated Trade System Platform</b>',
                 projs: [
                     {p:'',u:'http://putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,Subversion,SQL SERVER,IIS,AWS Cloud',d:`
                     <div class="accord-subtit">Since 2013 as JavaScript C# .NET Full Stack Developer</div>
@@ -69,15 +69,40 @@ ${buildImagesPanel('pcb',
                 ]
             },
             {
-                tit: 'Backend, Software Design, Platform Module, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda',
+                tit: 'Backend, Software Architect, Platform Module, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda, <b>Cron Job</b>',
                 projs: [
-                    {p:'',u:'https://github.com/sabsfilho/EC2Scheduler',k:'',n:'EC2Scheduler (click here to open GitHub project repository)',tags:'C#,.NET 8,GitHub,Docker,VS Code,DevContainer,.NET CLI,AWS CLI,NUnit,AWS Cloud',d:`
+                    {p:'',u:'https://github.com/sabsfilho/EC2Scheduler',k:'',n:'EC2Scheduler (click here to open GitHub project repository)',tags:'C#,.NET 8,GitHub,Docker,VS Code,DevContainer,.NET CLI,AWS CLI,NUnit,AWS Lambda,AWS S3,AWS EventBridge,AWS EC2,AWS Cloud',d:`
 					<p>AWS Lambda Function microservice to control Cron Jobs and AWS EC2 resources.</p>
-					<p><img class="pcb-logo" src="articles/AWSLambdaDockerInDockerGraviton/images/AWSLambdaAndDockerInDockerSmall.jpg" alt="company logo" /></p>
+					<p><img class="pcb-logo" src="articles/AWSLambdaDockerInDockerGraviton/images/AWSLambdaAndDockerInDockerSmall.jpg" alt="AWSLambdaAndDockerInDockerSmall" /></p>
 					<p>The purpose of this microservice is to control AWS Elastic Compute Cloud EC2 resources, executing Scheduled Tasks or Cron Jobs.</p>
 					<p>It provides a pipeline to allow some infrastructure maintenance procedures to be executed by our internal services. I tailored this project to be public on my GitHub repository for training my colleagues. I didn't implement any internal pieces that would expose some complexities of our business logic.</p>
 					<p>This project is also used as the Backend module by a Frontend .NET8 project, which is a Web Application written in Javascript and React, and using Tailwind.css. I am working on a public version to allow me to put it into my open GitHub repository and then release a more complete Full Stack system.</p>
 					<p>I wrote an all-in-one guide to help me and my colleagues to create a straightforward walk through to create a boilerplate for AWS Lambda Serverless Function from Zero to Hero. using the cost effective Graviton Arm64 processor from a VS Code Docker In Docker Dev Container running on Linux/Ubuntu EC2 Instance. <a href="https://www.linkedin.com/pulse/publish-net-8-microservice-aws-lambda-function-using-cost-santos-vsiqe">Click here and check it out!</a></p>
+					`}
+				]
+			},
+            {
+                tit: 'Backend, Software Design, Service Layer, <b>Redis</b>, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda, <b>Geolocation API</b>',
+                projs: [
+                    {p:'',u:'https://github.com/sabsfilho/IPGeoGuard',k:'',n:'IPGeoGuard (click here to open GitHub project repository)',tags:'C#,.NET 8,Redis,GitHub,Docker,VS Code,DevContainer,.NET CLI,AWS CLI,AWS Lambda,AWS S3,AWS Cloud',d:`
+					<p>AWS Lambda Function microservice to control IP requests and web resources using Geolocation by Country and City.</p>
+					<p><img class="pcb-logo" src="assets/img/pcb/IPGeoGuard.jpg" alt="IPGeoGuard" /></p>
+					<p>This project is a microservice that provides a Geolocation protection layer verifying an incoming request and using virtual geographic perimeters to determine if its IP address is allowed to access a restricted service resource. It is very useful when the ip address is available, but not the coordinate.</p>
+					<p>Another great future is to be capable of showing audience locations to see where the biggest audience exists. It is possible to create reports grouping user traffic by country and city.</p>
+					<p>These are the main targets of this project:
+					<ul>
+						<li>Block requests from restricted geographic areas</li>
+						<li>Allow requests from permitted geographic areas</li>
+						<li>Enable/disable features for specific regions</li>
+						<li>Keep and report audience traffic by location (Country, City...)</li>
+					</ul>
+					</p>
+					<p>This project is a .NET 8 microservice hosted in AWS Lambda Function and can be easily integrated consuming a file in GeoJSON format.</p>
+					<p>The incoming request IP address is translated into a geographic location and verified in the whitelist or blacklist files configured by the system administrator.</p>
+					<p>This IPGeoGuard microservice consumes the IP Geolocation API tool to determine a user's location and use the geolocation information.
+<a href="https://www.ip2location.io">IP2 Location API</a></p>
+<p>I recently submitted this project to the <a href="https://contest.ip2location.com/#ipinfodb-invitation">IP2Location.io Programming Contest</a>. I found it would be a perfect opportunity to test my abilities, learn new techniques and share my knowledge.</p>
+<p><img class="pcb-logo" src="assets/img/pcb/IP2LocationContest.jpg" alt="IP2Location Contest" /></p>
 					`}
 				]
 			},
@@ -192,6 +217,7 @@ ${buildImagesPanel('pcb',
             'C#, <strong>.NET 8</strong>, .NET Framework, Entity Framework',
             'MS SQL Server &amp; T-SQL, PostgreSQL &amp; PL/pgSQL',
             'MongoDB/Azure & EF Core, DynamoDB/AWS & Object Model',
+			'<a href="https://redis.io/">Redis Database, in-memory storage cache</a>',
 			'.NET CLI, AWS.CLI',
 			'Docker Container, AWS EKS, AWS Lambda Serverless Function, AWS S3 Bucket, AWS Event Bridge',
 			'<strong>VS Code using Dev Container running Docker in Ubuntu/Linux Virtual Machine</strong>',
