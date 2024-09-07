@@ -69,7 +69,7 @@ ${buildImagesPanel('pcb',
                 ]
             },
             {
-                tit: 'Backend, Software Architect, Platform Module, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda, <b>Cron Job</b>',
+                tit: 'Backend, Software Architect, Platform Module, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda, AWS S3, <b>Cron Job Manager</b>',
                 projs: [
                     {p:'',u:'https://github.com/sabsfilho/EC2Scheduler',k:'',n:'EC2Scheduler (click here to open GitHub project repository)',tags:'C#,.NET 8,GitHub,Docker,VS Code,DevContainer,.NET CLI,AWS CLI,NUnit,AWS Lambda,AWS S3,AWS EventBridge,AWS EC2,AWS Cloud',d:`
 					<p>AWS Lambda Function microservice to control Cron Jobs and AWS EC2 resources.</p>
@@ -82,7 +82,7 @@ ${buildImagesPanel('pcb',
 				]
 			},
             {
-                tit: 'Backend, Software Design, Service Layer, <b>Redis</b>, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda, <b>Geolocation API</b>',
+                tit: 'Backend, Software Design, Service Layer, <b>Redis</b>, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda, AWS S3, <b>Geolocation API</b>',
                 projs: [
                     {p:'',u:'https://github.com/sabsfilho/IPGeoGuard',k:'',n:'IPGeoGuard (click here to open GitHub project repository)',tags:'C#,.NET 8,Redis,GitHub,Docker,VS Code,DevContainer,.NET CLI,AWS CLI,AWS Lambda,AWS S3,AWS Cloud',d:`
 					<p>AWS Lambda Function microservice to control IP requests and web resources using Geolocation by Country and City.</p>
@@ -101,6 +101,7 @@ ${buildImagesPanel('pcb',
 					<p>The incoming request IP address is translated into a geographic location and verified in the whitelist or blacklist files configured by the system administrator.</p>
 					<p>This IPGeoGuard microservice consumes the IP Geolocation API tool to determine a user's location and use the geolocation information.
 <a href="https://www.ip2location.io">IP2 Location API</a></p>
+<p>In this project, I am also using <a href="https://redis.io/">Redis Database, in-memory storage</a> to cache Geolocation metadata, so I can significantly reduce IP2Location API requests. Redis is the world's fastest in-memory database and extremely easy to integrate.</p>
 <p>I recently submitted this project to the <a href="https://contest.ip2location.com/#ipinfodb-invitation">IP2Location.io Programming Contest</a>. I found it would be a perfect opportunity to test my abilities, learn new techniques and share my knowledge.</p>
 <p><img class="pcb-logo" src="assets/img/pcb/IP2LocationContest.jpg" alt="IP2Location Contest" /></p>
 					`}
@@ -222,7 +223,7 @@ ${buildImagesPanel('pcb',
 			'Docker Container, AWS EKS, AWS Lambda Serverless Function, AWS S3 Bucket, AWS Event Bridge',
 			'<strong>VS Code using Dev Container running Docker in Ubuntu/Linux Virtual Machine</strong>',
 			'ASP.NET Core using minimal API, ASP.NET MVC and Controller-based API',
-            'JavaScript ES6, jQuery, Node.js, Express, React, Mongoose, RESTful',
+            'JavaScript ES6, jQuery, Node.js, Express, React, Mongoose',
             'Tradingview Lightweight Charts js library, D3.js, HTML Canvas API',
             'HTML5, CSS, SCSS, Sass, Jekyll',
             'AWS, Azure',
@@ -232,9 +233,9 @@ ${buildImagesPanel('pcb',
             'Project Management using Kanban ✔️, SCRUM, Waterfall, <a href="https://www.wrike.com">Wrike</a>✔️',
             '<a href="https://workspace.google.com">Google Workspace</a>, <a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software/">Microsoft Teams</a>',
             'Visual Studio, VSCode, Notepad++ ✔️',
-			'System Integration using <i>API, TCP, HTTP, FTP, Stream, WebHook, WebSocket</i>',
-			'Eletronic Trading System (ETS) Integration to <i>TD Ameritrade, Brazilian Exchange, XP Broker, BTG, Genial, Terra, Cedro, Nelogica</i>',
-			'Payment Integration to <i>Authorize.NET by Visa, Fiserv-First Data, Bradesco, Banco do Brasil, Itau, Brazilian Banks using (CNAB), PagSeguro, MercadoPago, PayPal</i>',
+			'System Integration using <i>RESTful API, TCP, HTTP, FTP, Stream, WebHook, WebSocket</i>',
+			'Eletronic Trading System (ETS) Integration to <i>TD Ameritrade, Brazilian Stock Exchange, XP Broker, BTG, Genial, Terra, Cedro, Nelogica</i>',
+			'Payment Integration to <i>Authorize.NET by Visa, Fiserv-First Data, Bradesco, Banco do Brasil, Itau, Brazilian Banks using (CNAB), PagSeguro, MercadoPago, PayPal, Payment Card Industry Data Security Standard (PCI DSS Compliance)</i>',
 			'Logistics company Integration to <i>DHL, USPS, Correios</i>'
         ],
         softskills: ' T-shaped person,Friendliness,Active Listening,Collaboration,Adaptability,Research,Problem Solving,Self-taught Mindset'.split(','),
