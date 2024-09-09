@@ -82,7 +82,7 @@ ${buildImagesPanel('pcb',
 				]
 			},
             {
-                tit: 'Backend, Software Design, Service Layer, <b>Redis</b>, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda, AWS S3, <b>Geolocation API</b>',
+                tit: 'Backend, Software Design, Service Layer, <b>Redis</b>, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda, AWS API Gateway, AWS S3, <b>Geolocation API</b>',
                 projs: [
                     {p:'',u:'https://github.com/sabsfilho/IPGeoGuard',k:'',n:'IPGeoGuard (click here to open GitHub project repository)',tags:'C#,.NET 8,Redis,GitHub,Docker,VS Code,DevContainer,.NET CLI,AWS CLI,AWS Lambda,AWS S3,AWS Cloud',d:`
 					<p>AWS Lambda Function microservice to control IP requests and web resources using Geolocation by Country and City.</p>
@@ -100,19 +100,20 @@ ${buildImagesPanel('pcb',
 					<p>This project is a .NET 8 microservice hosted in AWS Lambda Function and can be easily integrated consuming a file in GeoJSON format.</p>
 					<p>The incoming request IP address is translated into a geographic location and verified in the whitelist or blacklist files configured by the system administrator.</p>
 					<p>This IPGeoGuard microservice consumes the IP Geolocation API tool to determine a user's location and use the geolocation information.
-<a href="https://www.ip2location.io">IP2 Location API</a></p>
-<p>In this project, I am also using <a href="https://redis.io/">Redis Database, in-memory storage</a> to cache Geolocation metadata, so I can significantly reduce IP2Location API requests. Redis is the world's fastest in-memory database and extremely easy to integrate.</p>
-<p>I recently submitted this project to the <a href="https://contest.ip2location.com/#ipinfodb-invitation">IP2Location.io Programming Contest</a>. I found it would be a perfect opportunity to test my abilities, learn new techniques and share my knowledge.</p>
-<p><img class="pcb-logo" src="assets/img/pcb/IP2LocationContest.jpg" alt="IP2Location Contest" /></p>
-<p>I also created a minimal Web API project with ASP.NET Core. I named it SimpleApi and it is used solely for demonstration. I designed these functions:
-<ul>
-<li>GetCurrentTime => first check if the requested IP address can access this service using the IPGeoGuard. If it is allowed, then print the server current time. Otherwise, returns the region restriction warning message.</li>
-<li>GetMapViews => print the stored requested IPs aggregated  by Country and City.</li>
-<li>PutRestriction => set Country restriction for GetCurrentTime function.</li>
-<li>DeleteRestriction => remove Country restriction for GetCurrentTime function.</li>
-</ul>
-<img class="pcb-logo" src="assets/img/pcb/SimpleApiSwagger.jpg" alt="SimpleApiSwagger" />
-</p>
+					<a href="https://www.ip2location.io">IP2 Location API</a></p>
+					<p>I created an AWS API Gateway to invoke the IP GeoGuard Lambda function using its REST API. Using AWS API Gateway provides a secure HTTP endpoint to invoke this Lambda function and it helps manage large volumes of calls by throttling traffic and automatically validating and authorizing API calls. So, it's good practice to implement this connectivity layer.</p>
+					<p>In this project, I am also using <a href="https://redis.io/">Redis Database, in-memory storage</a> to cache Geolocation metadata, so I can significantly reduce IP2Location API requests. Redis is the world's fastest in-memory database and extremely easy to integrate.</p>
+					<p>I recently submitted this project to the <a href="https://contest.ip2location.com/#ipinfodb-invitation">IP2Location.io Programming Contest</a>. I found it would be a perfect opportunity to test my abilities, learn new techniques and share my knowledge.</p>
+					<p><img class="pcb-logo" src="assets/img/pcb/IP2LocationContest.jpg" alt="IP2Location Contest" /></p>
+					<p>I also created a minimal Web API project with ASP.NET Core. I named it SimpleApi and it is used solely for demonstration. I designed these functions:
+					<ul>
+					<li>GetCurrentTime => first check if the requested IP address can access this service using the IPGeoGuard. If it is allowed, then print the server current time. Otherwise, returns the region restriction warning message.</li>
+					<li>GetMapViews => print the stored requested IPs aggregated  by Country and City.</li>
+					<li>PutRestriction => set Country restriction for GetCurrentTime function.</li>
+					<li>DeleteRestriction => remove Country restriction for GetCurrentTime function.</li>
+					</ul>
+					<img class="pcb-logo" src="assets/img/pcb/SimpleApiSwagger.jpg" alt="SimpleApiSwagger" />
+					</p>
 					`}
 				]
 			},
