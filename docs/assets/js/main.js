@@ -244,7 +244,7 @@ ${buildImagesPanel('pcb',
             '<a href="https://workspace.google.com">Google Workspace</a>, <a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software/">Microsoft Teams</a>',
             'Visual Studio, VSCode, Notepad++ ✔️',
 			'System Integration using <i>RESTful API, TCP, HTTP, FTP, Stream, WebHook, WebSocket</i>',
-			'Eletronic Trading System (ETS) Integration to <i>TD Ameritrade, Brazilian Stock Exchange, XP Broker, BTG, Genial, Terra, Cedro, Nelogica</i>',
+			'Eletronic Trading System (ETS) Integration to <i>TD Ameritrade, Brazilian Stock Exchange, XP Broker, BTG, Genial, Terra, Cedro, Nelogica, Financial Information eXchange protocol (FIX)</i>',
 			'Payment Integration to <i>Authorize.NET by Visa, Fiserv-First Data, Bradesco, Banco do Brasil, Itau, Brazilian Banks using (CNAB), PagSeguro, MercadoPago, PayPal, Payment Card Industry Data Security Standard (PCI DSS Compliance)</i>',
 			'Logistics company Integration to <i>DHL, USPS, Correios</i>'
         ],
