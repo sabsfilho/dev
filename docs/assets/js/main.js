@@ -118,6 +118,47 @@ ${buildImagesPanel('pcb',
 				]
 			},
             {
+                tit: 'Backend, Software Design, <b>WebSocket</b>, .NET 8, C#, GitHub, <b>Entity Framework</b>, Microservice, <b>Azure Web API</b>, <b>NoSQL Azure CosmosDB</b>, Parallel Programming, SOLID, SOC, <b>CryptoCurrency API</b>',
+                projs: [
+                    {p:'',u:'https://github.com/sabsfilho/CryptoCurrencyExchangeBroker',k:'',n:'CryptoCurrencyExchangeBroker on Azure (click here to open GitHub project repository)',tags:'C#,.NET 8,Azure WebAPI,WebSocket,EntityFramework,CosmosDB,GitHub,.NET CLI,Azure Cloud',d:`
+					<p>Service Oriented Architecture using AZURE cloud resources.</p>
+					<p><img class="pcb-logo" src="articles/CryptoCurrencyExchangeBroker/CryptoCurrencyExchangeBroker_1240.jpg" alt="CryptoCurrencyExchangeBroker_1240" /></p>
+					<p>Recently at my current company, I implemented an agnostic cloud architecture solution using the DockerHub container repository to register some microservices images that could be published to our AWS or Azure cloud spaces. We are evaluating some AWS cost concerns.</p>
+					<p>I have been using Azure cloud resources for my personal labs for about 3 years, and actually I really enjoy working with Azure solutions and even more because it can be easily integrated with Visual Studio and GitHub. They are also using amazing technologies such as Biceps for CI/CD deployment.</p>
+					<p>So, inspired by this recent study, I decided to create on my Azure account a micro service project that should consume Azure resources, then I came up with this CryptoCurrency project to present to my fellows a simple way to learn a Websocket API server using .NET 8 and also Entity Framework consuming a NoSQL database, the Azure Cosmos DB, which is great for low latency performance.</p>
+					<p>I developed this project based on Parallel Programming, SOLID, Clean Code, Object Oriented, Domain Driven Design and Keep It Simple Stupid (KISS) concepts. The persistence layer has an important abstraction that could allow me change the database management system without changing the business logic layer. The Entity Framework also helps to achieve this level of abstraction modeling the storage entities for us.</p>
+					<p>
+					<img class="pcb-logo" src="articles/CryptoCurrencyExchangeBroker/CryptoCurrencyExchangeBrokerHighLevelDesign.jpg" alt="CryptoCurrencyExchangeBroker" /<br/>
+					<div>Project Highlights:</div>
+					<ul>
+						<li>CryptoCurrency .NET 8 Minimal API solution using the Bitstamp.net crypto exchange Websocket API.</li>
+						<li>Adopted GitHub Actions CI/CD pipeline to Azure Web App and also consuming Azure Cosmos DB with Entity Framework.</li>
+						<li>Enable/disable features for specific regions</li>
+						<li>Development based on Parallel Programming, SOLID, Separation of Concerns, Clean Code, Object Oriented and Domain Driven Design best practices.</li>
+					</ul>
+					</p>
+					<p>This project is a .NET 8 microservice hosted on my Azure account.</p>
+					<p>This is the public API url:<br/>
+					<a href="https://cryptocurrencyexchangebrokerapi20240930232221.azurewebsites.net/">https://cryptocurrencyexchangebrokerapi20240930232221.azurewebsites.net/</a><br/>
+					<img class="pcb-logo" src="articles/CryptoCurrencyExchangeBroker/home-api.png" alt="HomeAPI" />
+					</p>
+					<p>As I am using my Azure account, I have to be very cautious about related cloud costs. So, I am using the FREE F1 plan that unfortunately takes a minute to warm up the service and also it has these constrains:<br/>
+						<ul>
+							<li>Limited compute and memory resources: The F1 plan provides a shared instance of a single CPU core and 1 GB of memory.</li>
+							<li>Limited traffic: The F1 plan allows only up to 1 hour of CPU usage in a day.</li>
+							<li>Limited features: The F1 plan does not include some features as auto-scaling.</li>
+						</ul>
+					</p>
+					<p>I've created a GitHub Actions CI/CD pipeline to Azure Web App and I also configured it to be public. So, it's possible to consume this API using <a href="https://www.postman.com/">Postman</a> or <a href="https://swagger.io/tools/swagger-ui/">SWAGGER UI</a>.<br/>
+						<img class="pcb-logo" src="articles/CryptoCurrencyExchangeBroker/SWAGGER_API.png" alt="SWAGGER_API" />
+					</p>
+					<p>I implemented an API function to create a very simple HTML to show the Crypto Coin Order Book. I simply put a head meta data tag to refresh the page each 5 seconds.<br/>
+						<img class="pcb-logo" src="articles/CryptoCurrencyExchangeBroker/CryptoOrderBook_BTCUSD.jpg" alt="CryptoOrderBook_BTCUSD" />
+					</p>
+					`}
+				]
+			},
+            {
                 tit: 'Web Design & Style, HTML5, SCSS, Flexbox',
                 k: 'rebrand/FreeCodeCamp/Certification/ResponsiveWebDesign',
                 projs: [
@@ -244,7 +285,7 @@ ${buildImagesPanel('pcb',
             'Project Management using Kanban ✔️, SCRUM, Waterfall, <a href="https://www.wrike.com">Wrike</a>✔️',
             '<a href="https://workspace.google.com">Google Workspace</a>, <a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software/">Microsoft Teams</a>',
             'Visual Studio, VSCode, Notepad++ ✔️',
-			'REST API Documentation using <i>SWAGGER UI, Postman</i>',
+			'REST API Documentation using <i><a href="https://swagger.io/tools/swagger-ui/">SWAGGER UI</a>, <a href="https://www.postman.com/">Postman</a></i>',
 			'System Integration using <i>RESTful API, TCP, HTTP, FTP, Stream, WebHook, WebSocket</i>',
 			'Eletronic Trading System (ETS) Integration to <i>TD Ameritrade, Brazilian Stock Exchange, XP Broker, BTG, Genial, Terra, Cedro, Nelogica, Financial Information eXchange protocol (FIX)</i>',
 			'Payment Integration to <i>Authorize.NET by Visa, Fiserv-First Data, Bradesco, Banco do Brasil, Itau, Brazilian Banks using (CNAB), PagSeguro, MercadoPago, PayPal, Payment Card Industry Data Security Standard (PCI DSS Compliance)</i>',
