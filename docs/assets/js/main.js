@@ -3,15 +3,19 @@ const CtMain = function(){
     const experience = {
         projs: [
             {
-                tit: 'Put.Call.Bot, Quant Trading System Fintech, RJ-Brazil<br/>Working remote since September 2013<br/>JavaScript C# .NET Full Stack Developer',
+                tit: 'Microsoft, Silicon, Cloud Hardware, and Infrastructure Engineering (SCHIE), Redmond-USA<br/>Working remote since November 2024<br/>Tech Lead Product and Site Reliability Engineering.<br/>C# .NET Cosmos DB, ADX, Kusto (KQL) DevOps Python Powershell Bash',
+                bdy: 'exp_ms'
+            },
+            {
+                tit: 'Put.Call.Bot, Quant Trading System Fintech, RJ-Brazil<br/>September 2013 - November 2024<br/>Principal Software Engineer, C# .NET JavaScript',
                 bdy: 'exp_pcb'
             },
             {
-                tit: 'Box.Brazil, Logistics Startup, RJ-Brazil<br/>October 2010 - September 2013<br/>JavaScript C# .NET Full Stack Developer',
+                tit: 'Box.Brazil, Logistics Startup, RJ-Brazil<br/>October 2010 - September 2013<br/>Principal Full Stack Engineer, C# .NET JavaScript Full Stack Developer',
                 bdy: 'exp_bxbr'
             },
             {
-                tit: 'Itau Previtec, Banking, RJ-Brazil<br/>July 2000 - October 2010<br/>Project Manager and Senior Software Engineer',
+                tit: 'Itau Previtec, Banking, RJ-Brazil<br/>July 2000 - October 2010<br/>Staff Software Engineer',
                 bdy: 'exp_itprv'
             }
         ]
@@ -25,10 +29,36 @@ const CtMain = function(){
     showCase = {
         projs: [
             {
+                tit: 'Tech Lead Product and Site Reliability Engineering, DevOps Backend Development, <b>Elasticsearch workload tool Implementation for performance benchmark evaluation</b>',
+                projs: [
+                    {p:'',u:'https://microsoft.github.io/VirtualClient/docs/overview/',k:'',n:'Virtual Client Platform',tags:'C#,.NET,Azure Data Explore (ADX),Kusto (KQL),Virtual Client Platform,Juno Orchestrator,Python,Bash,Powershell,Linux',d:`
+                    <div class="accord-subtit">2024-current as Tech Lead Product and Site Reliability Engineering and hands-on C# .NET Backend Developer</div>
+                    <br>
+                    <p>Elasticsearch workload tool Implementation for performance benchmark evaluation, compatible with Windows and Linux servers, consuming the <a href="https://esrally.readthedocs.io/en/stable/">Rally benchmark tool</a>.</p>
+                    <p>This kind of tool is used to certify new hardware before releasing it to the production environment. For these objectives, we run real case scenario workloads simulating our customer demands. We analyze the telemetries evaluating cpu, memory, network performance, readiness and incidents.</p>
+                    <p>I developed this tool integrated into the <a href="https://github.com/microsoft/VirtualClient">https://github.com/microsoft/VirtualClient</a> project.</p>
+                    <p>Profile <a href="https://github.com/microsoft/VirtualClient/blob/6859c6cc84e971a7e910a1659857c41f5be62f3e/src/VirtualClient/VirtualClient.Main/profiles/PERF-ELASTICSEARCH-RALLY.json">PERF-ELASTICSEARCH-RALLY.json</a></p>
+                    <p>This a tiny fraction sample using these races: geonames=ExecuteGeoNamesBenchmark, pmc=ExecutePMCBenchmark, geopoin=ExecuteGeopointBenchmarkt, http_logs=ExecuteHTTPLogsBenchmark running on the Azure Virtual Machine Standard_D2as_v5.<br>
+                    <img src="assets/img/pcb/ElasticsearchRaces.jpg" alt="Elasticsearch races" /><br>
+                    We can find the list of available races to choose <a href="https://esrally.readthedocs.io/en/stable/race.html#list-tracks">here</a>:<br>
+                    <img src="assets/img/pcb/ElasticsearchRacesList.jpg" alt="Rally races list" /><br><br>
+                    We collect Elasticsearch performance metrics and record them in telemetries table in Kusto database<br>
+                    <img src="assets/img/pcb/ElasticsearchMetrics.jpg" alt="Elasticsearch metrics" /><br><br>
+                    Using Azure Data Explorer (ADX), I do performance analysis from the metrics collected in Kusto. I created some functions using KQL.<br>
+                    <img src="assets/img/pcb/ElasticsearchKQL01.jpg" alt="Kusto analysis" /><br><br>
+                    I do several performance data analysis using Kusto Query Language (KQL).<br>
+                    <img src="assets/img/pcb/ElasticsearchKQL02.jpg" alt="Kusto query" /><br><br>
+                    <img src="assets/img/pcb/ElasticsearchKQL03.jpg" alt="Kusto query results" />
+</p>
+                    `
+                    }
+                ]
+            },
+            {
                 tit: 'Full Stack, Product Development, <b>Quant Automated Trade System Platform</b>',
                 projs: [
                     {p:'',u:'http://putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,Subversion,SQL SERVER,IIS,AWS Cloud',d:`
-                    <div class="accord-subtit">Since 2013 as JavaScript C# .NET Full Stack Developer</div>
+                    <div class="accord-subtit">2013-2024 as Principal Software Engineer and hands-on JavaScript C# .NET Full Stack Developer</div>
 					<br>
 					<p><img class="pcb-logo" src="assets/img/pcb/PCBFolders.jpg" alt="company logo" /></p>
 					<p>Put.Call.Bot is a software solution that evaluates quantitative analysis from real time Bovespa exchange market data, sending buy and sell signals to brokers according to the algorithmic strategy chosen by the trader.</p>
@@ -42,7 +72,7 @@ const CtMain = function(){
 					<a href="assets/doc/PutCallBot_v138_en.pdf">click here to open some pages of the Compliance Document sent to XP Broker in March, 2017</a>
 					</p>
 					<p>In the early days of this project, I made our electronic integration to the <b>XP Broker Electronic Trade System (ETS)</b> and the <b>Brazilian Bovespa Exchange Order Management System (OMS)</b> using the <b>Financial Information eXchange protocol (FIX)</b> which is an electronic communications protocol for international real-time exchange of information related to securities transactions and markets. As I have a strict budget for this project, I researched and luckily found a great 100% free and open source solution with a great community support. So, I decided to use the <a href="https://quickfixn.org/">QuickFIX/n</a> library which implements the <b>FIX</b> protocol on <b>.NET</b>. Later I also integrated our system with other electronic trading system providers as <a href="https://www.cedrotech.com/">Cedro Technologies</a>, <a href="https://www.metatrader5.com/">Metatrader</a> and <a href="https://www.nelogica.com.br/">Nelogica</a>, consuming their API's.</p>
-					<p><i>I've also created an extensive document to help me guide my skeptical colleagues, who are Microsoft stack developers, to build the environment needed to deploy a <b>.NET 8 microservice to AWS Lambda Serverless Function</b>, using a Ubuntu/Linux distribution and the cost-effective <b>Graviton processor</b> based in the Arm64 architecture. Along this process, I realized that the installation and the related configuration using this architecture was a sort of problematic depending on the installation pathway chosen. So, I decided to describe the solutions that worked better for our development context and maybe could also help someone else outside our playground. My colleagues, who were once resistant, now are engaged and using this DevContainer development concept. To support some tasks presented in this guide, I've created some bash scripts running <b>.NET CLI</b> and <b>AWS CLI</b> commands. If you are interested, you can open this guide by <a target="_blank" href="https://docs.google.com/document/d/1Yg7iscwM2IChCxy66aYhOB4-kA_9cgu6XC3Ar5RNn5k/edit?usp=sharing">clicking here</a></i>.</p>
+					<p><i>I've also created an extensive document to help me guide my skeptical colleagues, who are Microsoft stack developers, to build the environment needed to deploy a <b>.NET (all) microservice to AWS Lambda Serverless Function</b>, using a Ubuntu/Linux distribution and the cost-effective <b>Graviton processor</b> based in the Arm64 architecture. Along this process, I realized that the installation and the related configuration using this architecture was a sort of problematic depending on the installation pathway chosen. So, I decided to describe the solutions that worked better for our development context and maybe could also help someone else outside our playground. My colleagues, who were once resistant, now are engaged and using this DevContainer development concept. To support some tasks presented in this guide, I've created some bash scripts running <b>.NET CLI</b> and <b>AWS CLI</b> commands. If you are interested, you can open this guide by <a target="_blank" href="https://docs.google.com/document/d/1Yg7iscwM2IChCxy66aYhOB4-kA_9cgu6XC3Ar5RNn5k/edit?usp=sharing">clicking here</a></i>.</p>
 					<p><img class="TheManWhoSolvedTheMarketCover" src="assets/img/TheManWhoSolvedTheMarket.jpg">This project was inspired by the Renaissance Technologies Hedge Fund which was the first company using quantitative models derived from mathematical and statistical analysis in an Automated Trading System (ATS). Their Medallion fund has generated average annual returns of 66 percent.
 					If you are even more interested about our project I recommend this book that tells the amazing story about Jim Simon, who is considered the greatest money maker in modern financial history.<br>					
 					<a href="https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/073521798X">The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution Hardcover - Amazon Store</a></p>					
@@ -267,8 +297,9 @@ ${buildImagesPanel('pcb',
     const data = {
         skills: [
             'C#, <strong>.NET 8</strong>, .NET Framework, Entity Framework',
+            'Azure Data Explorer (ADX), <b>Kusto (KQL)</b>',
             'MS SQL Server &amp; T-SQL, PostgreSQL &amp; PL/pgSQL',
-            'MongoDB/Azure & EF Core, DynamoDB/AWS & Object Model',
+            'Cosmos DB, MongoDB/Azure & EF Core, DynamoDB/AWS & Object Model',
 			'<a href="https://redis.io/">Redis Database, in-memory storage cache</a>',
 			'.NET CLI, AWS.CLI',
 			'Docker Container, AWS EKS, AWS Lambda Serverless Function, AWS S3 Bucket, AWS Event Bridge',
@@ -277,7 +308,7 @@ ${buildImagesPanel('pcb',
             'JavaScript ES6, jQuery, Node.js, Express, React, Mongoose',
             'Tradingview Lightweight Charts js library, D3.js, HTML Canvas API',
             'HTML5, CSS, SCSS, Sass, Jekyll',
-            'AWS, Azure',
+            'AWS, Azure, Google Cloud',
             'Azure Key Vault, AWS Secret Keys',
 			'AWS CodePipeline, Azure Bicep, Jenkins, GitHub Actions, NUnit',
             'Git, GitHub, VisualSVN Subversion, TortoiseSVN',
@@ -318,6 +349,7 @@ ${buildImagesPanel('pcb',
             ['Mechanical Engineering @ Federal University of Rio de Janeiro - UFRJ','http://www.mecanica.ufrj.br/ufrj-em/','1995-2001, Rio de Janeiro, RJ - Brazil']
         ],
         awards: [
+            ['Winning the IP2Location Programming Contest 2024', 'https://contest.ip2location.com/winners', 'November 2024, IP2Location Company<br/>AWS Lambda Serverless Function to control IP requests and web resources using Geolocation by Country and City. <a href="https://github.com/sabsfilho/IPGeoGuard">https://github.com/sabsfilho/IPGeoGuard</a>'],
             ['ABCM-EMBRAER 2004 prize in undergraduate category','https://abcm.org.br/symposium-series/SSM_Vol2/Section_II_Industrial_Instrumentation/SSM2_II_05.pdf',`
 2001-2003, UFRJ Robotics Lab (LabRob), Rio de Janeiro, RJ - Brazil<br>
 A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department
@@ -543,19 +575,24 @@ mainContent = {
             {
                 body:`
 <div class="bio">
-<p>I am a seasoned System Engineer and Full Stack Developer specializing in the Microsoft stack with more than 25 years in software development and team management, helping people in Banking, Startup and Fintech companies.${vids}</p>
-<p class="currentmemo">&ldquo;Currently I am working on a brownfield project, being responsible to modernize our .NET Framework ecosystem from a monolithic architecture based in Virtual Machines running Windows Servers to a Service Oriented Architecture, using AWS Lambda Serverless Function, DynamoDB, AWS RDS for SQL Server, AWS S3 Bucket, AWS Event Bridge, .NET 8, Entity Framework, Docker images and applying the .NET Microservices Architecture.<img class="AWSLambdaFunction" src="assets/img/AWSLambdaFunction.jpg"> I am coding on a VS Code Dev Container running a Docker in Docker approach on a Ubuntu/Linux EC2 Instance and using GitHub for version control. Before getting this project approval, I developed a .NET Core Web App consuming  resources of my personal Azure account in order to build a prototype and create a viability study for this modernization. I've crafted an <a target="_blank" href="https://docs.google.com/document/d/1Yg7iscwM2IChCxy66aYhOB4-kA_9cgu6XC3Ar5RNn5k/edit?usp=sharing">all-in-one guide (click to open)</a> to help me train my colleagues to publish .NET 8 microservices to AWS Lambda Function, using really cool stuff and also reducing our costs !&rdquo;</p>
+<p>I am a seasoned Tech Lead Systems Engineer & Backend Developer with more than 25 years in software development and team management in Banking, Startup, Fintech and also globally in large companies as Microsoft.${vids}</p>
+<p class="currentmemo">&ldquo;I'm currently working at Microsoft Silicon, Cloud Hardware, and Infrastructure Engineering (SCHIE) as Tech Lead Product and Site Reliability Engineering - SRE, Level 1, building reliable and scalable systems to infrastructure, emphasizing automation (CI/CD), observability, and incident management, debugging production issues, and post-incident reviews. I'm also responsible for guiding and mentoring junior colleagues. I wrote technical documents and also a Zero to Hero guide to help onboard new team members too.
+My team is based in the Microsoft headquarters campus at Redmond, WA, USA, but I also support and have meetings with teams across the globe mainly located in the Microsoft India Development Center (IDC), from Hyderabad and Noida cities.&rdquo;</p>
+<p>I've been developing and contributing for the Juno orchestrator project, and also for the internal and public GitHub repo of the Virtual Client platform, developing solutions for monitoring, benchmarking and running customer-representative scenarios on virtual machines or physical hosts. I'm developing these solutions using GitHub, VisualStudio, VS Code, C#, .NET 10, Python, PowerShell and Bash scripts.
+I'm using Azure Data Explorer (ADX) to collect and analyze log ingestion and real-time telemetries from their petabytes data lake. I've been developing queries using Kusto Query Language (KQL).</p>
+<p>I have the capability and versatility of solving complex and unknown problems. I like to go beyond borders to bring and share knowledge with our team members and stakeholders. From my vast experience dealing with a large range of challenges of different businesses and sizes, including Startup. Fintech and large companies as Microsoft, <b>I am able to start collaborating and delivering results from day one</b>.</p>
+<p>I'm very proud to be a valuable member of the Microsoft Cloud Infrastructure team. It's worthwhile to mention I succeeded at all Microsoft challenging hiring interview rounds, meaning I'm vetted to deploy reliable and scalable systems by applying software engineering solutions.</p>
+<p class="currentmemo">&ldquo;Before Microsoft, for more than 10 years, I had been working asynchronously as a Staff Engineer in a full remote position at <a href="https://putcallbot.com/">PutCallBot</a>, a Fintech company that develops stock market trading solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies. My last project was a brownfield project, being responsible to modernize our .NET Framework ecosystem from a monolithic architecture based in Virtual Machines running Windows Servers to a Service Oriented Architecture, using AWS Lambda Serverless Function, DynamoDB, AWS RDS for SQL Server, AWS S3 Bucket, AWS Event Bridge, .NET 8, Entity Framework, Docker images and applying the .NET Microservices Architecture.<img class="AWSLambdaFunction" src="assets/img/AWSLambdaFunction.jpg"> I am coding on a VS Code Dev Container running a Docker in Docker approach on a Ubuntu/Linux EC2 Instance and using GitHub for version control. Before getting this project approval, I developed a .NET Core Web App consuming  resources of my personal Azure account in order to build a prototype and create a viability study for this modernization. I've crafted an <a target="_blank" href="https://docs.google.com/document/d/1Yg7iscwM2IChCxy66aYhOB4-kA_9cgu6XC3Ar5RNn5k/edit?usp=sharing">all-in-one guide (click to open)</a> to help me train my colleagues to publish .NET 8 microservices to AWS Lambda Function, using really cool stuff and also reducing our costs !&rdquo;</p>
 <p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro - UFRJ, one of the most prestigious universities in Brazil, and worked in their Robotics Lab until graduation. I post-graduated in Computer Science & System Project Management from Pontifical Catholic University of Rio de Janeiro - PUC-RIO also a renowned university in Brazil.</p>
 <p>I am a researcher by nature and I am very proud to say that one of my research projects was awarded and recognized with the ABCM-EMBRAER 2004 prize.</p>
-<p>My CEO usually says that I am a T-shaped person collaborating and nurturing multiple areas of connections. As I am a developer with a mechanical engineering, academic research and financial background, I can easily cross beyond borders building strong bridges with network, security, compliance, sales and business teams.</p>
-<p>For the last 10 years I have been working asynchronously as a Full Stack Developer specializing in JavaScript and C# .NET.  in a full remote position in a Fintech company that develops stock market trading solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies.</p>
+<p>I am working at Microsoft as a vendor from Wipro Company, with the Tech Lead Band B3, Developer L4 role. I can deliver to our customers technical design and development solutions, managing teams, mentoring engineers, and acting as a Subject Matter Expert (SME).</p>
+<p>My former CEO usually said that I am a T-shaped person collaborating and nurturing multiple areas of connections. As I am a developer with a mechanical engineering, academic research and financial background, I can easily cross beyond borders building strong bridges with network, security, compliance, sales and business teams.</p>
 <a class="toggle-link" data-hidden="click here to see more info" data-shown="show less"></a>
 <div class="toggle-panel">
-<p>Impacting real demanding users who are wealthy and high-profile banking customers, this Fintech project is a dream come true for people that love software engineering and problem-solving routine because of its technical challenges we face everyday. It is a real world sandbox in production, where I do a lot of research, learn and experiment new techie acknowledgments in countless use case scenarios, that can be applied beyond borders in many IT projects of companies around the world. So, I am sure I can bring value and a humble collaboration to my future partners, sharing thoughts and having an active listening approach to my colleagues opinions, growing a deeper connection based in empathy, respect and friendliness.</p>
+<p>It's worthwhile to mention that I built the Quant trading system that became the Fintech I worked for. Impacting real demanding users who are wealthy and high-profile banking customers, this Fintech project is a dream come true for people that love software engineering and problem-solving routine because of its technical challenges we face everyday. It is a real world sandbox in production, where I do a lot of research, learn and experiment new techie acknowledgments in countless use case scenarios, that can be applied beyond borders in many IT projects of companies around the world. So, I am sure I can bring value and a humble collaboration to my future partners, sharing thoughts and having an active listening approach to my colleagues opinions, growing a deeper connection based in empathy, respect and friendliness.</p>
 <p>All the business logic implementations I try to apply some design patterns concepts detailed in the Gang of Four book, also I like to get inspired by some SOLID ideas and Domain-Driven Design to help non-coders to understand what I've meant to deliver. Before coding, I collect all kinds of requirements or specifications to clearly describe and tell a good user story, a task or use case scenario. This procedure helps me continue improving the concept and also deliver small pieces to a business partner follows its evaluation.</p>
 <p>Besides the business logic in the backend side written in C#, for the frontend I also created an extensive JavaScript framework library to help build dynamic and responsive web interfaces, including dialog windows, forms, dynamic and smart spreadsheets, reports, interactive charts, and client-server communication consuming our REST API services.</p>
-<p>Nowadays I am migrating some old modules that use legacy .NET web services to a modern microservice concept using Node.js and React.js. I recently got some  proficiency certifications in the MERN stack that helped me get the support I needed to start this transition.</p>
-<p>Recently, I started a personal project to use some Deep Learning techniques using the ML.NET Framework with the purpose of getting better results in our prediction models. For this project I started to use some libraries and models using Python, Pandas, Jupyter, Seaborn, Scikit-learn, Keras and TensorFlow coding in VSCode and Google Colab.</p>
+<p>At that time, I started a personal project to use some Deep Learning techniques using the ML.NET Framework with the purpose of getting better results in our prediction models. For this project I started to use some libraries and models using Python, Pandas, Jupyter, Seaborn, Scikit-learn, Keras and TensorFlow coding in VSCode and Google Colab.</p>
 <p>I'm currently looking for the opportunity to work remotely in IT projects abroad.</p>
 <p>My hour is a commodity that your budget can take advantage of.
 As I work from the seashore of the wonderful City of Rio de Janeiro, Brazil, we can together be very happy with the currency exchange rates. So, it's definitely a win–win game for us!</p>
@@ -602,40 +639,40 @@ As I work from the seashore of the wonderful City of Rio de Janeiro, Brazil, we 
                 tit: 'Core Skills'
             },
             {
-                body: buildShowcases(),
+                body: buildExperiences(),
                 index: 3,
+                tagImg: 'assets/img/trophies4.jpg',
+                tit: 'Work Experience'
+            },
+            {
+                body: buildShowcases(),
+                index: 4,
                 tagImg: 'assets/img/library.jpg',
                 tit: 'Showcases'
             },
             {
-                body: buildList(data.certifications),
-                index: 4,
-                tagImg: 'assets/img/lego-bricks.jpg',
-                tit: 'Certifications'
+                body: buildList(data.education),
+                index: 5,
+                tagImg: 'assets/img/education.jpg',
+                tit: 'Education'
             },
             {
-                body: buildExperiences(),
-                index: 5,
-                tagImg: 'assets/img/trophies4.jpg',
-                tit: 'Work Experience'
+                body: buildList(data.awards),
+                index: 6,
+                tagImg: 'assets/img/medals.jpg',
+                tit: 'Awards'
+            },
+            {
+                body: buildList(data.certifications),
+                index: 7,
+                tagImg: 'assets/img/lego-bricks.jpg',
+                tit: 'Certifications'
             },
             {
                 body: buildList(data.profiles),
                 index: 8,
                 tagImg: 'assets/img/stamps.jpg',
                 tit: 'Profiles'
-            },
-            {
-                body: buildList(data.education),
-                index: 6,
-                tagImg: 'assets/img/education.jpg',
-                tit: 'Education'
-            },
-            {
-                body: buildList(data.awards),
-                index: 7,
-                tagImg: 'assets/img/medals.jpg',
-                tit: 'Awards'
             },
             {
                 body: buildList(data.outerITWorld),

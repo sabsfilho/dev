@@ -1,7 +1,7 @@
-# Senior Software Engineer & Full Stack Developer
+# Tech Lead Systems Engineer & Backend Developer
 ### C#, JavaScript & SQL
 
-I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management, helping people in Brazilian IT, Banking and Fintech companies.  
+I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management, helping people in Brazilian IT, Banking and Fintech companies, and also globally in large companies as Microsoft.
 I graduated in Mechanical Engineering, post-graduated in CS & System Project Management and I'm currently looking for the opportunity to work remotely in IT projects abroad.  
 Too much to say, too much to tell...
 Let's team up someday, somewhere, somehow !!!
@@ -9,9 +9,10 @@ Let's team up someday, somewhere, somehow !!!
 ## Skills
 - C#, .NET
 - MS SQL Server & T-SQL, PostGRE & PL/pgSQL, MongoDB
+- Azure Data Explorer (ADX) and Kusto Query Language (KQL) :heavy_check_mark:
 - JavaScript ES6, jQuery, Node.js, Express, React, Mongoose, RESTful
 - HTML5, CSS, SCSS, Sass, Jekyll
-- AWS, Azure
+- AWS, Azure, Google
 - Project Management (Kanban :heavy_check_mark:, SCRUM, Waterfall)
 - Git, GitHub, Apache Subversion, TortoiseSVN
 
@@ -27,6 +28,20 @@ _- Google Colab & VSCode_
 ## Language
 - B2 - English Proficiency  
 - Native Brazilian Portuguese
+
+## Education
+- [CS & System Project Management @ Pontifícia Universidade Católica - PUC](https://www.puc-rio.br)  
+2005-2006, Rio de Janeiro, RJ - Brazil  
+- [Mechanical Engineer @ Federal University of Rio de Janeiro - UFRJ](https://ufrj.br)  
+1995-2001, Rio de Janeiro, RJ - Brazil
+
+## Awards
+[Winning the IP2Location Programming Contest 2024](https://contest.ip2location.com/winners)
+_AWS Lambda Serverless Function to control IP requests and web resources using Geolocation by Country and City._
+https://github.com/sabsfilho/IPGeoGuard
+
+ABCM-EMBRAER 2004 prize in undergraduate category.  
+_A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department._
 
 ## Certifications
 
@@ -63,16 +78,6 @@ Build C# applications using core concepts and object-oriented programming princi
 - [CodePen](https://codepen.io/sabsfilho)
 
 - [CodeAlly](https://codeally.io/cv/1925e7e676abb9663fe62f5e)
-
-## Education
-- [CS & System Project Management @ Pontifícia Universidade Católica - PUC](https://www.puc-rio.br)  
-2005-2006, Rio de Janeiro, RJ - Brazil  
-- [Mechanical Engineer @ Federal University of Rio de Janeiro - UFRJ](https://ufrj.br)  
-1995-2001, Rio de Janeiro, RJ - Brazil
-
-## Awards
-ABCM-EMBRAER 2004 prize in undergraduate category.  
-_A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department._
 
 ## Outer IT World
 - Capital Markets & Securities Analyst For Trading Floor Certification  
