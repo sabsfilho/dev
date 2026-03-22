@@ -38,7 +38,7 @@ const CtMain = function(){
                     <p>This kind of tool is used to certify new hardware before releasing it to the production environment. For these objectives, we run real case scenario workloads simulating our customer demands. We analyze the telemetries evaluating cpu, memory, network performance, readiness and incidents.</p>
                     <p>I developed this tool integrated into the <a href="https://github.com/microsoft/VirtualClient">https://github.com/microsoft/VirtualClient</a> project.</p>
                     <p>Profile <a href="https://github.com/microsoft/VirtualClient/blob/6859c6cc84e971a7e910a1659857c41f5be62f3e/src/VirtualClient/VirtualClient.Main/profiles/PERF-ELASTICSEARCH-RALLY.json">PERF-ELASTICSEARCH-RALLY.json</a></p>
-                    <p>This a tiny fraction sample using these races: geonames=ExecuteGeoNamesBenchmark, pmc=ExecutePMCBenchmark, geopoin=ExecuteGeopointBenchmarkt, http_logs=ExecuteHTTPLogsBenchmark running on the Azure Virtual Machine Standard_D2as_v5.<br>
+                    <p>This a tiny fraction sample using these races:<br>geonames=ExecuteGeoNamesBenchmark,<br>pmc=ExecutePMCBenchmark,<br>geopoin=ExecuteGeopointBenchmarkt,<br>http_logs=ExecuteHTTPLogsBenchmark<br>running on the Azure Virtual Machine Standard_D2as_v5.<br>
                     <img src="assets/img/pcb/ElasticsearchRaces.jpg" alt="Elasticsearch races" /><br>
                     We can find the list of available races to choose <a href="https://esrally.readthedocs.io/en/stable/race.html#list-tracks">here</a>:<br>
                     <img src="assets/img/pcb/ElasticsearchRacesList.jpg" alt="Rally races list" /><br><br>
