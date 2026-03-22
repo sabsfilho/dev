@@ -3,11 +3,11 @@ const CtMain = function(){
     const experience = {
         projs: [
             {
-                tit: 'Microsoft, Silicon, Cloud Hardware, and Infrastructure Engineering (SCHIE), Redmond-USA<br/>Working remote since November 2024<br/>Tech Lead Product and Site Reliability Engineering.<br/>C# .NET Cosmos DB, ADX, Kusto (KQL) DevOps Python Powershell Bash<br/><a href="https://azure.microsoft.com/en-us/explore/global-infrastructure">https://azure.microsoft.com/en-us/explore/global-infrastructure</a> | <a href="https://www.wipro.com">https://www.wipro.com</a>',
+                tit: 'Microsoft, Silicon, Cloud Hardware, and Infrastructure Engineering (SCHIE), Redmond-USA<br/>Working remote since November 2024<br/>Tech Lead Product and Site Reliability Engineering.<br/>C# .NET Cosmos DB, ADX, Kusto (KQL) DevOps Python Powershell Bash<br/><a target="_blank" href="https://azure.microsoft.com/en-us/explore/global-infrastructure">https://azure.microsoft.com/en-us/explore/global-infrastructure</a>',
                 bdy: 'exp_ms'
             },
             {
-                tit: 'Put.Call.Bot, Quant Trading System Fintech, RJ-Brazil<br/>September 2013 - November 2024<br/>Principal Software Engineer, C# .NET JavaScript<br/><a href="https://putcallbot.com">https://putcallbot.com</a>',
+                tit: 'Put.Call.Bot, Quant Trading System Fintech, RJ-Brazil<br/>September 2013 - November 2024<br/>Principal Software Engineer, C# .NET JavaScript<br/><a target="_blank" href="https://putcallbot.com">https://putcallbot.com</a>',
                 bdy: 'exp_pcb'
             },
             {
@@ -400,7 +400,7 @@ stepping in and out as handling a bad asset position to secure the fund health a
     const templ = {
         accord: (i,n,w) => {
             const multiline = n.includes('<br') ? ' multiline' : '';
-            return `<button class="accord-btn accord-l${i}${multiline}"><div data-hidden="+" data-shown="-"></div>${n}</button><div class="accord-panel">${w}</div>`
+            return `<button class="accord-btn accord-l${i}${multiline}"><div data-hidden="+" data-shown="-"></div><div>${n}</div></button><div class="accord-panel">${w}</div>`
         },
         href: (u,t) => `<a href="${u}" rel="nofollow" target="_blank">${t}</a>`,
         item: (x) => {

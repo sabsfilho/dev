@@ -1576,8 +1576,11 @@ li a:hover,
   font-family: monospace;
   font-size: 16px;
 }
+.multiline {
+  display: flex;
+}
 .multiline > :first-child{ 
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .accord-panel{
@@ -1596,6 +1599,9 @@ li a:hover,
 .accord-subtit{
   font-weight: bold;
   font-size:14px
+}
+.accord-btn a {
+  color:inherit
 }
 .expand > a {
   display: none;
