@@ -48,7 +48,27 @@ const CtMain = function(){
                     <img src="assets/img/pcb/ElasticsearchKQL01.jpg" alt="Kusto analysis" /><br><br>
                     I do several performance data analysis using Kusto Query Language (KQL).<br>
                     <img src="assets/img/pcb/ElasticsearchKQL02.jpg" alt="Kusto query" /><br><br>
-                    <img src="assets/img/pcb/ElasticsearchKQL03.jpg" alt="Kusto query results" />
+                    <img src="assets/img/pcb/ElasticsearchKQL03.jpg" alt="Kusto query results" /><br>
+                    I created a KQL function to collect good clusters for our experiments to boost our team productivity.<br>
+                    <img src="assets/img/pcb/ElasticsearchKQL04.jpg" alt="Kusto query results" /><br><br>
+                    I crafted a kusto tool that put together a bunch of relevant experiment data collected on the fly and it works right after the experiment is in progress.<br>This KQL tool is a realtime experiment tracker and debugger summary having these data for each experiment run:<br>
+<ul>
+<li>the Human Investigation and Out for Repair incidents</li>
+<li>trace and metric occurrences</li>
+<li>Virtual Machine type sizes</li>
+<li>profile name and Virtual Client command arguments having its parameters</li>
+<li>in progress, failed and succeeded runs</li>
+<li>number of runs goal, and its completed percentage progress</li>
+<li>startdate, enddate, experiment duration average</li>
+</ul>
+Kusto function description:<br>
+sf_getExperimentStatus(“experimentName”, startTime:Default(30days back), endTime:Default(now), ScreenFailedNodeHoursAhead:Default(5hours), experimentNameRegex:string="")
+                    <img src="assets/img/pcb/ElasticsearchKQL05.jpg" alt="Kusto query results" /><br>
+                    Incident monitoring<br>
+                    <img src="assets/img/pcb/ElasticsearchKQL06.jpg" alt="Kusto query results" /><br>
+For regex geeks, I added a parameter to filter experiments by regular expression.<br>
+Here is a sample for SIR experiments ran on AMD Turin and Intel Granite(GNR).<br>
+<img src="assets/img/pcb/ElasticsearchKQL07.jpg" alt="Kusto query results" /><br>
 </p>
                     `
                     }
