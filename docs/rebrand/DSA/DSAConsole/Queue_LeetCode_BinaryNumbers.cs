@@ -45,10 +45,10 @@ class Queue_LeetCode_BinaryNumbers {
         return w;
     }
 	
-	private static void ConvertToBinary(int n) {
+	private static void ConvertToBinary2(int n) {
 		var fifo = new Queue<int>();
 		fifo.Enqueue(1);
-		for(int i = 0; i < n. i++){
+		for(int i = 0; i < n; i++){
 			int x = fifo.Dequeue();
 			Console.WriteLine(x);
 			fifo.Enqueue(x * 10);
