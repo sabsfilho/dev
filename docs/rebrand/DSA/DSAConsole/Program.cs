@@ -16,8 +16,8 @@
             //MergeSortedArrays.Print();
             //Blind75.GroupAnagramsSolution.Print();
             //Blind75.TopKFrequentSolution.Print();
-            ArrayLab.ArrayLab.Print();
-            //HelloApp.Print();
+            //ArrayLab.ArrayLab.Print();
+            HelloApp.Print();
 
         }
     }

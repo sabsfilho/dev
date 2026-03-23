@@ -3,7 +3,7 @@ class HelloApp {
 
         Console.WriteLine("Test!");
 
-        Test01();
+        Test02();
     }
 
     static void Test01()
@@ -14,6 +14,26 @@ class HelloApp {
 
         //Array.Reverse(arr);
 
+        foreach(var a in arr)
+        {
+            Console.WriteLine(a);
+        }
+    }
+
+    static void Test02()
+    {
+        var nums = new int[] { 7, 2, 6, 8, 2, 3, 2 };
+        nums.Sort();
+        var m = new HashSet<int>(nums);
+        foreach(var n in m)
+        {
+            Console.WriteLine(n);
+        }
+        var arr = m.ToArray();
+        for(int i=0; i < arr.Length; i++)
+        {
+            Console.WriteLine(arr[i]);
+        }
         foreach(var a in arr)
         {
             Console.WriteLine(a);
