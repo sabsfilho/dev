@@ -1,6 +1,7 @@
 public class MaxAreaSolution {
     public int MaxArea(int[] heights) {
         /*
+        Container With Most Water
         max = H * W
         */
         int max = 0;

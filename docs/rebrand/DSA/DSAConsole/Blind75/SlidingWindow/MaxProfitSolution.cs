@@ -1,6 +1,9 @@
 public class MaxProfitSolution {
     public int MaxProfit(int[] prices) {
         /*
+        
+        Best Time to Buy and Sell Stock
+
         profit = sell future - buy present > 0
         max profit = max(current,previous)
 
