@@ -3,7 +3,21 @@ class HelloApp {
 
         Console.WriteLine("Test!");
 
-        Test02();
+        //Test02();
+        TestStack();
+    }
+
+    static void TestStack()
+    {
+        var arr = new int[] { 9,2,5,5,7 };
+
+        var stack = new Stack<int>(arr);
+
+        while(stack.Count > 0)
+        {
+            Console.WriteLine(stack.Pop());
+        }
+        
     }
 
     static void Test01()
