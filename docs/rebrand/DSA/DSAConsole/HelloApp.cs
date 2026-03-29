@@ -11,7 +11,7 @@ class HelloApp {
         var arr = new int[] { 9,2,5,7 };
 
         Array.Sort(arr, (a, b) => b.CompareTo(a));
-
+        //arr.Reverse();
         //Array.Reverse(arr);
 
         foreach(var a in arr)
