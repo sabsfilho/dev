@@ -12,6 +12,7 @@ class HelloApp {
         var arr = new int[] { 9,2,5,5,7 };
 
         var stack = new Stack<int>(arr);
+        stack.Push(11);
 
         while(stack.Count > 0)
         {
