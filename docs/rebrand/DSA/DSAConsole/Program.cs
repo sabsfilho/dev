@@ -18,7 +18,8 @@
             //Blind75.TopKFrequentSolution.Print();
             //ArrayLab.ArrayLab.Print();
             //MinWindowSolution.Print();
-            HelloApp.Print();
+            BinarySearchSolution.Print();
+            //HelloApp.Print();
 
         }
     }
