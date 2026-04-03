@@ -4,6 +4,7 @@
     {
         public static void Main(string[] args)
         {
+            //Console.Clear();
 
             Console.WriteLine("DSAConsole");
             //QueueLinkedList<int>.Load();
@@ -18,7 +19,8 @@
             //Blind75.TopKFrequentSolution.Print();
             //ArrayLab.ArrayLab.Print();
             //MinWindowSolution.Print();
-            BinarySearchSolution.Print();
+            //BinarySearchSolution.Print();
+            FindMinSolution.Print();
             //HelloApp.Print();
 
         }
