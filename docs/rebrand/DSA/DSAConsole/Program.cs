@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            //Console.Clear();
+            Console.Clear();
 
             Console.WriteLine("DSAConsole");
             //QueueLinkedList<int>.Load();
@@ -20,7 +20,8 @@
             //ArrayLab.ArrayLab.Print();
             //MinWindowSolution.Print();
             //BinarySearchSolution.Print();
-            FindMinSolution.Print();
+            //FindMinSolution.Print();
+            SearchInSortedArraySolution.Print();
             //HelloApp.Print();
 
         }
