@@ -1,4 +1,5 @@
 public class LowestCommonAncestorSolution {
+    // Lowest Common Ancestor in Binary Search Tree
  public class TreeNode {
       public int val;
       public TreeNode? left;
