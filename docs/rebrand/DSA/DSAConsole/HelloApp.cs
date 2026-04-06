@@ -3,8 +3,8 @@ class HelloApp {
 
         Console.WriteLine("Test!");
 
-        //Test02();
-        TestStack();
+        Test02();
+        //TestStack();
     }
 
     static void TestStack()

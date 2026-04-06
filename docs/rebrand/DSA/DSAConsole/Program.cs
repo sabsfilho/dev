@@ -21,8 +21,8 @@
             //MinWindowSolution.Print();
             //BinarySearchSolution.Print();
             //FindMinSolution.Print();
-            SearchInSortedArraySolution.Print();
-            //HelloApp.Print();
+            //SearchInSortedArraySolution.Print();
+            HelloApp.Print();
 
         }
     }
