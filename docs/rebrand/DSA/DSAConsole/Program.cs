@@ -22,7 +22,8 @@
             //BinarySearchSolution.Print();
             //FindMinSolution.Print();
             //SearchInSortedArraySolution.Print();
-            HelloApp.Print();
+            MedianFinderSolution.Print();
+            //HelloApp.Print();
 
         }
     }
