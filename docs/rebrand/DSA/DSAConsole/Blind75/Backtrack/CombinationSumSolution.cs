@@ -1,24 +1,31 @@
 public class CombinationSumSolution {
-// Combination Sum
     public List<List<int>> CombinationSum(int[] nums, int target) {
         var lst = new List<List<int>>();
-        if (nums == null || nums.Length == 0) return lst;
-        Array.Sort(nums);
-        Backtrack(nums, target, 0, new List<int>(), lst);
-        return lst;
+
+        Dfs(lst, 0, new List<int>(), nums, target);
+
+        return lst;        
     }
 
-    private void Backtrack(int[] nums, int target, int start, List<int> current, List<List<int>> result) {
-        if (target == 0) {
-            result.Add(new List<int>(current));
+    void Dfs(List<List<int>> lst, int i, List<int> curr, int[] nums, int target)
+    {
+        if (i == nums.Length || target < 0) return;
+
+        if (target == 0)
+        {
+            lst.Add(curr.ToList());
             return;
         }
 
-        for (int i = start; i < nums.Length; i++) {
-            if (nums[i] > target) break;
-            current.Add(nums[i]);
-            Backtrack(nums, target - nums[i], i, current, result);
-            current.RemoveAt(current.Count - 1);
-        }
+        int n = nums[i];
+
+        curr.Add(n);
+
+        Dfs(lst, i, curr, nums, target - n);
+
+        curr.RemoveAt(curr.Count-1); // backtracking
+
+        Dfs(lst, i + 1, curr, nums, target);
+
     }
 }
