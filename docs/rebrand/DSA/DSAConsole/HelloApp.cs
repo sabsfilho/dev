@@ -3,7 +3,6 @@ class HelloApp {
 
         Console.WriteLine("Test!");
 
-        Test02();
         //TestStack();
     }
 
