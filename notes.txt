@@ -10,3 +10,4 @@ compile: jekyll build
 copy:
 cd _site
 cp -r . ../../docs
+verify.
