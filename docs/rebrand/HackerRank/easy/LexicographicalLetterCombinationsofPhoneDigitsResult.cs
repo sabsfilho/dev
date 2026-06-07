@@ -54,8 +54,7 @@ class LexicographicalLetterCombinationsofPhoneDigitsResult
             { '8', "tuv" },
             { '9', "wxyz" },
         };
-        var ds = digits.ToCharArray();
-        foreach(char d in ds)
+        foreach(char d in digits)
         {
             lst.Add(map[d]);
         }
