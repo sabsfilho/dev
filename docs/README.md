@@ -1,12 +1,12 @@
 # Hi, I'm Samuel Santos 👋
 
 **Principal Systems Engineer | Tech Lead SRE**  
-📍 Rio de Janeiro, Brazil (Open to Global Remote Contracts)  
+📍 Rio de Janeiro, Brazil  
 🌐 [Portfolio](https://samuel-santos-engineer.github.io/dev)
 
 ---
 
-### 🚀 Executive Summary
+### 🚀 Bio
 Seasoned Principal Systems Engineer and Technical Lead with over 25 years of experience delivering high-scale software architectures, resilient cloud infrastructure, and low-latency systems. Currently driving core initiatives within **Microsoft’s Silicon, Cloud Hardware, and Infrastructure Engineering (SCHIE)** division, orchestrating data center readiness and telemetry pipelines. 
 
 Passionate about resolving technical ambiguity, building elegant distributed systems, and automating FinOps frameworks (with a proven track record of eliminating over **$20,000/month** in active cloud infrastructure leaks).
@@ -32,11 +32,11 @@ Passionate about resolving technical ambiguity, building elegant distributed sys
 1995-2001, Rio de Janeiro, RJ - Brazil
 
 ## 🏆 Awards
-[Winning the IP2Location Programming Contest 2024](https://contest.ip2location.com/winners)
-_An advanced AWS Lambda serverless framework designed to orchestrate and throttle web resources using real-time country and city geolocation data._
+[Winning the IP2Location Programming Contest 2024](https://contest.ip2location.com/winners)  
+_An advanced AWS Lambda serverless framework designed to orchestrate and throttle web resources using real-time country and city geolocation data._  
 https://github.com/samuel-santos-engineer/IPGeoGuard
 
-[ABCM-EMBRAER Aerospace 2004 prize in undergraduate category](https://abcm.org.br/symposium-series/SSM_Vol2/Section_II_Industrial_Instrumentation/SSM2_II_05.pdf)
+[ABCM-EMBRAER Aerospace 2004 prize in undergraduate category](https://abcm.org.br/symposium-series/SSM_Vol2/Section_II_Industrial_Instrumentation/SSM2_II_05.pdf)  
 _A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department._
 
 #### 📈 [PutCallBot Core Architecture Ecosystem](https://putcallbot.com)
