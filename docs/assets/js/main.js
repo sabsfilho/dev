@@ -121,7 +121,7 @@ ${buildImagesPanel('pcb',
             {
                 tit: 'Backend, Software Architect, Platform Module, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda, AWS S3, <b>Cron Job Manager</b>',
                 projs: [
-                    {p:'',u:'https://github.com/sabsfilho/EC2Scheduler',k:'',n:'EC2Scheduler (click here to open GitHub project repository)',tags:'C#,.NET 8,GitHub,Docker,VS Code,DevContainer,.NET CLI,AWS CLI,NUnit,AWS Lambda,AWS S3,AWS EventBridge,AWS EC2,AWS Cloud',d:`
+                    {p:'',u:'https://github.com/samuel-santos-engineer/EC2Scheduler',k:'',n:'EC2Scheduler (click here to open GitHub project repository)',tags:'C#,.NET 8,GitHub,Docker,VS Code,DevContainer,.NET CLI,AWS CLI,NUnit,AWS Lambda,AWS S3,AWS EventBridge,AWS EC2,AWS Cloud',d:`
 					<p>AWS Lambda Function microservice to control Cron Jobs and AWS EC2 resources.</p>
 					<p><img class="pcb-logo" src="articles/AWSLambdaDockerInDockerGraviton/images/AWSLambdaAndDockerInDockerSmall.jpg" alt="AWSLambdaAndDockerInDockerSmall" /></p>
 					<p>The purpose of this microservice is to control AWS Elastic Compute Cloud EC2 resources, executing Scheduled Tasks or Cron Jobs.</p>
@@ -134,7 +134,7 @@ ${buildImagesPanel('pcb',
             {
                 tit: 'Backend, Software Design, Service Layer, <b>Redis</b>, .NET 8, C#, GitHub, Docker, DevContainer, Microservice, AWS Lambda, AWS API Gateway, AWS S3, <b>Geolocation API</b>',
                 projs: [
-                    {p:'',u:'https://github.com/sabsfilho/IPGeoGuard',k:'',n:'IPGeoGuard (click here to open GitHub project repository)',tags:'C#,.NET 8,Redis,GitHub,Docker,VS Code,DevContainer,.NET CLI,AWS CLI,AWS Lambda,AWS S3,AWS Cloud',d:`
+                    {p:'',u:'https://github.com/samuel-santos-engineer/IPGeoGuard',k:'',n:'IPGeoGuard (click here to open GitHub project repository)',tags:'C#,.NET 8,Redis,GitHub,Docker,VS Code,DevContainer,.NET CLI,AWS CLI,AWS Lambda,AWS S3,AWS Cloud',d:`
 					<p>AWS Lambda Function microservice to control IP requests and web resources using Geolocation by Country and City.</p>
 					<p><img class="pcb-logo" src="assets/img/pcb/IPGeoGuard.jpg" alt="IPGeoGuard" /></p>
 					<p>This project is a microservice that provides a Geolocation protection layer verifying an incoming request and using virtual geographic perimeters to determine if its IP address is allowed to access a restricted service resource. It is very useful when the ip address is available, but not the coordinate.</p>
@@ -170,7 +170,7 @@ ${buildImagesPanel('pcb',
             {
                 tit: 'Backend, Software Design, <b>WebSocket</b>, .NET 8, C#, GitHub, <b>Entity Framework</b>, Microservice, <b>Azure Web API</b>, <b>NoSQL Azure CosmosDB</b>, Parallel Programming, SOLID, SOC, <b>CryptoCurrency API</b>',
                 projs: [
-                    {p:'',u:'https://github.com/sabsfilho/CryptoCurrencyExchangeBroker',k:'',n:'CryptoCurrencyExchangeBroker on Azure (click here to open GitHub project repository)',tags:'C#,.NET 8,Azure WebAPI,WebSocket,EntityFramework,CosmosDB,GitHub,.NET CLI,Azure Cloud',d:`
+                    {p:'',u:'https://github.com/samuel-santos-engineer/CryptoCurrencyExchangeBroker',k:'',n:'CryptoCurrencyExchangeBroker on Azure (click here to open GitHub project repository)',tags:'C#,.NET 8,Azure WebAPI,WebSocket,EntityFramework,CosmosDB,GitHub,.NET CLI,Azure Cloud',d:`
 					<p>Service Oriented Architecture using AZURE cloud resources.</p>
 					<p><img class="pcb-logo" src="articles/CryptoCurrencyExchangeBroker/CryptoCurrencyExchangeBroker_1240.jpg" alt="CryptoCurrencyExchangeBroker_1240" /></p>
 					<p>Recently at my current company, I implemented an agnostic cloud architecture solution using the DockerHub container repository to register some microservices images that could be published to our AWS or Azure cloud spaces. We are evaluating some AWS cost concerns.</p>
@@ -223,7 +223,7 @@ ${buildImagesPanel('pcb',
                     {k:'Penguin',n:'Penguin',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
                     {k:'PhotoGallery',n:'Photo Gallery',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
                     {k:'Piano',n:'Piano',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
-                    {u:'https://sabsfilho.github.io/dev/',n:'Portfolio Demo',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
+                    {u:'https://samuel-santos-engineer.github.io/dev/',n:'Portfolio Demo',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
                     {k:'RegistrationForm',n:'Registration Form',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
                     {k:'RothkoPainting',n:'Rothko Painting',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
                     {k:'SurveyForm',n:'SurveyForm',tags:'HTML5,CSS,SCSS,Flexbox,CSS Grid',d:''},
@@ -356,7 +356,7 @@ ${buildImagesPanel('pcb',
         ],
         profiles: [
             ['FreeCodeCamp','https://www.freecodecamp.org/sabsfilho','My learning place to assimilate new cool techies stuff and practice a lot in real case scenarios'],
-            ['Git Hub','http://github.com/sabsfilho','My codespace.'],
+            ['Git Hub','http://github.com/samuel-santos-engineer','My codespace.'],
             ['Microsoft','https://learn.microsoft.com/en-us/users/samuelsantos-1448/','My windows since my first deployment.'],
             ['HackerRank','https://www.hackerrank.com/profile/sabsfilho','My gym where I keep myself in good shape for hack activities.'],
             ['CodeWars', 'https://www.codewars.com/users/sabsfilho', 'My another gym...'],
@@ -369,7 +369,7 @@ ${buildImagesPanel('pcb',
             ['Mechanical Engineering @ Federal University of Rio de Janeiro - UFRJ','http://www.mecanica.ufrj.br/ufrj-em/','1995-2001, Rio de Janeiro, RJ - Brazil']
         ],
         awards: [
-            ['Winning the IP2Location Programming Contest 2024', 'https://contest.ip2location.com/winners', 'November 2024, IP2Location Company<br/>AWS Lambda Serverless Function to control IP requests and web resources using Geolocation by Country and City. <a href="https://github.com/sabsfilho/IPGeoGuard">https://github.com/sabsfilho/IPGeoGuard</a>'],
+            ['Winning the IP2Location Programming Contest 2024', 'https://contest.ip2location.com/winners', 'November 2024, IP2Location Company<br/>AWS Lambda Serverless Function to control IP requests and web resources using Geolocation by Country and City. <a href="https://github.com/samuel-santos-engineer/IPGeoGuard">https://github.com/samuel-santos-engineer/IPGeoGuard</a>'],
             ['ABCM-EMBRAER Aerospace 2004 prize in undergraduate category','https://abcm.org.br/symposium-series/SSM_Vol2/Section_II_Industrial_Instrumentation/SSM2_II_05.pdf',`
 2001-2003, UFRJ Robotics Lab (LabRob), Rio de Janeiro, RJ - Brazil<br>
 A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department

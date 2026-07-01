@@ -139,11 +139,11 @@ https://www.jcchouinard.com/github-forks-and-pull-requests/#:~:text=A%20fork%20i
 [ track branches using submodule ]
 # add submodule to track branch_name branch
 git submodule add -b branch_name URL_to_Git_repo optional_directory_rename
-git submodule add --name rebrand https://github.com/sabsfilho/rebrand.git
-git submodule set-url origin git@github.com:sabsfilho/rebrand.git
+git submodule add --name rebrand https://github.com/samuel-santos-engineer/rebrand.git
+git submodule set-url origin git@github.com:samuel-santos-engineer/rebrand.git
 
 # update your submodule
 git submodule update --remote 
 https://www.vogella.com/tutorials/GitSubmodules/article.html
 
-git remote set-url origin git@github.com:sabsfilho/rebrand.git
+git remote set-url origin git@github.com:samuel-santos-engineer/rebrand.git

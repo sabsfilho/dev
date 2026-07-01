@@ -9,14 +9,14 @@
 #https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
 #
 #run script passing your Public IP address and your Key Pair name
-#./create-ubuntu-instance.sh “YOUR PUBLIC IP x.x.x.x” “YOUR KEY PAIR NAME”
+#./create-ubuntu-instance.sh ï¿½YOUR PUBLIC IP x.x.x.xï¿½ ï¿½YOUR KEY PAIR NAMEï¿½
 #
 #This script will create a Security Group named DevelopmentUbuntuSecurityGroup
 #
 #This new Instance will have the 22 SSH and 3389 RDP ports opened for your Machine.
 #
 #author: Samuel
-#contact: https://sabsfilho.github.io/dev/
+#contact: https://samuel-santos-engineer.github.io/dev/
 #
 echo -e "\n~~ CREATE GRAVITON+UBUNTU INSTANCE ~~\n"
 if [ -z $1 ]

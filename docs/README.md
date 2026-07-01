@@ -2,7 +2,7 @@
 
 **Principal Systems Engineer | Tech Lead SRE**  
 📍 Rio de Janeiro, Brazil (Open to Global Remote Contracts)  
-🌐 [Portfolio](https://sabsfilho.github.io/dev)
+🌐 [Portfolio](https://samuel-santos-engineer.github.io/dev)
 
 ---
 
@@ -34,7 +34,7 @@ Passionate about resolving technical ambiguity, building elegant distributed sys
 ## 🏆 Awards
 [Winning the IP2Location Programming Contest 2024](https://contest.ip2location.com/winners)
 _An advanced AWS Lambda serverless framework designed to orchestrate and throttle web resources using real-time country and city geolocation data._
-https://github.com/sabsfilho/IPGeoGuard
+https://github.com/samuel-santos-engineer/IPGeoGuard
 
 [ABCM-EMBRAER Aerospace 2004 prize in undergraduate category](https://abcm.org.br/symposium-series/SSM_Vol2/Section_II_Industrial_Instrumentation/SSM2_II_05.pdf)
 _A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department._
@@ -90,4 +90,4 @@ _Financial Fundamentals, Simple interest, Compound interest and Amortization, Di
 
 ### 🤝 Let's Connect
 I thrive on solving deep systemic challenges, infrastructure bottlenecks, and optimizing enterprise cloud investments.
-*   [Contact](https://sabsfilho.github.io/dev)
+*   [Contact](https://samuel-santos-engineer.github.io/dev)
