@@ -1,32 +1,28 @@
-# Tech Lead Systems Engineer & Backend Developer
-### C#, JavaScript & SQL
+# Hi, I'm Samuel Santos 👋
 
-I've been working in Rio de Janeiro, Brazil for more than 25 years in software development and team management, helping people in Brazilian IT, Banking and Fintech companies, and also globally in large companies as Microsoft.
-I graduated in Mechanical Engineering, post-graduated in CS & System Project Management and I'm currently looking for the opportunity to work remotely in IT projects abroad.  
-Too much to say, too much to tell...
-Let's team up someday, somewhere, somehow !!!
+**Principal Systems Engineer | Tech Lead SRE**  
+📍 Rio de Janeiro, Brazil (Open to Global Remote Contracts)  
+🌐 [Portfolio](https://sabsfilho.github.io/dev)
 
-## Skills
-- C#, .NET
-- MS SQL Server & T-SQL, PostGRE & PL/pgSQL, MongoDB
-- Azure Data Explorer (ADX) and Kusto Query Language (KQL) :heavy_check_mark:
-- JavaScript ES6, jQuery, Node.js, Express, React, Mongoose, RESTful
-- HTML5, CSS, SCSS, Sass, Jekyll
-- AWS, Azure, Google
-- Project Management (Kanban :heavy_check_mark:, SCRUM, Waterfall)
-- Git, GitHub, Apache Subversion, TortoiseSVN
+---
 
-_DORMANT Skills<sub> used to work with a long time ago</sub>_  
-_- JAVA, C++, C_  
+### 🚀 Executive Summary
+Seasoned Principal Systems Engineer and Technical Lead with over 25 years of experience delivering high-scale software architectures, resilient cloud infrastructure, and low-latency systems. Currently driving core initiatives within **Microsoft’s Silicon, Cloud Hardware, and Infrastructure Engineering (SCHIE)** division, orchestrating data center readiness and telemetry pipelines. 
 
-_FORTHCOMING Skills<sub>learning and improving</sub>_  
-_- Deep Learning techniques_  
-_- ML.NET_  
-_- Python, Pandas, Jupyter, Seaborn, Scikit-learn, Keras and TensorFlow_  
-_- Google Colab & VSCode_
+Passionate about resolving technical ambiguity, building elegant distributed systems, and automating FinOps frameworks (with a proven track record of eliminating over **$20,000/month** in active cloud infrastructure leaks).
+
+---
+
+### 🛠️ Technical Core Competencies
+
+*   **Systems Architecture & Cloud:** Azure (Synapse, ADX), AWS (Lambda, S3, DynamoDB), Google Cloud Platform (GCP), Multi-Cloud Orchestration, Docker.
+*   **Data Engineering & Telemetry:** Kusto Query Language (KQL), Azure Data Explorer (ADX), MS SQL Server, PostgreSQL, Cosmos DB, MongoDB.
+*   **API Architecture & Protocols:** Financial Information eXchange (FIX) Protocol, RESTful Web Services/APIs, Cross-Platform Interoperability.
+*   **Programming & Scripting:** C#, .NET (All Versions), SQL, KQL, Python, Shell Scripting (Bash, PowerShell), C++ (Systems Interoperability).
+*   **Methodologies:** Site Reliability Engineering (SRE), FinOps & Cloud Cost Optimization, Low-Latency FinTech Systems, DevOps Automation.
 
 ## Language
-- B2 - English Proficiency  
+- C1 - English Proficiency  
 - Native Brazilian Portuguese
 
 ## Education
@@ -35,13 +31,18 @@ _- Google Colab & VSCode_
 - [Mechanical Engineer @ Federal University of Rio de Janeiro - UFRJ](https://ufrj.br)  
 1995-2001, Rio de Janeiro, RJ - Brazil
 
-## Awards
+## 🏆 Awards
 [Winning the IP2Location Programming Contest 2024](https://contest.ip2location.com/winners)
-_AWS Lambda Serverless Function to control IP requests and web resources using Geolocation by Country and City._
+_An advanced AWS Lambda serverless framework designed to orchestrate and throttle web resources using real-time country and city geolocation data._
 https://github.com/sabsfilho/IPGeoGuard
 
-ABCM-EMBRAER 2004 prize in undergraduate category.  
+ABCM-EMBRAER Aerospace 2004 prize in undergraduate category.  
 _A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department._
+
+#### 📈 [PutCallBot Core Architecture Ecosystem](https://putcallbot.com)
+*Founding Architect (Production Fintech Platform)*
+*   A high-performance quantitative trading software handling 200 GB+ real-time ticker databases.
+*   Features an isolated Backtest Engine for algorithmic debugging and a proprietary low-latency execution tunnel bypassing institutional constraints.
 
 ## Certifications
 
@@ -79,7 +80,7 @@ Build C# applications using core concepts and object-oriented programming princi
 
 - [CodeAlly](https://codeally.io/cv/1925e7e676abb9663fe62f5e)
 
-## Outer IT World
+## Financial Market & Quantitative Certifications
 - Capital Markets & Securities Analyst For Trading Floor Certification  
 1998-1999,  Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil  
 _Economics for Capital Markets; Financial and Statistical Calculation; Asset Classes; Financial Instruments and Markets; Equity Markets Trend Analysis; Portfolio Management; Brazilian Securities Law; Structure and Dynamics of a Trading Floor Negotiation_
@@ -87,3 +88,6 @@ _Economics for Capital Markets; Financial and Statistical Calculation; Asset Cla
 1997, 40 hours, Rio de Janeiro Stock Exchange,  Rio de Janeiro, RJ - Brazil  
 _Financial Fundamentals, Simple interest, Compound interest and Amortization, Discounted Cash Flow Analysis, Bond and Depreciation Calculations._
 
+### 🤝 Let's Connect
+I thrive on solving deep systemic challenges, infrastructure bottlenecks, and optimizing enterprise cloud investments.
+*   [Contact](https://sabsfilho.github.io/dev)
