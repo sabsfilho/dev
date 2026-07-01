@@ -36,7 +36,7 @@ Passionate about resolving technical ambiguity, building elegant distributed sys
 _An advanced AWS Lambda serverless framework designed to orchestrate and throttle web resources using real-time country and city geolocation data._
 https://github.com/sabsfilho/IPGeoGuard
 
-ABCM-EMBRAER Aerospace 2004 prize in undergraduate category.  
+[ABCM-EMBRAER Aerospace 2004 prize in undergraduate category](https://abcm.org.br/symposium-series/SSM_Vol2/Section_II_Industrial_Instrumentation/SSM2_II_05.pdf)
 _A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department._
 
 #### 📈 [PutCallBot Core Architecture Ecosystem](https://putcallbot.com)

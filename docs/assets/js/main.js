@@ -7,7 +7,7 @@ const CtMain = function(){
                 bdy: 'exp_ms'
             },
             {
-                tit: 'Put.Call.Bot, Quant Trading System Fintech, RJ-Brazil<br/>September 2013 - November 2024<br/>Principal Software Engineer, C# .NET JavaScript<br/><a target="_blank" href="https://putcallbot.com">https://putcallbot.com</a>',
+                tit: 'Put.Call.Bot, Quant Trading System Fintech, RJ-Brazil<br/>September 2013 - November 2024<br/>Principal Software Engineer & Founding Architect, C# .NET JavaScript<br/><a target="_blank" href="https://putcallbot.com">https://putcallbot.com</a>',
                 bdy: 'exp_pcb'
             },
             {
@@ -78,7 +78,7 @@ Here is a sample for SIR experiments ran on AMD Turin and Intel Granite(GNR).<br
                 tit: 'Full Stack, Product Development, <b>Quant Automated Trade System Platform</b>',
                 projs: [
                     {p:'',u:'http://putcallbot.com/',k:'',n:'Put.Call.Bot Quant Trade System Platform',tags:'C#,.NET,T-SQL,HTML5,CSS,Javascript,jQuery,WebService API,FIX Protocol,Subversion,SQL SERVER,IIS,AWS Cloud',d:`
-                    <div class="accord-subtit">2013-2024 as Principal Software Engineer and hands-on JavaScript C# .NET Full Stack Developer</div>
+                    <div class="accord-subtit">2013-2024 as Principal Software Engineer & Founding Architect and hands-on JavaScript C# .NET Full Stack Developer</div>
 					<br>
 					<p><img class="pcb-logo" src="assets/img/pcb/PCBFolders.jpg" alt="company logo" /></p>
 					<p>Put.Call.Bot is a software solution that evaluates quantitative analysis from real time Bovespa exchange market data, sending buy and sell signals to brokers according to the algorithmic strategy chosen by the trader.</p>
@@ -370,7 +370,7 @@ ${buildImagesPanel('pcb',
         ],
         awards: [
             ['Winning the IP2Location Programming Contest 2024', 'https://contest.ip2location.com/winners', 'November 2024, IP2Location Company<br/>AWS Lambda Serverless Function to control IP requests and web resources using Geolocation by Country and City. <a href="https://github.com/sabsfilho/IPGeoGuard">https://github.com/sabsfilho/IPGeoGuard</a>'],
-            ['ABCM-EMBRAER 2004 prize in undergraduate category','https://abcm.org.br/symposium-series/SSM_Vol2/Section_II_Industrial_Instrumentation/SSM2_II_05.pdf',`
+            ['ABCM-EMBRAER Aerospace 2004 prize in undergraduate category','https://abcm.org.br/symposium-series/SSM_Vol2/Section_II_Industrial_Instrumentation/SSM2_II_05.pdf',`
 2001-2003, UFRJ Robotics Lab (LabRob), Rio de Janeiro, RJ - Brazil<br>
 A Digital System for Measurements in Gypsum Molds for Orthodontics Mechanical Engineering Department
 <a class="toggle-link" data-hidden="click here to see more info" data-shown="show less"></a>
@@ -595,7 +595,7 @@ mainContent = {
             {
                 body:`
 <div class="bio">
-<p>I am a seasoned Tech Lead Systems Engineer & Backend Developer with more than 25 years in software development and team management in Banking, Startup, Fintech and also collaborating across the globe in large companies as Microsoft.${vids}</p>
+<p>I am a seasoned Principal Systems Engineer & Backend Developer with more than 25 years in software development and team management in Banking, Startup, Fintech and also collaborating across the globe in large companies as Microsoft.${vids}</p>
 <p class="currentmemo">&ldquo;I'm currently working at Microsoft Silicon, Cloud Hardware, and Infrastructure Engineering (SCHIE) as Tech Lead Product and Site Reliability Engineering - SRE, Level 1, building reliable and scalable systems to infrastructure, emphasizing automation (CI/CD), observability, and incident management, debugging production issues, and post-incident reviews. I'm also responsible for guiding and mentoring junior colleagues. I wrote technical documents and also a Zero to Hero guide to help onboard new team members too.
 My team is based in the Microsoft headquarters campus at Redmond, WA, USA, but I also support and have meetings with teams located in the Microsoft India Development Center (IDC), from Hyderabad and Noida cities.&rdquo;</p>
 <p>I've been developing and contributing for the Juno orchestrator project, and also for the internal and public GitHub repo of the Virtual Client platform, developing solutions for monitoring, benchmarking and running customer-representative scenarios on virtual machines or physical hosts. I'm developing these solutions using GitHub, VisualStudio, VS Code, C#, .NET 10, Python, PowerShell and Bash scripts.
@@ -604,7 +604,7 @@ I'm using Azure Data Explorer (ADX) to collect and analyze log ingestion and rea
 <p>I'm very proud to be a valuable member of the Microsoft Cloud Infrastructure team. It's worthwhile to mention I succeeded at all Microsoft challenging hiring interview rounds, meaning I'm vetted to deploy reliable and scalable systems by applying software engineering solutions.</p>
 <p class="currentmemo">&ldquo;Before Microsoft, for more than 10 years, I had been working asynchronously as a Staff Engineer in a full remote position at <a href="https://putcallbot.com/">PutCallBot</a>, a Fintech company that develops stock market trading solutions, including a stock portfolio management system that autonomously makes smart and fast trade decisions, using Quant trading strategies. My last project was a brownfield project, being responsible to modernize our .NET Framework ecosystem from a monolithic architecture based in Virtual Machines running Windows Servers to a Service Oriented Architecture, using AWS Lambda Serverless Function, DynamoDB, AWS RDS for SQL Server, AWS S3 Bucket, AWS Event Bridge, .NET 8, Entity Framework, Docker images and applying the .NET Microservices Architecture.<img class="AWSLambdaFunction" src="assets/img/AWSLambdaFunction.jpg"> I am coding on a VS Code Dev Container running a Docker in Docker approach on a Ubuntu/Linux EC2 Instance and using GitHub for version control. Before getting this project approval, I developed a .NET Core Web App consuming  resources of my personal Azure account in order to build a prototype and create a viability study for this modernization. I've crafted an <a target="_blank" href="https://docs.google.com/document/d/1Yg7iscwM2IChCxy66aYhOB4-kA_9cgu6XC3Ar5RNn5k/edit?usp=sharing">all-in-one guide (click to open)</a> to help me train my colleagues to publish .NET 8 microservices to AWS Lambda Function, using really cool stuff and also reducing our costs !&rdquo;</p>
 <p>I graduated in Mechanical Engineering from Federal University of Rio de Janeiro - UFRJ, one of the most prestigious universities in Brazil, and worked in their Robotics Lab until graduation. I post-graduated in Computer Science & System Project Management from Pontifical Catholic University of Rio de Janeiro - PUC-RIO also a renowned university in Brazil.</p>
-<p>I am a researcher by nature and I am very proud to say that one of my research projects was awarded and recognized with the ABCM-EMBRAER 2004 prize.</p>
+<p>I am a researcher by nature and I am very proud to say that one of my research projects was awarded and recognized with the ABCM-EMBRAER Aerospace 2004 prize.</p>
 <p>I am working at Microsoft as a vendor from Wipro Company, with the Tech Lead Band B3, Developer L4 role. I can deliver to our customers technical design and development solutions, managing teams, mentoring engineers, and acting as a Subject Matter Expert (SME).</p>
 <p>My former CEO usually said that I am a T-shaped person collaborating and nurturing multiple areas of connections. As I am a developer with a mechanical engineering, academic research and financial background, I can easily cross beyond borders building strong bridges with network, security, compliance, sales and business teams.</p>
 <a class="toggle-link" data-hidden="click here to see more info" data-shown="show less"></a>
