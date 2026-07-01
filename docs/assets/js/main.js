@@ -574,11 +574,11 @@ stepping in and out as handling a bad asset position to secure the fund health a
 		const vids = `<div class="vid">
 <div>
 <embed src="https://docs.google.com/file/d/1OY46AiLuqPmG4PJScHkDyuAQZ7xETApT/preview">
-<div>Short Introduction</div>
+<div>Short Introduction (2024)</div>
 </div>
 <div>
 <embed src="https://docs.google.com/file/d/1MZBidAZR2YWW03qooKx6P0SD5ZKGfTT7/preview">
-<div>About Me Presentation</div>
+<div>About Me Presentation (2024)</div>
 </div>
 </div>`;
 /*
